@@ -36,6 +36,7 @@ import '../../styles/download.css';
 const sg_en = 'https://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
 //I don't know whether this will ever get translated
 const press_kit_en = 'https://resources.telosfoundation.io/presskit_master/TELOS_press_kit.pdf';
+const voting_guide_en = 'https://resources.telosfoundation.io/voting_guide/Telos_Foundation_Board_Voting_Guide.pdf';
 
 const splashBanners = [
 	{
@@ -402,6 +403,12 @@ class Documents extends Component {
 				url: sg_en,
 				link_text: documents.style_guide.link,
 				description: documents.style_guide.description
+			},
+			{
+				document_type: 'pdf',
+				url: voting_guide_en,
+				link_text: documents.voting_guide.link,
+				description: documents.voting_guide.description
 			},
 			{
 				document_type: 'zip',

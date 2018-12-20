@@ -366,6 +366,10 @@
         "link": "Telos 风格指南",
         "description": "Telos基金会的风格指南, 包括Telos使用的徽标、选色板和字体。"
       },
+      "voting_guide": {
+        "link": "Telos Foundation Board Voting Guide",
+        "description": "A guide to executing all the Telos Foundation Board voting functions available on Sqrl wallet."
+      },
       "logos_icons": {
         "link": "Telos 徽标和图标",
         "description": "包含各种大小和类型的 Telos 徽标和图标。"

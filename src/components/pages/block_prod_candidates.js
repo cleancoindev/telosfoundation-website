@@ -193,7 +193,7 @@ class Candidates extends Component {
 				url: 'https://telosrussia.io',
 				logo: telos_russia,
 				vote_name: 'telos1russia',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'KainosBP',
@@ -225,7 +225,7 @@ class Candidates extends Component {
 				url: 'http://www.bigiron.io',
 				logo: eosworld,
 				vote_name: 'BigIronbpTex',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'TelosGreen',
@@ -408,7 +408,7 @@ class Candidates extends Component {
 				url: 'https://www.eossandiego.io',
 				logo: eos_sandiego,
 				vote_name: 'eossandiego1',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'EOSphere',
@@ -440,7 +440,7 @@ class Candidates extends Component {
 				url: 'https://eosvenezuela.io',
 				logo: eos_venezuela,
 				vote_name: 'eosvenezuela',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'telos awake',

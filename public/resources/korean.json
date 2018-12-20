@@ -366,6 +366,10 @@
         "link": "Telos Style Guide",
         "description": "A style guide featuring Telos Foundation logos, color palettes and fonts for brand use."
       },
+      "voting_guide": {
+        "link": "Telos Foundation Board Voting Guide",
+        "description": "A guide to executing all the Telos Foundation Board voting functions available on Sqrl wallet."
+      },
       "logos_icons": {
         "link": "Telos Logo and Icon",
         "description": "A package containing an assortment of file sizes and types for the Telos logo and icon."
