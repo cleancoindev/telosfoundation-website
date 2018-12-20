@@ -10,6 +10,8 @@ import {selectLanguage} from '../../actions';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
+import awake_logo from '../../img/awake_wallet_banner.png';
+import meow_logo from '../../img/meow_wallet_banner.png';
 
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
@@ -135,6 +137,47 @@ class Download extends Component {
 }
 
 const Wallets = ({wallets}) => {
+	const walletsArr = [
+		{
+			name: 'SQRL',
+			description: wallets.sqrl_description,
+			logo: sqrl_logo,
+			links: {
+				linux: 'https://github.com/Telos-Foundation/Sqrl/releases',
+				apple: 'https://github.com/Telos-Foundation/Sqrl/releases',
+				windows: 'https://github.com/Telos-Foundation/Sqrl/releases',
+				github: 'https://github.com/Telos-Foundation/Sqrl'
+			}
+		},
+		{
+			name: 'Scatter',
+			description: 'Signing transactions on a blockchain can be a daunting task for users. Scatter makes it easy for anyone to do, whether they know about blockchain or not.',
+			logo: scatter_logo,
+			links: {
+				linux: 'https://github.com/GetScatter/ScatterDesktop/releases/',
+				apple: 'https://github.com/GetScatter/ScatterDesktop/releases/',
+				windows: 'https://github.com/GetScatter/ScatterDesktop/releases/',
+				github: 'https://github.com/GetScatter/ScatterDesktop'
+			}
+		},
+		{
+			name: 'meow',
+			description: 'Access and manage your hardware wallets with My Eos Wallet (MEOW), a sleek and secure cross-chain app by Attic Lab.',
+			logo: meow_logo,
+			links: {
+				download: 'https://altshiftdev.com/telos'
+			}
+		},
+		{
+			name: 'awake',
+			description: 'The Awake mobile wallet and trading platform, developed by the EosAwake community, supports digital asset management and functions such as node voting.',
+			logo: awake_logo,
+			links: {
+				download: 'https://www.pgyer.com/awake'
+			}
+		}
+	];
+
 	return (
 		<section id='download_wallets'>
 			<ScrollAnimation
@@ -157,191 +200,158 @@ const Wallets = ({wallets}) => {
 					</ScrollAnimation>
 				</Col>
 			</Row>
-			<Row>
-				<Col sm={5}>
-					<ScrollAnimation
-						animateOnce
-						animateIn='fadeInUp'
-						duration={0.4}
-					>
-						<img src={sqrl_logo} alt='squirrel wallet logo' className='img-responsive' />
-					</ScrollAnimation>
-				</Col>
-				<Col sm={7}> 
-					<div className='squirrel_content'>
-						<ScrollAnimation
-							animateOnce
-							animateIn='fadeInUp'
-							duration={0.4}
-						>
-							<p>{wallets.sqrl_description}</p>
-						</ScrollAnimation>
-						<ul className='download_buttons'>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={100}
-								>
-									<a
-										href='https://github.com/Telos-Foundation/Sqrl/releases'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-linux'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={150}
-								>
-									<a
-										href='https://github.com/Telos-Foundation/Sqrl/releases'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-apple'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={200}
-								>
-									<a
-										href='https://github.com/Telos-Foundation/Sqrl/releases'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-windows'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={250}
-								>
-									<a 
-										href='https://github.com/Telos-Foundation/Sqrl' 
-										className='btn btn-primary' 
-										target='_blank' 
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-github'></i>  {wallets.source}
-									</a>
-								</ScrollAnimation>
-							</li>
-						</ul>
-					</div>
-				</Col>
-			</Row>
-			<Row>
-				<Col sm={5}>
-					<ScrollAnimation
-						animateOnce
-						animateIn='fadeInUp'
-						duration={0.4}
-					>
-						<img src={scatter_logo} alt='scatter wallet logo' className='img-responsive' />
-					</ScrollAnimation>
-				</Col>
-				<Col sm={7}>
-					<div className='squirrel_content'>
-						<ScrollAnimation
-							animateOnce
-							animateIn='fadeInUp'
-							duration={0.4}
-						>
-							<p>Signing transactions on a blockchain can be a daunting task for users. Scatter makes it easy for anyone to do, whether they know about blockchain or not.</p>
-						</ScrollAnimation>
-						<ul className='download_buttons'>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={100}
-								>
-									<a
-										href='https://github.com/GetScatter/ScatterDesktop/releases/'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-linux'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={150}
-								>
-									<a
-										href='https://github.com/GetScatter/ScatterDesktop/releases/'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-apple'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={200}
-								>
-									<a
-										href='https://github.com/GetScatter/ScatterDesktop/releases/'
-										className='btn btn-primary'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-windows'></i>  {wallets.download}
-									</a>
-								</ScrollAnimation>
-							</li>
-							<li>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={250}
-								>
-									<a 
-										href='https://github.com/GetScatter/ScatterDesktop' 
-										className='btn btn-primary' 
-										target='_blank' 
-										rel='noopener noreferrer'
-									>
-										<i className='fa fa-github'></i>  {wallets.source}
-									</a>
-								</ScrollAnimation>
-							</li>
-						</ul>
-					</div>
-				</Col>
-			</Row>
+			{
+				walletsArr.map((wal, i) => {
+					return (
+						<Wallet
+							key={i}
+							logo={wal.logo}
+							wallets={wallets}
+							wallet_name={wal.name}
+							wallet_description={wal.description}
+							links={wal.links} />
+					);
+				})
+			}
 		</section>
+	);
+}
+
+const Wallet = (props) => {
+
+	const {wallets} = props;
+
+	return (
+		<Row>
+			<Col sm={5}>
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeInUp'
+					duration={0.4}
+				>
+					<img src={props.logo} alt={`${props.wallet_name} wallet logo`} className='wallet_logo' />
+				</ScrollAnimation>
+			</Col>
+			<Col sm={7}> 
+				<div className='squirrel_content'>
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeInUp'
+						duration={0.4}
+					>
+						<p>{props.wallet_description}</p>
+					</ScrollAnimation>
+					<ul className='download_buttons'>
+						{
+							props.links.linux ?
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+										delay={100}
+									>
+										<a
+											href={props.links.linux}
+											className='btn btn-primary'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<i className='fa fa-linux'></i>  {wallets.download}
+										</a>
+									</ScrollAnimation>
+								</li> :
+								''
+						}
+						{
+							props.links.apple ?
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+										delay={150}
+									>
+										<a
+											href={props.links.apple}
+											className='btn btn-primary'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<i className='fa fa-apple'></i>  {wallets.download}
+										</a>
+									</ScrollAnimation>
+								</li> :
+								''
+						}
+						{
+							props.links.windows ?
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+										delay={200}
+									>
+										<a
+											href={props.links.windows}
+											className='btn btn-primary'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<i className='fa fa-windows'></i>  {wallets.download}
+										</a>
+									</ScrollAnimation>
+								</li> :
+								''
+						}
+						{
+							props.links.github ?
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+										delay={250}
+									>
+										<a
+											href={props.links.github}
+											className='btn btn-primary'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<i className='fa fa-github'></i> {wallets.source}
+										</a>
+									</ScrollAnimation>
+								</li> :
+								''
+						}
+						{
+							props.links.download ?
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+										delay={100}
+									>
+										<a
+											href={props.links.download}
+											className='btn btn-primary'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<i className='fa fa-download'></i> {wallets.download}
+										</a>
+									</ScrollAnimation>
+								</li> :
+								''
+						}
+						
+					</ul>
+				</div>
+			</Col>			
+		</Row>
 	);
 };
 

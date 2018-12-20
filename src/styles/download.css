@@ -31,6 +31,13 @@
 	margin-bottom: 70px;
 }
 
+#download_wallets .wallet_logo {
+	display: block;
+	width: 275px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
 #download_wallets h2,
 #download_documents h2 {
 	text-align: center;
@@ -79,8 +86,8 @@
 	background-color: #ed4a2e;
 	border-color: transparent;
 	transition: background-color 0.15s ease;
-	font-size: 1.5em;
-	padding: 5px 0;
+	font-size: 1em;
+	padding: 3px 0;
 	border-radius: 12px;
 	margin-bottom: 30px;
 	width: 100%;
