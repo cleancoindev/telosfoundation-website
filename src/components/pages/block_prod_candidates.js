@@ -56,6 +56,7 @@ import telos_unlimited from '../../img/partner_logos/logo_telos_unlimited.png';
 import eos_venezuela from '../../img/partner_logos/logo_eos_venezuela.png';
 import eos_awake from '../../img/partner_logos/logo_eosawake.png';
 import cryptosuvi from '../../img/partner_logos/logo_cryptosuvi.png';
+import jijiplan from '../../img/partner_logos/logo_jijiplan.png';
 
 import checkmark from '../../img/green_check.png';
 
@@ -456,6 +457,14 @@ class Candidates extends Component {
 				url: 'http://www.cryptosuvi.io',
 				logo: cryptosuvi,
 				vote_name: 'cryptosuviio',
+				compliant: true
+			},
+			{
+				name: 'JijiPlan DAC',
+				description: 'JijiPlan DAC was commissioned to develop and incubate the global smart urbanization market opportunity for Telos. Join our city innovation forum and earn rewards.',
+				url: 'https://jijiplan.com',
+				logo: jijiplan,
+				vote_name: 'jijiplannode',
 				compliant: true
 			}
 		];
