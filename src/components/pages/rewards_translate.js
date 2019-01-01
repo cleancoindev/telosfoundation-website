@@ -73,22 +73,8 @@ class RewardsTranslate extends Component {
 										<iframe title='Rewards Program Video' src='https://www.youtube.com/embed/1XJjGqzS1AU' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
 									</ResponsiveEmbed>
 									<div className='text-center video_heading'>
-										<h2>The period for submissions has started!</h2>
-										<h4>Sign-ups are now closed. Submission lists will be accepted until one week after activation, so keep earning rewards!</h4>
-										{/*<Button
-											bsStyle='primary'
-											bsSize='large'
-											onClick={() => this.setState({showRewardsModal: true})}
-										>
-											{rewards_page.intro.cta_text}
-										</Button>*/}
-										<Button
-											bsStyle='primary'
-											bsSize='large'
-											onClick={() => this.props.history.push('/rewards/submission')}
-										>
-											Submission Form
-										</Button>
+										<h2>The Community Rewards Program is now closed!</h2>
+										<h4>Thanks to everyone who participated.</h4>
 									</div>
 								</Col>
 							</Row>
