@@ -50,6 +50,7 @@ import kainos from '../../img/partner_logos/logo_kainos.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 import telescope from '../../img/partner_logos/logo_telescope.png';
 import eos_sphere from '../../img/partner_logos/logo_eos_sphere.png';
+import telos_awake from '../../img/partner_logos/logo_telos_awake.png';
 
 //exchange logos
 // import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
@@ -61,6 +62,8 @@ import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 import swaponline_button from '../../img/exchange_logos/SwapOnline-Button.jpg';
 import whaleex_button from '../../img/exchange_logos/WhaleEx-Button.jpg';
 import codex_button from '../../img/exchange_logos/codex_button.jpg';
+import eosex_button from '../../img/exchange_logos/eosex.png';
+import akdex_button from '../../img/exchange_logos/akdex.png';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
@@ -247,6 +250,11 @@ const partnersArr = [
 		name: 'eosphere',
 		logo: eos_sphere,
 		url: 'https://eosphere.io'
+	},
+	{
+		name: 'telos awake',
+		logo: telos_awake,
+		url: 'https://eosawake.io'
 	}
 ];
 
@@ -280,6 +288,16 @@ const exchangesArr = [
 		name: 'codex',
 		img: codex_button,
 		url: 'https://codex.one'
+	},
+	{
+		name: 'eosex',
+		img: eosex_button,
+		url: 'https://eosex.com'
+	},
+	{
+		name: 'akdex',
+		img: akdex_button,
+		url: 'https://akdex.io'
 	}
 ];
 

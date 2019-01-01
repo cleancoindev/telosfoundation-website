@@ -26,6 +26,7 @@ import chijioke from '../../img/foundation_site/Chijioke Ilochonwu.jpg';
 import joost from '../../img/foundation_site/Joost Voordouw.png';
 import justin_giudici from '../../img/foundation_site/Justin Giudici.jpg';
 import daniel_lazar from '../../img/foundation_site/daniel_lazar.png';
+import suvi from '../../img/foundation_site/Suvi.jpg';
 
 
 import '../../styles/board.css';
@@ -187,6 +188,17 @@ const boardNominees = [
 		bio: [
 			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, Dapps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
 			'Chen started programming in high school and won 1st Prize in the National Olympiad in Informatics (NOIP) at the age of 18. Over the past 15 years, he has successfully implemented and deployed various projets ranging from Global Navigation Satellite Reflectometry to Network Monitoring System for large-scaled enterprises. With his experience in development and dev ops, Chen is committed to contributing his technical skills to the Telos community.'
+		]
+	},
+	{
+		name: 'Suvi Rinkinen',
+		organization: 'Cryptosuvi',
+		nominatedBy: 'Douglas Horn, GoodBlock',
+		portrait: suvi,
+		bio: [
+			'Suvi is an experienced business developer. Since 2017 she has been working full time on blockchain projects. Prior to this, Suvi worked in fintech for a company specializing in payments and remittances technology. She was solely responsible for business development, and increased the revenues several fold. Due to her vast network, she also assists companies in fundraising and investor relations.',
+			'Suvi holds a masters degree (eximia cum laude approbatur) in lingustics focusing on rhetorics, discourse and metaphors. She has also worked in Finnish language communications, as a literature teacher, and lecturer on all levels. She is trained to evaluate, create programs, work on set goals and educate people. In her last teaching role she planned and produced an entire teaching program while training assistant teachers for a private social and healthcare company which operates throughout Finland.',
+			'Suvi is co-founder for Cryptosuvi Block Producing Company, the first in Finland. She is a professional networker and communicator, a true people person. She aims to represent and work for The Telos Foundation\'s goals with the highest professionalism both locally, in Finland, throughout London, as well as globally.'
 		]
 	},
 	{

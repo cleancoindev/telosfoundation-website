@@ -54,9 +54,11 @@ import eos_sphere from '../../img/partner_logos/logo_eos_sphere.png';
 import eos_index from '../../img/partner_logos/logo_eosindex.png';
 import telos_unlimited from '../../img/partner_logos/logo_telos_unlimited.png';
 import eos_venezuela from '../../img/partner_logos/logo_eos_venezuela.png';
-import eos_awake from '../../img/partner_logos/logo_eosawake.png';
+import telos_awake from '../../img/partner_logos/logo_telos_awake.png';
 import cryptosuvi from '../../img/partner_logos/logo_cryptosuvi.png';
 import jijiplan from '../../img/partner_logos/logo_jijiplan.png';
+import eclipse from '../../img/partner_logos/logo_eclipse.png';
+import beyond_bitcoin from '../../img/partner_logos/logo_beyond_bitcoin.png';
 
 import checkmark from '../../img/green_check.png';
 
@@ -253,7 +255,7 @@ class Candidates extends Component {
 			},
 			{
 				name: 'Telos Miami',
-				description: 'At Telos Miami, we’re passionate about Blockchain, Entrepreneurship, and Community. We are committed to giving back and creating DApps to transform industries.',
+				description: 'At Telos Miami, the team behind Sqrl, we are committed to giving back and creating DApps to transform industries.',
 				url: 'https://telos.miami',
 				logo: telos_miami,
 				vote_name: 'TelosMiamiBP',
@@ -360,7 +362,7 @@ class Candidates extends Component {
 				description: 'Goingos is a digital team focusing on block chains and digitally encrypted currencies, dedicated to promoting good development of TELOS.',
 				url: 'http://www.goingos.org',
 				logo: china_goingos,
-				vote_name: 'telgoingos13',
+				vote_name: 'Telgoingosbp',
 				compliant: true
 			},
 			{
@@ -447,7 +449,7 @@ class Candidates extends Component {
 				name: 'telos awake',
 				description: 'Awake Team focuses on EOS ecology. We will contribute to the development of Telos through DApp development, wallets, and Akdex, a decentralized exchange with support EOS/Telos trade.',
 				url: 'https://eosawake.io',
-				logo: eos_awake,
+				logo: telos_awake,
 				vote_name: 'eosawakeiobp',
 				compliant: true
 			},
@@ -466,6 +468,22 @@ class Candidates extends Component {
 				logo: jijiplan,
 				vote_name: 'jijiplannode',
 				compliant: true
+			},
+			{
+				name: 'Telos Eclipse24',
+				description: 'Telos Eclipse24 is based out of the UK and is a self-funded organisation, We have a desire to support and educate the Telos community and are currently evaluating how we can support various good causes in the UK utilizing block chain technology.',
+				url: 'https://telos.eclipse24.io',
+				logo: eclipse,
+				vote_name: 'teleclipse24',
+				compliant: true
+			},
+			{
+				name: 'Beyond Bitcoin',
+				description: 'Beyond Bitcoin is the collective community where DPoS history began and is archived.  Fuzzy coined Exponential Operating system and after many years of waiting, scalable chains have emerged to enable the community to grow and thrive with new tools.  We are here to build Voltron.',
+				url: 'http://beyondbitcoin.org',
+				logo: beyond_bitcoin,
+				vote_name: 'beyondbtctls',
+				compliant: false
 			}
 		];
 
