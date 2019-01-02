@@ -59,6 +59,7 @@ import cryptosuvi from '../../img/partner_logos/logo_cryptosuvi.png';
 import jijiplan from '../../img/partner_logos/logo_jijiplan.png';
 import eclipse from '../../img/partner_logos/logo_eclipse.png';
 import beyond_bitcoin from '../../img/partner_logos/logo_beyond_bitcoin.png';
+import eosvibes from '../../img/partner_logos/logo_eosvibes.png';
 
 import checkmark from '../../img/green_check.png';
 
@@ -484,6 +485,14 @@ class Candidates extends Component {
 				logo: beyond_bitcoin,
 				vote_name: 'beyondbtctls',
 				compliant: false
+			},
+			{
+				name: 'EOSVibes',
+				description: 'EOSVibes is committed to supporting the eosio family of chains with applications, fast secure dedicated bare metal servers, and community education.',
+				url: 'https://www.eosvibes.io',
+				logo: eosvibes,
+				vote_name: 'eosvibesbloc',
+				compliant: true
 			}
 		];
 
