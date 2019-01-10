@@ -112,7 +112,7 @@ const boardNominees = [
 		nominatedBy: 'Rob Konsdorf',
 		portrait: justin_giudici,
 		bio: [
-			'Justin is the founder and CEO of infinitybloc.io, a founding partner and block producer on Telos. He is highly experienced for thie space having assisted a number of top block producers before and after the first EOSIO chain launched. He is a well respected community member within both Telos and the broader EOSIO community.',
+			'Justin is the founder and CEO of infinitybloc.io, a founding partner and block producer on Telos. He is highly experienced in this space, having assisted a number of top block producers before and after the first EOSIO chain launched. He is a well respected community member within both Telos and the broader EOSIO community.',
 			'He  appears on a weekly tokenomics crowdcast interviewing and reviewing top EOSIO dapps. And runs regular meetup sessions to educate and incubate blockchain talent in San Francisco and Silicon Valley.',
 			'Justin led the Telos dapp outreach program pre launch and helped to deliver an impressive list of tools, wallets and dapps expected to be available from early in the chains existence. If elected, Justin will be able to continue to bring top talent to Telos and champion the needs of the networks community above all else.'
 		]

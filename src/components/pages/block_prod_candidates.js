@@ -60,6 +60,7 @@ import jijiplan from '../../img/partner_logos/logo_jijiplan.png';
 import eclipse from '../../img/partner_logos/logo_eclipse.png';
 import beyond_bitcoin from '../../img/partner_logos/logo_beyond_bitcoin.png';
 import eosvibes from '../../img/partner_logos/logo_eosvibes.png';
+import arabia from '../../img/partner_logos/logo_arabia.png';
 
 import checkmark from '../../img/green_check.png';
 
@@ -492,6 +493,14 @@ class Candidates extends Component {
 				url: 'https://www.eosvibes.io',
 				logo: eosvibes,
 				vote_name: 'eosvibesbloc',
+				compliant: true
+			},
+			{
+				name: 'Telos Arabia',
+				description: 'Telos Arabia is unique in Middle East and North Africa, our goal is to take the lead of Blockchain Technology and knowledge in MENA our team have extensive experience in Blockchain & IT, DDoS protection and infrastructure.',
+				url: 'https://telosarabia.net',
+				logo: arabia,
+				vote_name: 'telosarabia1',
 				compliant: true
 			}
 		];
