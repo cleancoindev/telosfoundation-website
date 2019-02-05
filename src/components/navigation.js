@@ -83,18 +83,6 @@ class Navigation extends Component {
 							MAINNET
 						</MenuItem>
 				    </NavDropdown>
-					<li className='rewards_nav_item'>
-						<a
-							href="/rewards"
-							onClick={e => {
-								e.preventDefault();
-								this.props.history.push('/rewards');
-								this.handleCloseNav();
-							}}
-						>
-							REWARDS
-						</a>
-					</li>
 					<button 
 						className={`hamburger hamburger--spin ${side_nav_open ? 'is-active' : ''}`} 
 						type="button"

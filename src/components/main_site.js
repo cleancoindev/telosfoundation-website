@@ -28,12 +28,6 @@ const MainSite = ({site_content}) => {
 			<main className='main'>
 
 				<Switch>
-					
-					
-
-					<Route path='/rewards/submission' component={RewardsSubmission} />
-
-					<Route path='/:language/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
 					<Route path='/:language/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/:language/iwantmytlos' component={ExchangeOutreach} />
 					<Route path='/:language/launch' component={Checklist} />
@@ -46,7 +40,6 @@ const MainSite = ({site_content}) => {
 					<Route path='/:language/candidates' component={BlockProducerCandidates} />
 					<Route path='/:language/how_to_vote' component={HowToVote} />
 
-					<Route path='/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
 					<Route path='/launch' component={Checklist} />
