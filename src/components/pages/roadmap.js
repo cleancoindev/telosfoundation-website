@@ -8,6 +8,9 @@ import development_icon from '../../img/roadmap_icons/roadmap_development_icon.p
 import governance_icon from '../../img/roadmap_icons/roadmap_governance_icon.png';
 import network_icon from '../../img/roadmap_icons/roadmap_network_icon.png';
 import tools_icon from '../../img/roadmap_icons/roadmap_tools_icon.png';
+import null_icon from '../../img/roadmap_icons/roadmap_null_icon.png';
+
+import telos_logo from '../../img/checklist/logo_gray32x35.png';
 
 import '../../styles/roadmap.css';
 
@@ -16,29 +19,24 @@ const icons = {
 	development: development_icon,
 	governance: governance_icon,
 	network: network_icon,
-	tools: tools_icon
+	tools: tools_icon,
+	none: null_icon
 };
 
-
-class Roadmap extends Component {
-
-	render(){
-		const {telos_roadmap} = this.props;
-
-		return (
-			<div className='roadmap'>
-				<Grid>
-					<Row>
-						<Col md={10} mdOffset={1}>
-							<Intro />
-							<RoadmapCalendar telos_roadmap={telos_roadmap} />
-						</Col>
-					</Row>
-				</Grid>
-			</div>
-		);
-	}
-}
+const Roadmap = props => {
+	return (
+		<div className='roadmap'>
+			<Grid>
+				<Row>
+					<Col md={12}>
+						<Intro />
+						<RoadmapCalendar telos_roadmap={props.telos_roadmap} />
+					</Col>
+				</Row>
+			</Grid>
+		</div>
+	);
+};
 
 const Intro = () => {
 	return (
@@ -77,6 +75,7 @@ const RoadmapLegend = () => {
 	);
 };
 
+//flex container of all the months
 const RoadmapCalendar = ({telos_roadmap}) => {
 	return (
 		<div id='roadmap_calendar'>
@@ -86,6 +85,7 @@ const RoadmapCalendar = ({telos_roadmap}) => {
 						<RoadmapMonth
 							key={i}
 							month={rmMonth.month}
+							stage={rmMonth.stage}
 							year={rmMonth.year}
 							items={rmMonth.items} />
 					);
@@ -113,6 +113,7 @@ class RoadmapMonth extends Component {
 		const {
 			month,
 			year,
+			stage,
 			items
 		} = this.props;
 
@@ -143,8 +144,11 @@ class RoadmapMonth extends Component {
 			}
 		};
 
+		//use ... and up arrow/caret when expanded
+		const footerIcon = expanded ? <i className='fa fa-caret-up' /> : <i className='fa fa-ellipsis-h' />;
+
 		return (
-			<div className='roadmap_month'>
+			<div className={`roadmap_month stage_${stage}`}>
 				<header>
 					<h5>{month}</h5>
 					<h5>{year}</h5>
@@ -155,13 +159,14 @@ class RoadmapMonth extends Component {
 					</ul>
 				</div>
 				<footer>
-					{items.length > 5 ? <button onClick={this.handleClick.bind(this)}><i className='fa fa-ellipsis-h'></i></button> : ''}
+					{ items.length > 5 ? <button onClick={this.handleClick.bind(this)}>{footerIcon}</button> : '' }
 				</footer>
 			</div>
 		);
 	}
 }
 
+//render the list
 const RoadmapListItem = props => {
 	const {
 		category,
@@ -169,24 +174,34 @@ const RoadmapListItem = props => {
 		link
 	} = props;
 
-	const liStyle = {
-		backgroundImage: `url(${icons[category]})`
+	const liStyle ={
+		backgroundImage: `url(${category ? icons[category] : icons.none})`
+	};
+
+	//pick icon based on url contents.  May need to be reworked when I get real links
+	const getIconFromURL = url => {
+		if(new RegExp('github.com').test(url)) return (<i className='fa fa-github'></i>);
+		if(new RegExp('medium.com').test(url)) return (<i className='fa fa-medium'></i>);
+		if(new RegExp('telosfoundation.io').test(url)) return (<img src={telos_logo} alt='telos link' />);
+		return (<i className='fa fa-link'></i>);
 	};
 
 	//will have to get icons
-	const getLink = () => {
+	//create the links 
+	const getLinks = () => {
 		if(!link) return <div></div>;
 
 		//array of links
 		if(typeof link !== 'string'){
-			return link.map((el, i) => {
+			return link.map((url, i) => {
 				return <a
-					href={el}
+					key={i}
+					href={url}
 					target='_blank'
 					rel='noopener noreferrer'
 					className='roadmap_li_link'
 				>
-					<i className='fa fa-github'></i>
+					{getIconFromURL(url)}
 				</a>
 			});
 		}
@@ -199,7 +214,7 @@ const RoadmapListItem = props => {
 				rel='noopener noreferrer'
 				className='roadmap_li_link'
 			>
-				<i className='fa fa-github'></i>
+				{getIconFromURL(link)}
 			</a>
 		);
 	};
@@ -207,10 +222,10 @@ const RoadmapListItem = props => {
 	return (
 		<li style={liStyle}>
 			{content}
-			{getLink()}
+			{getLinks()}
 		</li>
 	);
-}
+};
 
 function mapStateToProps(state){
 	return {

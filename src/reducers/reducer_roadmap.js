@@ -1,11 +1,13 @@
+//just return an array of all the months
+//might have to rename stages
 export default function(){
 	return [
 		{
 			month: 'June',
 			year: 2018,
+			stage: 'zero',
 			items: [
 				{
-					category: 'community',
 					content: 'Write Whitepaper',
 					link: 'https://telosfoundation.io' //link can be string or array
 				},
@@ -34,6 +36,7 @@ export default function(){
 		{
 			month: 'July',
 			year: 2018,
+			stage: 'one',
 			items: [
 				{
 					category: 'community',
@@ -58,13 +61,14 @@ export default function(){
 				{
 					category: 'development',
 					content: 'Release Equitable BP pay',
-					link: '#'
+					link: 'https://medium.com/@teloslogical/the-telos-foundation-state-of-the-board-the-first-30-days-13e93b1523d0'
 				}
 			]
 		},
 		{
 			month: 'August',
 			year: 2018,
+			stage: 'one',
 			items: [
 				{
 					category: 'development',
@@ -116,6 +120,7 @@ export default function(){
 		{
 			month: 'September',
 			year: 2018,
+			stage: 'one',
 			items: [
 				{
 					category: 'tools',
@@ -162,6 +167,259 @@ export default function(){
 					content: 'Lost Key Recovery Program begins',
 					link: '#'
 				},
+			]
+		},
+		{
+			month: 'October',
+			year: 2018,
+			stage: 'one',
+			items: [
+				{
+					category: '',
+					content: 'Telos Staging Network launched',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release Block Producer kick function',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Token Exchange Reservere Fund created',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'TBNOA Ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'BP Minimum Requirements ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Regarb contract Ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Arbitrator minimum requirements ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Data Protection Policy ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Launch sequence script published',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Established RAM management policy',
+					links: '#'
+				}
+			]
+		},
+		{
+			month: 'November',
+			year: 2018,
+			stage: 'one',
+			items: [
+				{
+					category: '',
+					content: 'Telos IPFS cluster established',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Missed block tracking function',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Update Sqrl 0.5.3 - first multi-chain EOSIO wallet',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Conform Telos to EOSIO CDT',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Launch Testnet Stage 3',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Governance documents published to TIPFS',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos Foundation Interim Charter ratified',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Facilitate integrations from Scatter wallet',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release Trail Service voting system v.1',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'BP pay inflation schedule code released',
+					links: '#'
+				}
+			]
+		},
+		{
+			month: 'December',
+			year: 2018,
+			stage: 'one',
+			items: [
+				{
+					category: '',
+					content: 'Release Telos IPSF system v.1 (governance only)',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Complete Worker Proposal System contract',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release Ratify/Amend contract',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Implement RAM Administration functions',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release Telos Foundation voting tokens (TFVT)',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Governance features wallet integration',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Launching Staging Net',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Complete Arbitration contract stage 1 (arbitrator elections)',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release free account creation contract and interface',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Launch Mainnet',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Sqrl wallet 0.5.4 adds governance/Trail Service voting',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'BP Compliance system implemented',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'First RAM Guidance Price published',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'First exchanges list TLOS',
+					links: '#'
+				}
+			]
+		},
+		{
+			month: 'January',
+			year: 2019,
+			stage: 'two',
+			items: [
+				{
+					category: '',
+					content: 'Add app integrations to Sqrl wallet',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos Foundation board on-chain election',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Capture of on-chain active-account snapshots',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'GoodGrants program begins',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Release in-wallet exchange functions to Sqrl wallet',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos Foundation Board of Directors election',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos monitor/blockchain explorer upgraded',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'First mobile wallet (Awake)',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos Original Snapshot captured',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'First Apps deploy',
+					links: '#'
+				},
+				{
+					category: '',
+					content: 'Telos listed on Blocktivity',
+					links: '#'
+				}
 			]
 		}
 	];
