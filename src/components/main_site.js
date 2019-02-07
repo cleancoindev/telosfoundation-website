@@ -12,6 +12,7 @@ import FAQPage from './pages/faq';
 import BlockProducerCandidates from './pages/block_prod_candidates';
 import HowToVote from './pages/how_to_vote';
 import RewardsSubmission from './pages/rewards_submission';
+import Roadmap from './pages/roadmap';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import Header from './header';
@@ -40,6 +41,7 @@ const MainSite = ({site_content}) => {
 					<Route path='/:language/candidates' component={BlockProducerCandidates} />
 					<Route path='/:language/how_to_vote' component={HowToVote} />
 
+					<Route path='/roadmap' component = {Roadmap} />
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
 					<Route path='/launch' component={Checklist} />
