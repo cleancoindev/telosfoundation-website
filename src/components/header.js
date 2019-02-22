@@ -8,7 +8,7 @@ import '../styles/header.css';
 const Header = () => {
 
 	return (
-		<div>
+		<div className='main_telos_site'>
 			<header style={{backgroundImage: `url(${header_background})`}} className='main_header'>
 				<Navigation />
 			</header>

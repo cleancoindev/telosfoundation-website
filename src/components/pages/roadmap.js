@@ -26,6 +26,8 @@ const icons = {
 const Roadmap = props => {
 	return (
 		<div className='roadmap'>
+			<RoadmapFuture roadmap_future={props.roadmap_future} />
+			<DeveloperTeam developer_team={props.developer_team} />
 			<Grid>
 				<Row>
 					<Col md={12}>
@@ -40,11 +42,12 @@ const Roadmap = props => {
 
 const Intro = () => {
 	return (
-		<section id='roadmap_intro'>
+		<header id='roadmap_intro'>
+			<div id='history_anchor'></div>
 			<h1>Telos Development History</h1>
-				<h2>Core development tasks completed by the <br />Telos Launch Group (TLG) and Telos Core Developers</h2>
+			<h2>Telos was built by the Telos Launch Group (TLG) as a grassroots, decentralized project over about 7 months with over 120 global contributors. The TLG freely distributed TLOS accounts and tokens to EOS genesis token-holders without ever conducting an ICO or token sale. Following the December 2018 launch and activation of Telos, the TLG disbanded and further development was performed by the Telos Core Developers.</h2>
 			<RoadmapLegend />
-		</section>
+		</header>
 	);
 };
 
@@ -132,7 +135,7 @@ class RoadmapMonth extends Component {
 					);
 				});
 			}else{
-				return items.slice(0, 5).map((item, i) => {
+				return items.slice(0, 7).map((item, i) => {
 					return (
 						<RoadmapListItem
 							key={i}
@@ -174,8 +177,11 @@ const RoadmapListItem = props => {
 		link
 	} = props;
 
+	//get icon for this category, if there is one
+	const categoryStr = (category || 'none').trim().toLowerCase();
+
 	const liStyle ={
-		backgroundImage: `url(${category ? icons[category] : icons.none})`
+		backgroundImage: `url(${icons[categoryStr]})`
 	};
 
 	//pick icon based on url contents.  May need to be reworked when I get real links
@@ -227,9 +233,163 @@ const RoadmapListItem = props => {
 	);
 };
 
+const DeveloperTeam = props => {
+	return (
+		<section id='developer_team'>
+			<div id='team_anchor'></div>
+			<DeveloperIntro />
+			<TeamMembers developer_team={props.developer_team} />
+		</section>
+	);
+};
+
+const DeveloperIntro = () => {
+	return (
+		<header id='developer_intro'>
+			<h1>Telos Core Developer Team</h1>
+			<h2>The Telos Core Developer team builds and maintains code for Telos and Telos-related tools. It is paid by user-voted worker proposals. The TCD actively encourages developers passionate about blockchain, DPOS, and the Telos ethos to join and be paid to help make Telos the world’s greatest blockchain.</h2>
+		</header>
+	);
+};
+
+const TeamMembers = props => {
+	return (
+		<div className='dev_team_members'>
+			{
+				props.developer_team.map((dev, i) => {
+					return (
+						<TeamMember
+							key={i}
+							name={dev.name}
+							title={dev.title}
+							company={dev.company}
+							image={dev.image}
+							bio={dev.bio}
+							links={dev.links} />
+					);
+				})
+			}
+		</div>
+	);
+};
+
+const TeamMember = props => {
+	const {
+		name,
+		title,
+		company,
+		image,
+		bio,
+		links
+	} = props;
+
+	const getIconFromUrl = url => {
+		if(new RegExp('github.com').test(url)) return (<i className='fa fa-github'></i>);
+		if(new RegExp('linkedin.com').test(url)) return (<i className='fa fa-linkedin'></i>);
+		return (<i className='fa fa-link'></i>);
+	}
+
+	const getLinks = () => {
+		return links.map((link, i) => {
+			return (
+				<li key={i}>
+					<a
+						href={link}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						{getIconFromUrl(link)}
+					</a>
+				</li>
+			);
+		});
+	};
+
+	return (
+		<div className='dev_team_member'>
+			<header>
+				<h5>{name}</h5>
+				<h5>{title}</h5>
+				<h5>{company}</h5>
+			</header>
+			<div className='dev_bio'>
+				<img src={image} alt={name} />
+				{bio.map((par, i) => <p key={i}>{par}</p>)}
+			</div>
+			<footer>
+				{links ? <ul>{getLinks()}</ul> : ''}
+			</footer>
+		</div>
+	);
+};
+
+const RoadmapFuture = props => {
+	return (
+		<section id='roadmap_future'>
+			<div id='future_anchor'></div>
+			<FutureIntro />
+			<FutureItems roadmap_future={props.roadmap_future} />
+		</section>
+	);
+};
+
+const FutureIntro = () => {
+	return (
+		<header id='future_intro'>
+			<h1>Telos Development Roadmap</h1>
+			<h2>The Telos Core Developers have these projects under current development or scheduled for development in the near future. These projects are entirely supported by worker proposal funds voted by Telos users. Please remember to vote for developer proposals to support ongoing development and help decide the direction of future growth.</h2>
+		</header>
+	);
+};
+
+const FutureItems = props => {
+	return (
+		<div className='future_items_container'>
+			{
+				props.roadmap_future.map((item, i) => {
+					return (
+						<FutureItem
+							key={i}
+							name={item.name}
+							description={item.description}
+							priority={item.priority}
+							status={item.status}
+							personnel={item.personnel}
+							estimate={item.estimate} />
+					);
+				})
+			}
+		</div>
+	);
+};
+
+const FutureItem = props => {
+	const {
+		name,
+		description,
+		priority,
+		status,
+		personnel,
+		estimate
+	} = props;
+
+	return (
+		<div className={`future_item priority-${priority}`}>
+			<h4>{name}</h4>
+			<p>{description}</p>
+			<p><strong>Priority:</strong> <span className='priority_value'>{priority}</span></p>
+			<p><strong>Status:</strong> {status}</p>
+			{estimate ? <p><strong>Estimate:</strong> {estimate}</p> : ''}
+			<p className='future_personnel'>{personnel ? personnel.join(', ') : ''}</p>
+		</div>
+	);
+};
+
 function mapStateToProps(state){
 	return {
-		telos_roadmap: state.telos_roadmap
+		telos_roadmap: state.telos_roadmap,
+		developer_team: state.developer_team,
+		roadmap_future: state.roadmap_future
 	};
 }
 

@@ -23,20 +23,20 @@
 }
 
 @media screen and (min-width: 992px){
-	.navbar-nav > li > a {
+	.main_telos_site .navbar-nav > li > a {
 		padding: 40px 15px;
 	}
 }
 
 @media screen and (max-width: 800px){
-	.navbar-nav > li > a {
+	.main_telos_site .navbar-nav > li > a {
 		padding-left: 8px;
 		padding-right: 8px;
 	}
 }
 
 @media screen and (max-width: 767px){
-	.navbar-nav > li > a {
+	.main_telos_site .navbar-nav > li > a {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -48,7 +48,7 @@
 }
 
 @media screen and (min-width: 768px){
-	.navbar-nav > li.rewards_nav_item > a {
+	.main_telos_site .navbar-nav > li.rewards_nav_item > a {
 		padding: 10px 15px;
 		color: #fff;
 		background-color: #8F8B7B;
@@ -57,19 +57,40 @@
 		transition: background-color 0.25s ease;
 	}
 
-	.navbar-nav > li.rewards_nav_item > a:hover,
-	.navbar-nav > li.rewards_nav_item > a:active {
+	.main_telos_site .navbar-nav > li.rewards_nav_item > a:hover,
+	.main_telos_site .navbar-nav > li.rewards_nav_item > a:active {
 		color: #fff;
 		background-color: #5C5848;
 	}
-	.navbar-nav > li.rewards_nav_item > a:focus {
+	.main_telos_site .navbar-nav > li.rewards_nav_item > a:focus {
 		color: #fff;
 		background-color: #8F8B7B;
 	}
 }
 
+@media screen and (min-width: 768px){
+	.main_telos_site .navbar-nav > li.roadmap_nav_item > a {
+		padding: 10px 15px;
+		color: #fff;
+		background-color: #ed4a2e;
+		border-radius: 12px;
+		box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.2);
+		transition: background-color 0.25s ease;
+	}
+
+	.main_telos_site .navbar-nav > li.roadmap_nav_item > a:hover,
+	.main_telos_site .navbar-nav > li.roadmap_nav_item > a:active {
+		color: #fff;
+		background-color: #872311;
+	}
+	.main_telos_site .navbar-nav > li.roadmap_nav_item > a:focus {
+		color: #fff;
+		background-color: #ed4a2e;
+	}
+}
+
 @media screen and (max-width: 767px){
-	.navbar {
+	.main_telos_site .navbar {
 		margin-bottom: 0;
 	}
 }

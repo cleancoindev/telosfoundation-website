@@ -1,0 +1,53 @@
+#process_footer {
+	background-color: #bbb7a5;
+	padding: 20px 0;
+}
+
+#process_footer .social_links {
+	margin: 0;
+	padding: 5px 0 0 0;
+	display: block;
+
+}
+
+#process_footer .social_links li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+#process_footer .social_links li:last-child {
+	margin-right: 0;
+}
+
+#process_footer .social_links li a {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+#process_footer .social_links li a:hover {
+	color: #fff;
+}
+
+#process_footer .footer_icon {
+
+}
+
+#process_footer .footer_icon img {
+	width: 42px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+#process_footer .email_link {
+	text-align: right;
+	padding-top: 10px;
+}
+
+#process_footer .email_link a {
+	color: #fff;
+}
+
+#process_footer .email_link a:hover {
+	text-decoration: none;
+}

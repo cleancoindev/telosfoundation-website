@@ -1,5 +1,7 @@
 //just return an array of all the months
 //might have to rename stages
+//category is case insensitive, but must be spelled correctly
+//if no category is give, icon will be dark circle.  If it is misspelled, no icon will appear at all
 export default function(){
 	return [
 		{
@@ -9,27 +11,26 @@ export default function(){
 			items: [
 				{
 					content: 'Write Whitepaper',
-					link: 'https://telosfoundation.io' //link can be string or array
+					link: 'https://resources.telosfoundation.io/wp_master/telos_white_paper_english.pdf' //link can be string or array
 				},
 				{
 					category: 'development',
 					content: 'Create Telos Branch of EOSIO Repository',
-					link: 'https://github.com'
+					link: 'https://github.com/Telos-Foundation/telos'
 				},
 				{
 					category: 'development',
 					content: 'Modify Teclos CLI',
-					link: 'https://github.com'
+					link: 'https://github.com/Telos-Foundation/telos/issues/25'
 				},
 				{
 					category: 'tools',
 					content: 'Release "Grow" network generation tool',
-					link: ['#', '#']
+					link: 'https://github.com/Telos-Foundation/grow'
 				},
 				{
 					category: 'network',
-					content: 'Launch Testnet Stage 0',
-					link: '#'
+					content: 'Launch Testnet Stage 0'
 				}
 			]
 		},
@@ -41,27 +42,26 @@ export default function(){
 				{
 					category: 'community',
 					content: 'Announce whitepaper and launch group',
-					link: '#'
+					link: 'http://www.telosfoundation.io/TelosAnnouncement.pdf'
 				},
 				{
 					category: 'network',
 					content: 'Launch Testnet Stage 1',
-					link: '#'
+					link: 'https://medium.com/telos-foundation/telos-network-weekly-report-july-19-2018-111dec3edc7b'
 				},
 				{
 					category: 'tools',
 					content: 'Release public testnet monitor v1',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos-monitor'
 				},
 				{
 					category: 'network',
 					content: 'Launch Testnet Stage 1.1',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos#testnet-road-map'
 				},
 				{
 					category: 'development',
-					content: 'Release Equitable BP pay',
-					link: 'https://medium.com/@teloslogical/the-telos-foundation-state-of-the-board-the-first-30-days-13e93b1523d0'
+					content: 'Release Equitable BP pay'
 				}
 			]
 		},
@@ -73,47 +73,47 @@ export default function(){
 				{
 					category: 'development',
 					content: 'Release improved Claimrewards contract (eliminates gaming)',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/10'
 				},
 				{
 					category: 'development',
 					content: 'Release inverse-weighted voting function',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/7'
 				},
 				{
 					category: 'governance',
 					content: 'Release initial draft of TBNOA (\'constitution\')',
-					link: '#'
+					link: 'https://medium.com/officialtelos/below-is-the-first-draft-of-the-telos-network-operating-agreement-which-is-meant-to-be-reviewed-a29d54e1f71a'
 				},
 				{
 					category: 'development',
 					content: 'Release TIP-5 token standard',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/tip-0005.md'
 				},
 				{
 					category: 'network',
 					content: 'Launch Testnet Stage 2',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos#testnet-road-map'
 				},
 				{
 					category: 'tools',
 					content: 'Release testnet monitor v2',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos-monitor-Deprecated'
 				},
 				{
 					category: 'governance',
 					content: 'Release Regproducer contract',
-					link: '#'
+					link: 'https://medium.com/telos-foundation/telos-regproducer-human-language-contract-1281e28070d8'
 				},
 				{
 					category: 'governance',
 					content: 'Release BP Infrastructure Requirements',
-					link: '#'
+					link: 'https://medium.com/telos-foundation/telos-block-producer-infrastructure-requirements-9a93b59dc7d5'
 				},
 				{
 					category: 'development',
 					content: 'Release Standby BP rotation function',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/3'
 				},
 			]
 		},
@@ -125,12 +125,12 @@ export default function(){
 				{
 					category: 'tools',
 					content: 'Release TelosPy - EOSIO Python implementation',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telospy'
 				},
 				{
 					category: 'tools',
 					content: 'Sqrl wallet released',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
 					category: 'network',
@@ -140,7 +140,7 @@ export default function(){
 				{
 					category: 'community',
 					content: 'Create Telos knowledgebase wiki',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos/wiki'
 				},
 				{
 					category: 'tools',
@@ -150,22 +150,22 @@ export default function(){
 				{
 					category: 'development',
 					content: 'Release removal of non-producing BPs',
-					link: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/52'
 				},
 				{
 					category: 'governance',
 					content: 'Telos Foundation Charter adopted',
-					link: '#'
+					link: 'https://medium.com/@teloslogical/telos-foundation-organization-and-tfvt-token-distribution-process-b5b02de21424'
 				},
 				{
 					category: 'tools',
 					content: 'Release testnet full block explorer',
-					link: '#'
+					link: 'http://testnet.telosfoundation.io/'
 				},
 				{
 					category: 'community',
 					content: 'Lost Key Recovery Program begins',
-					link: '#'
+					link: 'https://medium.com/@teloslogical/telos-lost-and-compromised-account-key-swap-process-c85e8a852dbb'
 				},
 			]
 		},
@@ -175,54 +175,52 @@ export default function(){
 			stage: 'one',
 			items: [
 				{
-					category: '',
-					content: 'Telos Staging Network launched',
-					links: '#'
+					category: 'network',
+					content: 'Telos Staging Network launched'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Release Block Producer kick function',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/56'
 				},
 				{
-					category: '',
-					content: 'Token Exchange Reservere Fund created',
-					links: '#'
+					category: 'development',
+					content: 'Exchange Token Reserve Fund created',
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/tip-0011.md'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'TBNOA Ratified',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/TelosOperatingAgreement.md'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'BP Minimum Requirements ratified',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/BPMinReq.md'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Regarb contract Ratified',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/Regarb.md'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Arbitrator minimum requirements ratified',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/ArbMinReq.md'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Data Protection Policy ratified',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tips/blob/master/DataProtectionPolicy.md'
 				},
 				{
-					category: '',
-					content: 'Launch sequence script published',
-					links: '#'
+					category: 'network',
+					content: 'Launch sequence script published'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Established RAM management policy',
-					links: '#'
+					link: 'https://medium.com/@teloslogical/telos-interim-ram-administration-director-position-paper-ace4aaf7c467'
 				}
 			]
 		},
@@ -232,54 +230,52 @@ export default function(){
 			stage: 'one',
 			items: [
 				{
-					category: '',
+					category: 'network',
 					content: 'Telos IPFS cluster established',
-					links: '#'
+					link: 'https://github.com/jhexperiment/telos-ipfs-notes'
 				},
 				{
-					category: '',
-					content: 'Missed block tracking function',
-					links: '#'
+					category: 'development',
+					content: 'Missed block tracking function'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'Update Sqrl 0.5.3 - first multi-chain EOSIO wallet',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Conform Telos to EOSIO CDT',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/39'
 				},
 				{
-					category: '',
+					category: 'network',
 					content: 'Launch Testnet Stage 3',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/telos#testnet-road-map'
 				},
 				{
-					category: '',
-					content: 'Governance documents published to TIPFS',
-					links: '#'
+					category: 'governance',
+					content: 'Governance documents published to TIPFS'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Telos Foundation Interim Charter ratified',
-					links: '#'
+					link: 'https://medium.com/telos-foundation/telos-foundation-interim-charter-and-tfvt-token-distribution-process-ca88b2ef1e1e'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'Facilitate integrations from Scatter wallet',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Release Trail Service voting system v.1',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/eosio.trail'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'BP pay inflation schedule code released',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/eosio.system'
 				}
 			]
 		},
@@ -289,74 +285,72 @@ export default function(){
 			stage: 'one',
 			items: [
 				{
-					category: '',
+					category: 'development',
 					content: 'Release Telos IPSF system v.1 (governance only)',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/tipfs'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Complete Worker Proposal System contract',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/eosio.saving'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Release Ratify/Amend contract',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/eosio.amend'
 				},
 				{
-					category: '',
-					content: 'Implement RAM Administration functions',
-					links: '#'
+					category: 'governance',
+					content: 'Implement RAM Administration functions'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Release Telos Foundation voting tokens (TFVT)',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/telos.tfvt'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'Governance features wallet integration',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
-					content: 'Launching Staging Net',
-					links: '#'
+					category: 'network',
+					content: 'Launching Staging Net'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Complete Arbitration contract stage 1 (arbitrator elections)',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/telos/issues/27'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Release free account creation contract and interface',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/eosio.contracts/tree/master/telos.free'
 				},
 				{
-					category: '',
+					category: 'network',
 					content: 'Launch Mainnet',
-					links: '#'
+					link: 'https://medium.com/telos-foundation/telos-blockchain-network-launches-bc458a251456'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'Sqrl wallet 0.5.4 adds governance/Trail Service voting',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'BP Compliance system implemented',
-					links: '#'
+					link: 'https://medium.com/telos-foundation/telos-testnet-block-compliance-testing-fab618724218'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'First RAM Guidance Price published',
-					links: '#'
+					link: 'https://medium.com/telos-foundation/telos-ram-public-guidance-price-4d240dfb5fa6'
 				},
 				{
-					category: '',
+					category: 'community',
 					content: 'First exchanges list TLOS',
-					links: '#'
+					link: 'https://telosfoundation.io/'
 				}
 			]
 		},
@@ -366,59 +360,54 @@ export default function(){
 			stage: 'two',
 			items: [
 				{
-					category: '',
+					category: 'tools',
 					content: 'Add app integrations to Sqrl wallet',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
+					category: 'governance',
 					content: 'Telos Foundation board on-chain election',
-					links: '#'
+					link: 'https://medium.com/telos-foundation/press-release-telos-foundation-board-elections-completed-ecfdf9b393b4'
 				},
 				{
-					category: '',
+					category: 'development',
 					content: 'Capture of on-chain active-account snapshots',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/snapshots'
 				},
 				{
-					category: '',
+					category: 'community',
 					content: 'GoodGrants program begins',
-					links: '#'
+					link: 'https://medium.com/goodblock-io/goodgrant-recipient-teachology-io-7bd064f7d994'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'Release in-wallet exchange functions to Sqrl wallet',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/sqrl'
 				},
 				{
-					category: '',
-					content: 'Telos Foundation Board of Directors election',
-					links: '#'
-				},
-				{
-					category: '',
+					category: 'tools',
 					content: 'Telos monitor/blockchain explorer upgraded',
-					links: '#'
+					link: 'https://github.com/Telos-Foundation/TelosWEB/'
 				},
 				{
-					category: '',
+					category: 'tools',
 					content: 'First mobile wallet (Awake)',
-					links: '#'
+					link: 'https://www.pgyer.com/awake'
 				},
 				{
-					category: '',
+					category: 'community',
 					content: 'Telos Original Snapshot captured',
-					links: '#'
+					link: 'https://medium.com/goodblock-io/telos-original-snapshot-update-fd6d60132a'
 				},
 				{
-					category: '',
+					category: 'community',
 					content: 'First Apps deploy',
-					links: '#'
+					link: 'https://medium.com/goodblock-io/telos-weekly-report-january-4th-2019-3026a93c9668'
 				},
 				{
-					category: '',
+					category: 'community',
 					content: 'Telos listed on Blocktivity',
-					links: '#'
+					link: 'https://blocktivity.info/'
 				}
 			]
 		}

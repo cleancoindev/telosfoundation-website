@@ -63,6 +63,17 @@ class Navigation extends Component {
 					<li>
 						<a href='https://medium.com/@teloslogical'>BLOG</a>
 					</li>
+					<li className='roadmap_nav_item'>
+						<a href='/roadmap'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/roadmap');
+								this.handleCloseNav();
+							}}
+						>
+							ROADMAP
+						</a>
+					</li>
 					<NavDropdown title="MONITOR" id="basic-nav-dropdown">
 						<MenuItem 
 							onClick={(e) => {

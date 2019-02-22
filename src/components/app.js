@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MainSite from './main_site';
 import FoundationSite from './foundation_site';
+import ProcessSite from './process_site';
 import {selectLanguage, toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -28,13 +29,11 @@ class App extends Component {
 					<Helmet>
 						<title>Telos Foundation</title>
 					</Helmet>
-					{/*<Header />*/}
 					<Switch>
 						<Route path='/foundation' component={FoundationSite} />
+						<Route path='/roadmap' component={ProcessSite} />
 						<Route path='/' component={MainSite} />
 					</Switch>
-					{/*<Footer />*/}
-					{/*<SideNavigation />*/}
 				</div>
 			</Router>
 		);

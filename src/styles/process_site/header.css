@@ -1,0 +1,173 @@
+/*f6f1e1*/
+/*d9632c orange*/
+
+#process_header {
+	background-color: #f6f1e1;
+	padding: 12px 0;
+	font-family: 'ClanProNews', 'Titillium Web', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+}
+
+#process_header a,
+#process_header li,
+#process_header span {
+	font-size: 14px;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 2px;
+}
+
+#process_header .navbar-brand {
+	padding: 0;
+}
+
+#process_header .navbar-header {
+	padding: 15px;
+}
+
+#process_header .navbar-toggle {
+	margin-top: 0;
+	top: 3px;
+}
+
+#process_header .telos_logo {
+	width: 125px;
+	max-width: 100%;
+	cursor: pointer;
+}
+
+#process_header .navbar {
+	margin-bottom: 0;
+}
+
+#process_header .navbar-nav > li > a {
+	color: #111;
+	padding: 6px 20px;
+	background: transparent;
+	margin-right: 5px;
+	transition: none;
+}
+
+#process_header .navbar-nav > li > a:hover {
+	color: #d9632c;
+	background-color: rgba(50, 50, 50, 0.1);
+}
+
+#process_header .navbar-nav > li:last-child > a {
+	margin-right: 0;
+}
+
+#process_header .navbar-nav {
+	margin-top: 16px;
+}
+
+#process_header .language_toggle_li_desktop {
+	padding: 0 14px 0 0;
+	font-family: 'ClanProNews', 'Titillium Web', sans-serif;
+	font-size: 1em;
+}
+
+#process_header .language_menu {
+	top: 40px;
+	background-color: #fff;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#process_header .language_menu span {
+	color: #111;
+}
+
+#process_header .language_option_container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#process_header .language_option_container:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#process_header .dropdown .dropdown-menu {
+	top: 40px;
+	background-color: #fff;
+}
+
+#process_header .dropdown-menu li {
+	font-family: 'ClanProNews', 'Titillium Web', sans-serif;
+	font-size: 1em;	
+}
+
+#process_header .dropdown-menu li a {
+	color: #111;
+}
+
+#process_header .dropdown-menu li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px){
+	#process_header .dropdown .dropdown-menu {
+		top: 40px;
+	}
+}
+
+#process_header .language_toggle_li_desktop span.selected_language {
+	color: #111;
+}
+
+#process_header .language_toggle_li_desktop span.selected_language:hover {
+	color: #d9632c;
+}
+
+#process_header .process_page_nav {
+	background-color: #b4a78f;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	padding: 12px 0;
+}
+
+@media screen and (max-width: 767px){
+	#process_header .process_page_nav {
+		text-align: center;
+	}
+}
+
+#process_header .process_page_nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+@media screen and (max-width: 767px){
+	#process_header .process_page_nav ul {
+		float: none;
+		display: inline-block;
+	}
+}
+
+#process_header .process_page_nav li {
+	display: inline-block;
+	margin-right: 18px;
+
+}
+
+#process_header .process_page_nav li:last-child {
+	margin-right: 0;
+}
+
+#process_header .process_page_nav li a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+
+#process_header .process_page_nav li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
