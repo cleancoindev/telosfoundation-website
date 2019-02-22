@@ -61,6 +61,7 @@ import eclipse from '../../img/partner_logos/logo_eclipse.png';
 import beyond_bitcoin from '../../img/partner_logos/logo_beyond_bitcoin.png';
 import eosvibes from '../../img/partner_logos/logo_eosvibes.png';
 import arabia from '../../img/partner_logos/logo_arabia.png';
+import eos_dublin from '../../img/partner_logos/logo_eos_dublin.png';
 
 import checkmark from '../../img/green_check.png';
 
@@ -501,6 +502,14 @@ class Candidates extends Component {
 				url: 'https://telosarabia.net',
 				logo: arabia,
 				vote_name: 'telosarabia1',
+				compliant: true
+			},
+			{
+				name: 'eosDublin',
+				description: 'eosDublin is an independent block producers based in Dublin, Ireland.  They have shown a focus to community building live and work though their values of Independence, Integrity, Honesty and Education.',
+				url: 'https://www.eosdublin.com',
+				logo: eos_dublin,
+				vote_name: 'eosdublinwow',
 				compliant: true
 			}
 		];
