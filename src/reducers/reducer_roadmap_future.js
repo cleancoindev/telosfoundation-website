@@ -64,7 +64,7 @@ export default function(){
 			status: 'In development',
 			estimate: 'Q1 2019',
 			personnel: [
-				'Torbin Anderson',
+				'Torben Anderson',
 				'Brendon Ross',
 				'Ignatius W',
 				'James Davis'

@@ -137,7 +137,7 @@ export default function(){
 		},
 		{
 			name: 'Douglas Horn',
-			title: 'Architect, Governance consultant, human-language contracts',
+			title: 'Architect, Governance consultant',
 			company: 'GoodBlock',
 			image: douglas,
 			bio: [

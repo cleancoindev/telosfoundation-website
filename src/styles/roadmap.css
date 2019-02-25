@@ -311,7 +311,9 @@
 	font-size: 1.1em;
 }
 
-
+.dev_team_member header h5.title {
+	font-size: 1em;
+}
 
 .dev_team_member .dev_bio {
 	padding: 20px 20px 0 20px;

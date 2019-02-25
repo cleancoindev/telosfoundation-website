@@ -309,7 +309,7 @@ const TeamMember = props => {
 		<div className='dev_team_member'>
 			<header>
 				<h5>{name}</h5>
-				<h5>{title}</h5>
+				<h5 className='title'>{title}</h5>
 				<h5>{company}</h5>
 			</header>
 			<div className='dev_bio'>
