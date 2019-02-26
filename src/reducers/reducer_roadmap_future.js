@@ -2,7 +2,7 @@ export default function(){
 	return [
 		{
 			name: 'Upstream Code Merges',
-			description: 'Merge and test new EOS.IO reference software builds with Telos contracts imporvements',
+			description: 'Merge and test new EOS.IO reference software builds with Telos contracts improvements',
 			priority: 'Ongoing',
 			status: 'Ongoing updates with new EOS.IO releases',
 			personnel: [
@@ -37,7 +37,7 @@ export default function(){
 			priority: 'Ongoing',
 			status: 'New capture every 6 M blocks',
 			personnel: [
-				'Jessse Schulman',
+				'Jesse Schulman',
 				'J.T. Buice',
 				'Mikel Segurola',
 				'Stephanie Sunshine'
