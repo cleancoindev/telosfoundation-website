@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
 import {Helmet} from 'react-helmet';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -12,6 +11,9 @@ import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 import awake_logo from '../../img/awake_wallet_banner.png';
 import meow_logo from '../../img/meow_wallet_banner.png';
+import torus_logo from '../../img/torus_wallet.png';
+
+import telos_icon from '../../img/Telos_MarketingSite_TelosIcon_334px.png';
 
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
@@ -112,19 +114,13 @@ class Download extends Component {
 				<Grid>
 					<Row>
 						<Col md={12}>
-							<div className='download_intro'>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeIn'
-									duration={0.4}
-								>
-									<h1>{downloads_page.intro.heading}</h1>
-									<Row>
-										<Col md={10} mdOffset={1}>
-											<h2>{downloads_page.intro.subheading}</h2>
-										</Col>
-									</Row>
-								</ScrollAnimation>
+							<div className='download_intro'>			
+								<h1>{downloads_page.intro.heading}</h1>
+								<Row>
+									<Col md={10} mdOffset={1}>
+										<h2>{downloads_page.intro.subheading}</h2>
+									</Col>
+								</Row>
 							</div>
 							<Wallets wallets={downloads_page.wallets} />
 							<Documents documents={downloads_page.documents} banners={downloads_page.banners} language={language} />
@@ -144,8 +140,8 @@ const Wallets = ({wallets}) => {
 			logo: sqrl_logo,
 			links: {
 				linux: 'https://github.com/Telos-Foundation/Sqrl/releases',
-				apple: 'https://github.com/Telos-Foundation/Sqrl/releases',
-				windows: 'https://github.com/Telos-Foundation/Sqrl/releases',
+				apple: 'https://github.com/Telos-Foundation/Sqrl/releases/download/1.0.5/mac-Sqrl-1.0.5.dmg',
+				windows: 'https://github.com/Telos-Foundation/Sqrl/releases/download/1.0.5/win-Sqrl-1.0.5.exe',
 				github: 'https://github.com/Telos-Foundation/Sqrl'
 			}
 		},
@@ -175,29 +171,24 @@ const Wallets = ({wallets}) => {
 			links: {
 				download: 'https://www.pgyer.com/awake'
 			}
+		},
+		{
+			name: 'torus',
+			description: 'Fully functional iOS mobile wallet available on Apple TestFlight. Coming soon to the Apple Store.',
+			logo: torus_logo,
+			links: {
+				download: 'http://kibisis.ch'
+			}
 		}
 	];
 
 	return (
 		<section id='download_wallets'>
-			<ScrollAnimation
-				animateOnce
-				animateIn='fadeIn'
-				duration={0.4}
-				delay={250}
-			>
-				<h2>{wallets.heading}</h2>
-				<hr />
-			</ScrollAnimation>
+			<h2>{wallets.heading}</h2>
+			<hr />
 			<Row>
-				<Col md={10} mdOffset={1}>
-					<ScrollAnimation
-						animateOnce
-						animateIn='fadeIn'
-						duration={0.4}
-					>
-						<h3>{wallets.subheading}</h3>
-					</ScrollAnimation>
+				<Col md={10} mdOffset={1}>					
+					<h3>{wallets.subheading}</h3>
 				</Col>
 			</Row>
 			{
@@ -224,126 +215,79 @@ const Wallet = (props) => {
 	return (
 		<Row>
 			<Col sm={5}>
-				<ScrollAnimation
-					animateOnce
-					animateIn='fadeInUp'
-					duration={0.4}
-				>
-					<img src={props.logo} alt={`${props.wallet_name} wallet logo`} className='wallet_logo' />
-				</ScrollAnimation>
+				<img src={props.logo} alt={`${props.wallet_name} wallet logo`} className='wallet_logo' />
 			</Col>
 			<Col sm={7}> 
 				<div className='squirrel_content'>
-					<ScrollAnimation
-						animateOnce
-						animateIn='fadeInUp'
-						duration={0.4}
-					>
-						<p>{props.wallet_description}</p>
-					</ScrollAnimation>
+					<p>{props.wallet_description}</p>
 					<ul className='download_buttons'>
 						{
 							props.links.linux ?
 								<li>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={100}
+									<a
+										href={props.links.linux}
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<a
-											href={props.links.linux}
-											className='btn btn-primary'
-											target='_blank'
-											rel='noopener noreferrer'
-										>
-											<i className='fa fa-linux'></i>  {wallets.download}
-										</a>
-									</ScrollAnimation>
+										<i className='fa fa-linux'></i>  {wallets.download}
+									</a>
 								</li> :
 								''
 						}
 						{
 							props.links.apple ?
 								<li>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={150}
+									<a
+										href={props.links.apple}
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<a
-											href={props.links.apple}
-											className='btn btn-primary'
-											target='_blank'
-											rel='noopener noreferrer'
-										>
-											<i className='fa fa-apple'></i>  {wallets.download}
-										</a>
-									</ScrollAnimation>
+										<i className='fa fa-apple'></i>  {wallets.download}
+									</a>
 								</li> :
 								''
 						}
 						{
 							props.links.windows ?
 								<li>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={200}
+									<a
+										href={props.links.windows}
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<a
-											href={props.links.windows}
-											className='btn btn-primary'
-											target='_blank'
-											rel='noopener noreferrer'
-										>
-											<i className='fa fa-windows'></i>  {wallets.download}
-										</a>
-									</ScrollAnimation>
+										<i className='fa fa-windows'></i>  {wallets.download}
+									</a>
 								</li> :
 								''
 						}
 						{
 							props.links.github ?
 								<li>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={250}
+									<a
+										href={props.links.github}
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<a
-											href={props.links.github}
-											className='btn btn-primary'
-											target='_blank'
-											rel='noopener noreferrer'
-										>
-											<i className='fa fa-github'></i> {wallets.source}
-										</a>
-									</ScrollAnimation>
+										<i className='fa fa-github'></i> {wallets.source}
+									</a>
 								</li> :
 								''
 						}
 						{
 							props.links.download ?
 								<li>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={100}
+									<a
+										href={props.links.download}
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<a
-											href={props.links.download}
-											className='btn btn-primary'
-											target='_blank'
-											rel='noopener noreferrer'
-										>
-											<i className='fa fa-download'></i> {wallets.download}
-										</a>
-									</ScrollAnimation>
+										<i className='fa fa-download'></i> {wallets.download}
+									</a>
 								</li> :
 								''
 						}
@@ -430,90 +374,57 @@ class Documents extends Component {
 
 		return (
 			<section id='download_documents'>
-				<ScrollAnimation
-					animateOnce
-					animateIn='fadeInUp'
-					duration={0.4}
-				>
-					<h2>{documents.heading}</h2>
-					<hr />
-				</ScrollAnimation>
+				<h2>{documents.heading}</h2>
+				<hr />
 				<Row>
 					<Col md={8} mdOffset={2}>
+						<div className='documents_wrapper'>
 						{
 							downloadDocuments.map((doc, i) => {
 								if(doc.document_type === 'pdf'){
 									return (
-										<ScrollAnimation
-											key={i}
-											animateOnce
-											animateIn='fadeInUp'
-											duration={0.4}
-											delay={i * 50}
-										>
-											<DownloadDocumentPDF
-												url={doc.url}
-												link_text={doc.link_text}
-												description={doc.description} />
-										</ScrollAnimation>
+										<DownloadDocumentPDF
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
 									);
 								}else{
 									//right now we only have pdf and zip, but might have others in the future.
 									return (
-										<ScrollAnimation
-											key={i}
-											animateOnce
-											animateIn='fadeInUp'
-											duration={0.4}
-											delay={i * 50}
-										>
-											<DownloadDocumentZIP
-												url={doc.url}
-												link_text={doc.link_text}
-												description={doc.description} />
-										</ScrollAnimation>
+										<DownloadDocumentZIP
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
 									);
 								}
 							})
 						}
-
+						</div>
+						<DownloadBadges />
 						<div className='download_banner_container'>
 							<div className='download_banner_description'>
-								<ScrollAnimation
-									animateOnce
-									animateIn='fadeInUp'
-									duration={0.4}
-								>
-									<h3>{banners.heading}</h3>
-									<p>{banners.subheading}</p>
-								</ScrollAnimation>
+								<h3>{banners.heading}</h3>
+								<p>{banners.subheading}</p>
 							</div>
 							<Row>
 								{
 									splashBanners.map((banner, i) => {
 										return (
 											<Col sm={6} key={i}>
-												<ScrollAnimation
-													animateOnce
-													animateIn='fadeIn'
-													duration={0.4}
-													delay={i * 50 + 50}
-												>
-													<img
-														src={banner.image}
-														alt={banner.name}
-														className='download_banner'
-														onClick={e => {
-															e.preventDefault();
-															this.setState({
-																downloadModalOpen: true,
-																displayBanner: banner.image,
-																downloadBanner: banner.download,
-																downloadBannerName: banner.downloadName,
-																downloadBannerFileSize: banner.fileSize
-															});
-														}} />
-												</ScrollAnimation>
+												<img
+													src={banner.image}
+													alt={banner.name}
+													className='download_banner'
+													onClick={e => {
+														e.preventDefault();
+														this.setState({
+															downloadModalOpen: true,
+															displayBanner: banner.image,
+															downloadBanner: banner.download,
+															downloadBannerName: banner.downloadName,
+															downloadBannerFileSize: banner.fileSize
+														});
+													}} />
 											</Col>
 										);
 									})
@@ -558,6 +469,45 @@ const DownloadDocumentZIP = (props) => {
 			<a href={props.url}>
 				<img src={zip_img} alt='zip download icon' className='download_icon' />
 			</a>
+		</div>
+	);
+};
+
+const DownloadBadges = () => {
+	return (
+		<div className='telos_badges'>
+			<heading className='telos_badge_heading'>
+				<h3>Telos Foundation Support Badges</h3>
+				<p>Projects funded by Telos Worker Proposals should consider acknowledging the Telos voters who helped make these projects possible. Please consider adding one of these images to your project website with a link to <a href='https://telosfoundation.io'>telosfoundation.io</a>.</p>
+			</heading>
+			<div className='badge_section_wrapper'>
+				<h4>Funded/Supported by Telos Work Proposals Badges</h4>
+				<DownloadBadge label='Supported by Telos Work Proposals' file='' file='Supported by Telos Work Proposals.zip' />
+				<DownloadBadge label='Funded by Telos Work Proposals' file='Funded by Telos Work Proposals.zip' />
+			</div>
+			<div className='badge_section_wrapper'>
+				<h4>Funded/Supported by Telos Community Funding Badges</h4>
+				<DownloadBadge label='Supported by Telos Community Funding' file='Supported by Telos Community Funding.zip' />
+				<DownloadBadge label='Funded by Telos Community Funding' file='Funded by Telos Community Funding.zip' />
+			</div>
+		</div>
+	);
+};
+
+const DownloadBadge = ({label, file}) => {
+	return (
+		<div className='telos_badge'>
+			<a href={`https://resources.telosfoundation.io/badges/${file}`}>
+				<div className='telos_badge_description'>
+					<img src={telos_icon} alt='telos icon' />
+					<p>{label}</p>
+				</div>
+			</a>
+			<div className='telos_badge_zip'>
+				<a href={`https://resources.telosfoundation.io/badges/${file}`}>
+					<img src={zip_img} alt='badge zip' />
+				</a>
+			</div>
 		</div>
 	);
 };

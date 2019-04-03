@@ -69,6 +69,7 @@ import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 import awake_logo from '../../img/awake_wallet_banner.png';
 import meow_logo from '../../img/meow_wallet_banner.png';
+import torus_logo from '../../img/torus_wallet.png';
 
 //white papers
 import { 
@@ -393,7 +394,7 @@ const Intro = ({intro_heading, intro_content, language}) => {
 							animateOnce={true}
 							animateIn='fadeInUp'
 							duration={0.4} >
-							<h1>{intro_heading}</h1>
+							<h1 dangerouslySetInnerHTML={{__html: intro_heading}} />
 							<p>{intro_content}</p>
 						</ScrollAnimation>
 					</Col>
@@ -689,6 +690,24 @@ const Wallets = () => {
 											rel='noopener noreferrer'
 										>
 											<img src={awake_logo} alt='awake logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={750}
+								>
+									<div className='wallet_img_container closed_source torus_banner_container'>
+										<a
+											href='http://kibisis.ch'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={torus_logo} alt='torus logo' />
 										</a>
 									</div>
 								</ScrollAnimation>

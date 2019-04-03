@@ -118,11 +118,13 @@
 	margin-bottom: 35px;
 }
 
-#arbitrator_candidates h2 {
+#arbitrator_candidates h2,
+#elected_arbitrators h2 {
 	text-align: center;
 }
 
-#arbitrator_candidates .candidate_list {
+#arbitrator_candidates .candidate_list,
+#elected_arbitrators .candidate_list {
 	padding-top: 35px;
 }
 

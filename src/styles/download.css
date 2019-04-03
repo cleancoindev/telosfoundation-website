@@ -237,6 +237,10 @@
 	padding-top: 50px;
 }
 
+#download_documents .documents_wrapper {
+	margin-bottom: 35px;
+}
+
 .banner_modal_img {
 	width: 100%;
 }
@@ -274,4 +278,72 @@
 .download_banner_modal .banner_meta p {
 	margin: 0;
 	font-size: 1.1em;
+}
+
+.telos_badges {
+
+}
+
+.telos_badge_heading {
+	margin-bottom: 30px;
+}
+
+.telos_badges h3 {
+	color: #f3853e;
+	text-decoration: underline;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.telos_badges h4 {
+	color: #f3853e;
+	text-decoration: none;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.telos_badges a {
+	font-size: 1em;
+}
+
+.telos_badge {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.telos_badge_description {
+	border: 1px solid #333;
+	border-radius: 68px;
+	padding: 14px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.telos_badge_description img {
+	width: 30px;
+	margin-right: 20px;
+	height: auto;
+}
+
+.telos_badge_description p {
+	margin: 0;
+}
+
+.telos_badge_zip {
+	padding-left: 15px;
+}
+
+.telos_badge_zip img {
+	width: 50px;
+	height: auto;
+}
+
+.badge_section_wrapper {
+	margin-bottom: 50px;
 }

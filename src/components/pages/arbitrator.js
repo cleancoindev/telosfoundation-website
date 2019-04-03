@@ -21,8 +21,12 @@ import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
 import fred_brown from '../../img/arbitrator/william_fred_brown.jpg';
 import jd_ressetar from '../../img/arbitrator/jd_ressetar.png';
 import blake_lagarde from '../../img/arbitrator/blake_lagarde.png';
+import chijioke from '../../img/arbitrator/chijioke.png';
+import justin_yashouafar from '../../img/arbitrator/justin_yashouafar.png';
+import placeholder from '../../img/arbitrator/placeholder-femaleNO-TEXT.png';
+import sean_m_king from '../../img/arbitrator/sean_m_king.png';
 
-const arbitratorPortraits = [
+const arbitratorPortraits = {
 	marc_roger,
 	roberto_corretjer,
 	raul_sepulveda,
@@ -30,8 +34,12 @@ const arbitratorPortraits = [
 	mark_blank,
 	fred_brown,
 	jd_ressetar,
-	blake_lagarde
-];
+	blake_lagarde,
+	placeholder,
+	chijioke,
+	justin_yashouafar,
+	sean_m_king
+};
 
 //email template for contact link
 const arbitratorMail = {
@@ -62,6 +70,9 @@ class Arbitrator extends Component {
 					<Row>
 						<Col md={10} mdOffset={1}>
 							<ArbitratorIntro intro={arbitrators_page.intro} documents={arbitrators_page.documents} contact={arbitrators_page.contact} />
+							<ElectedArbitrators
+								elected_arbitrators={arbitrators_page.elected_arbitrators}
+								candidate_section={arbitrators_page.candidate_section} />
 							<ArbitratorCandidates candidate_section={arbitrators_page.candidate_section} />
 						</Col>
 					</Row>
@@ -162,6 +173,52 @@ const ArbitratorDocument = (props) => {
 	);
 };
 
+const ElectedArbitrators = ({elected_arbitrators, candidate_section}) => {
+	return (
+		<section id='elected_arbitrators'>
+			<Row>
+				<Col md={12}>
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeIn'
+						duration={0.5}
+						delay={250}
+					>
+						<h2>Elected Arbitrators</h2>
+					</ScrollAnimation>
+					<hr />
+					<div className='candidate_list'>
+						{
+							elected_arbitrators.map((arb, i) => {
+								return (
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<ArbitratorCandidate
+											key={i}
+											cand_name={arb.name}
+											cand_vote_name={arb.vote_name}
+											cand_description={arb.description}
+											cand_statement={arb.statement}
+											cand_image={arbitratorPortraits[arb.portrait]}
+											cand_languages={arb.languages}
+											cand_country={arb.country}
+											languages_heading={candidate_section.languages_heading}
+											country_heading={candidate_section.country_heading}
+											vote_heading={candidate_section.vote_heading} />
+									</ScrollAnimation>
+								);
+							})
+						}
+					</div>
+				</Col>
+			</Row>
+		</section>
+	);
+};
+
 const ArbitratorCandidates = ({candidate_section}) => {
 	return (
 		<section id='arbitrator_candidates'>
@@ -191,7 +248,7 @@ const ArbitratorCandidates = ({candidate_section}) => {
 											cand_vote_name={arb.vote_name}
 											cand_description={arb.description}
 											cand_statement={arb.statement}
-											cand_image={arbitratorPortraits[i]}
+											cand_image={arbitratorPortraits[arb.portrait]}
 											cand_languages={arb.languages}
 											cand_country={arb.country}
 											languages_heading={candidate_section.languages_heading}
