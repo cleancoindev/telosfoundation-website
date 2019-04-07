@@ -102,11 +102,6 @@ class Header extends Component {
 									Token Recovery
 								</MenuItem>
 								<MenuItem
-						    		eventKey='iwantmytlos'
-						    	>
-									#IWantMyTLOS
-								</MenuItem>
-								<MenuItem
 						    		eventKey='faq'
 						    	>
 									FAQ
