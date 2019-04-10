@@ -30,7 +30,6 @@ class App extends Component {
 						<title>Telos Foundation</title>
 					</Helmet>
 					<Switch>
-						<Route path='/foundation' component={FoundationSite} />
 						<Route path='/' component={ProcessSite} />
 					</Switch>
 				</div>

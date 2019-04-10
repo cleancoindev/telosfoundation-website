@@ -28,15 +28,29 @@ class Header extends Component {
 								e.preventDefault();
 							}}
 						>
-							<LanguageToggleDesktop />
 							<NavItem
-								onClick={e => {
+								onSelect={(key, e) => {
 									e.preventDefault();
-									window.open('https://medium.com/@teloslogical');
+									this.props.history.push(`/foundation`);
 								}}
-								href='https://medium.com/@teloslogical'
 							>
-								BLOG
+								FOUNDATION
+							</NavItem>
+							<NavItem
+								onSelect={(key, e) => {
+									e.preventDefault();
+									this.props.history.push(`/governance`);
+								}}
+							>
+								GOVERNANCE
+							</NavItem>
+							<NavItem
+								onSelect={(key, e) => {
+									e.preventDefault();
+									this.props.history.push(`/arbitrators`);
+								}}
+							>
+								ARBITRATION
 							</NavItem>
 							<NavItem
 								onSelect={(key, e) => {
@@ -46,7 +60,16 @@ class Header extends Component {
 							>
 								ROADMAP
 							</NavItem>
-							<NavDropdown title="MONITOR" id="basic-nav-dropdown">
+							<NavItem
+								onClick={e => {
+									e.preventDefault();
+									window.open('https://medium.com/@teloslogical');
+								}}
+								href='https://medium.com/@teloslogical'
+							>
+								BLOG
+							</NavItem>
+							<NavDropdown title="MONITORS" id="basic-nav-dropdown">
 								<Navbar.Header>Mainnet</Navbar.Header>
 								<MenuItem 
 									onClick={(e) => {
@@ -64,7 +87,7 @@ class Header extends Component {
 									}} 
 									href="https://telostracker.io/monitor"
 								>
-									TELOSTRACKER
+									Telos Tracker
 								</MenuItem>
 								<MenuItem
 									onClick={(e) => {
@@ -73,7 +96,7 @@ class Header extends Component {
 									}} 
 									href="https://telos.eosx.io/"
 								>
-									EOSX
+									EosX
 								</MenuItem>
 								<Navbar.Header>Testnet</Navbar.Header>
 								<MenuItem
@@ -92,7 +115,7 @@ class Header extends Component {
 									}} 
 									href="https://telos-test.eosx.io/"
 								>
-									EOSX
+									EosX
 								</MenuItem>
 							</NavDropdown>
 							<NavDropdown
@@ -104,26 +127,6 @@ class Header extends Component {
 								}}
 							>
 								<MenuItem
-									eventKey='launch'
-								>
-									Launch Checklist
-								</MenuItem>
-								<MenuItem
-									eventKey='candidates'
-								>
-									BP Candidates
-								</MenuItem>
-								<MenuItem
-									eventKey='governance'
-								>
-								Governance
-								</MenuItem>
-								<MenuItem
-						    		eventKey='arbitrators'
-						    	>
-									Arbitrator Program
-								</MenuItem>
-								<MenuItem
 						    		eventKey='dapps'
 						    	>
 									Dapp Development
@@ -131,12 +134,12 @@ class Header extends Component {
 								<MenuItem
 						    		eventKey='downloads'
 						    	>
-									Downloads
+									Resources
 								</MenuItem>
 								<MenuItem
-						    		eventKey='recovery'
-						    	>
-									Token Recovery
+									eventKey='candidates'
+								>
+									BP Candidates
 								</MenuItem>
 								<MenuItem
 						    		eventKey='faq'
@@ -144,6 +147,7 @@ class Header extends Component {
 									FAQ
 								</MenuItem>
 							</NavDropdown>
+							<LanguageToggleDesktop />
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

@@ -7,6 +7,7 @@ import FrontPage from './pages/front_page';
 import ExchangeOutreach from './pages/exchange_outreach';
 import Checklist from './pages/checklist';
 import Download from './pages/download';
+import Board from './pages/board';
 import Arbitrator from './pages/arbitrator';
 import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
@@ -47,6 +48,7 @@ class ProcessSite extends Component {
 						<Route path='/exchange_outreach' component={ExchangeOutreach} />
 						<Route path='/iwantmytlos' component={ExchangeOutreach} />
 						<Route path='/launch' component={Checklist} />
+						<Route path='/foundation' component={Board} />
 						<Route path='/downloads' render={() => <Download downloads_page={site_content.downloads_page} language={site_content.language} />} />
 						<Route path='/arbitrators' render={() => <Arbitrator arbitrators_page={site_content.arbitrators_page} />} />
 						<Route path='/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />

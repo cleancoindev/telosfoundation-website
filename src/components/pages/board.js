@@ -266,7 +266,7 @@ const boardNominees = [
 
 const Board = () => {
 	return (
-		<div className='foundation_site'>
+		<div className='board'>
 			<ScrollAnimation
 				animateOnce
 				animateIn='fadeIn'
@@ -414,7 +414,7 @@ const Nominee = (props) => {
 			</p>
 		);
 	};
-	
+
 	const getName = () => {
 		if(!props.organization){
 			return <h4>{props.name}</h4>;
