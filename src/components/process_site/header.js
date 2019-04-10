@@ -60,15 +60,6 @@ class Header extends Component {
 							>
 								ROADMAP
 							</NavItem>
-							<NavItem
-								onClick={e => {
-									e.preventDefault();
-									window.open('https://medium.com/@teloslogical');
-								}}
-								href='https://medium.com/@teloslogical'
-							>
-								BLOG
-							</NavItem>
 							<NavDropdown title="MONITORS" id="basic-nav-dropdown">
 								<Navbar.Header>Mainnet</Navbar.Header>
 								<MenuItem 
@@ -131,6 +122,15 @@ class Header extends Component {
 						    	>
 									Dapp Development
 								</MenuItem>
+								<NavItem
+									onClick={e => {
+										e.preventDefault();
+										window.open('https://medium.com/@teloslogical');
+									}}
+									href='https://medium.com/@teloslogical'
+								>
+									Blog
+								</NavItem>
 								<MenuItem
 						    		eventKey='downloads'
 						    	>
