@@ -58,6 +58,7 @@ import akdex_button from '../../img/exchange_logos/akdex.png';
 import p2pb2b_button from '../../img/exchange_logos/P2PPB2B-Button.jpg';
 import cointiger_button from '../../img/exchange_logos/CoinTiger-Button.jpg';
 import newdex_button from '../../img/exchange_logos/NewDexLogo.png';
+import abcc_button from '../../img/exchange_logos/abcc.png';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
@@ -68,6 +69,7 @@ import eoslynx_logo from '../../img/EOSLynxLogo.png';
 import myteloswallet_logo from '../../img/my_telos_wallet.png';
 
 import carbon_logo from '../../img/stable_coin/CarbonLogo.png';
+import math_logo from '../../img/app_icon_rounded_1024.png';
 
 //white papers
 import { 
@@ -281,12 +283,17 @@ const exchangesArr = [
 	{
 		name: 'cointiger',
 		img: cointiger_button,
-		url: 'https://www.cointiger.com'
+		url: 'https://www.cointiger.com/en-us'
 	},
 	{
 		name: 'newdex',
 		img: newdex_button,
 		url: 'https://newdex.io'
+	},
+	{
+		name: 'abcc',
+		img: abcc_button,
+		url: 'https://abcc.com'
 	}
 ];
 
@@ -766,6 +773,22 @@ const Wallets = () => {
 											rel='noopener noreferrer'
 										>
 											<img src={myteloswallet_logo} alt='my telos wallet logo' />
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={1125}
+								>
+>
+									<div className='wallet_img_container closed_source math_banner_container'>
+										<a
+											href='https://www.mathwallet.org'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={math_logo} alt='math logo' />
 										</a>
 									</div>
 								</ScrollAnimation>
