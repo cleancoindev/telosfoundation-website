@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {Link, withRouter} from 'react-router-dom';
 
 import {connect} from 'react-redux';
+import Slider from '../slider/slider';
 import {selectLanguage} from '../../actions';
 
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
@@ -70,6 +71,10 @@ import myteloswallet_logo from '../../img/my_telos_wallet.png';
 
 import carbon_logo from '../../img/stable_coin/CarbonLogo.png';
 import math_logo from '../../img/app_icon_rounded_1024.png';
+
+import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
+import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
+import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
 
 //white papers
 import { 
@@ -297,6 +302,34 @@ const exchangesArr = [
 	}
 ];
 
+const slidesArr = [
+	{
+		img: splash_three,
+		heading: 'Blockchain Expo In London',
+		paragraphs: [
+			'Come visit the Telos Foundation at booth #521 on April 25-26th, 2019 in London.',
+			'Demo both the power and depth of Telos, and deep dive into what Telos can do for you.'
+		]
+	},
+	{
+		img: splash_one,
+		heading: 'Ready Hacker One',
+		paragraphs: [
+			'Use the power of Telos and EOSIO to enhance a new or pre-existing game. The game can be simple or complex, the key is how you use blockchain to make gaming engaging and fun!',
+			'May 31st 2019 - Submissions Close',
+			'readyhackerone.telosfoundation.io'
+		]
+	},
+	{
+		img: splash_two,
+		heading: 'New Exchange Listings',
+		paragraphs: [
+			'TLOS is now listed on ABCC Exchange! Both TLOS/USDT and TLOS/BTC pairs available.',
+			'TLOS is now listed on CoinTiger! TLOS/USDT pairs are available.'
+		]
+	}
+];
+
 class FrontPage extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
@@ -354,57 +387,12 @@ class FrontPage extends Component {
 	}
 }
 
-const Intro = ({intro_heading, intro_content, language}) => {
-
-	let localizedChart = '';
-	switch(language){
-		case 'en':
-			localizedChart = chart_en;
-			break;
-		case 'korean':
-			localizedChart = chart_kr;
-			break;
-		case 'mandarin':
-			localizedChart = chart_ch;
-			break;
-		case 'pt-br':
-			localizedChart = chart_pg;
-			break;
-		case 'russian':
-			localizedChart = chart_rn;
-			break;
-		case 'spanish':
-			localizedChart = chart_sp;
-			break;
-		default:
-			localizedChart = chart_en;
-			break;
-	}
-
+const Intro = () => {
 	return (
 		<section id='front_page_intro'>
-			<Grid>
-				<Row>
-					<Col sm={6}>
-						<ScrollAnimation
-							animateOnce={true}
-							animateIn='fadeInUp'
-							duration={0.4} >
-							<h1 dangerouslySetInnerHTML={{__html: intro_heading}} />
-							<p dangerouslySetInnerHTML={{__html: intro_content}} />
-						</ScrollAnimation>
-					</Col>
-					<Col sm={6}>
-						<ScrollAnimation
-							animateOnce={true}
-							animateIn='fadeInUp'
-							duration={0.4}
-							delay={250} >
-							<img src={localizedChart} alt='chart' className='img-responsive' />
-						</ScrollAnimation>
-					</Col>
-				</Row>
-			</Grid>
+			<Slider
+				slides={slidesArr}
+			/>
 		</section>
 	);
 };
