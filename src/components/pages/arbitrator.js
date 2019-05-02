@@ -307,7 +307,9 @@ const ArbitratorCandidate = (
 						{cand_statement.map((par, i) => <p key={i} dangerouslySetInnerHTML={{__html: par}} />)}
 						{getLanguages()}
 						{getCountry()}
-						<p>{vote_heading}: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
+						{
+							cand_vote_name ? <p>{vote_heading}: <span className='candidate_vote_name'>{cand_vote_name}</span></p> : ''
+						}
 					</div>
 				</Col>
 			</Row>
