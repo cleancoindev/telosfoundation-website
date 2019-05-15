@@ -73,7 +73,7 @@ class Arbitrator extends Component {
 							<ElectedArbitrators
 								elected_arbitrators={arbitrators_page.elected_arbitrators}
 								candidate_section={arbitrators_page.candidate_section} />
-							<ArbitratorCandidates candidate_section={arbitrators_page.candidate_section} />
+							{/*<ArbitratorCandidates candidate_section={arbitrators_page.candidate_section} />*/}
 						</Col>
 					</Row>
 				</Grid>

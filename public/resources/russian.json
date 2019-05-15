@@ -766,14 +766,7 @@
             "English",
             "Finnish"
           ]
-        }
-    ],
-    "candidate_section": {
-      "heading": "Кандидаты",
-      "languages_heading": "Языки",
-      "country_heading": "Страна",
-      "vote_heading": "Голосуйте за",
-      "candidates": [
+        },
         {
           "name": "Marc-Roger Gagné",
           "description": "CCIE, CCII, CIPP/G/C, MAPP",
@@ -817,7 +810,13 @@
           ],
           "portrait": "sean_m_king"
         }
-      ]
+    ],
+    "candidate_section": {
+      "heading": "Кандидаты",
+      "languages_heading": "Языки",
+      "country_heading": "Страна",
+      "vote_heading": "Голосуйте за",
+      "candidates": []
     }
   }
 }
