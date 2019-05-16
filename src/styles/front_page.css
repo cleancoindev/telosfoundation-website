@@ -329,6 +329,14 @@
 	width: 250px;
 }
 
+#wallets .eos_lynx_banner_container img {
+	width: 250px;
+}
+
+#wallets .my_telos_wallet_banner_container img {
+	width: 250px;
+}
+
 #wallets .wallet_img_container.closed_source::after {
 	content: "*";
 	font-size: 2.5em;
@@ -338,6 +346,56 @@
 	top: -5px;
 }
 
-#wallets .wallet_intro {
+#stable_coin {
+	padding-bottom: 50px;
+}
+
+#stable_coin header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#stable_coin h1 {
+	color: #ffffff;
+	margin: 0;
 	text-align: center;
+}
+
+#stable_coin .stable_coin_buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#stable_coin .stable_coin_buttons .stable_coin_button {
+	flex: 1 1 25%;
+	max-width: 25%;
+	padding: 0 25px 50px 25px;
+}
+
+@media screen and (max-width: 767px){
+	#stable_coin .stable_coin_buttons .stable_coin_button {
+		flex: 1 1 33.33333%;
+		max-width: 33.33333%;
+		padding: 0 12px 24px 12px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#stable_coin .stable_coin_buttons .stable_coin_button {
+		flex: 1 1 50%;
+		max-width: 50%;
+		padding: 0 12px 24px 12px;
+	}
+}
+
+#stable_coin .stable_coin_buttons a {
+	display: inline-block;
+}
+
+#stable_coin .stable_coin_buttons img {
+	display: inline-block;
+	max-width: 100%;
 }

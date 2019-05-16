@@ -54,16 +54,20 @@ import telos_awake from '../../img/partner_logos/logo_telos_awake.png';
 
 import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import codex_button from '../../img/exchange_logos/codex_button.jpg';
-import eosex_button from '../../img/exchange_logos/eosex.png';
 import akdex_button from '../../img/exchange_logos/akdex.png';
 import p2pb2b_button from '../../img/exchange_logos/P2PPB2B-Button.jpg';
 import cointiger_button from '../../img/exchange_logos/CoinTiger-Button.jpg';
+import newdex_button from '../../img/exchange_logos/NewDexLogo.png';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 import awake_logo from '../../img/awake_wallet_banner.png';
 import meow_logo from '../../img/meow_wallet_banner.png';
 import torus_logo from '../../img/torus_wallet.png';
+import eoslynx_logo from '../../img/EOSLynxLogo.png';
+import myteloswallet_logo from '../../img/my_telos_wallet.png';
+
+import carbon_logo from '../../img/stable_coin/CarbonLogo.png';
 
 //white papers
 import { 
@@ -265,11 +269,6 @@ const exchangesArr = [
 		url: 'https://codex.one'
 	},
 	{
-		name: 'eosex',
-		img: eosex_button,
-		url: 'https://eosex.com'
-	},
-	{
 		name: 'akdex',
 		img: akdex_button,
 		url: 'https://akdex.io'
@@ -283,6 +282,11 @@ const exchangesArr = [
 		name: 'cointiger',
 		img: cointiger_button,
 		url: 'https://www.cointiger.com'
+	},
+	{
+		name: 'newdex',
+		img: newdex_button,
+		url: 'https://newdex.io'
 	}
 ];
 
@@ -334,6 +338,7 @@ class FrontPage extends Component {
 					github_text={github_text}
 					language={language} />
 				<Exchanges />
+				<StableCoin />
 				<Wallets />
 				<Partners
 					partners_heading={partners_heading} />
@@ -583,6 +588,39 @@ const Exchange = (props) => {
 	);
 };
 
+const StableCoin = () => {
+	return (
+		<section id='stable_coin'>
+			<header>
+				<h1>Stable Coin</h1>
+			</header>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='stable_coin_buttons'>
+							<div className='stable_coin_button'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.5}
+								>
+									<a
+										href='https://www.carbon.money'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<img src={carbon_logo} alt='carbon' />
+									</a>
+								</ScrollAnimation>
+							</div>
+						</div>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
 const Wallets = () => {
 	return (
 		<section id='wallets' style={{direction: 'ltr'}}>
@@ -692,6 +730,42 @@ const Wallets = () => {
 											rel='noopener noreferrer'
 										>
 											<img src={torus_logo} alt='torus logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={875}
+								>
+									<div className='wallet_img_container closed_source eos_lynx_banner_container'>
+										<a
+											href='https://eoslynx.com'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={eoslynx_logo} alt='eos lynx logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={1000}
+								>
+									<div className='wallet_img_container closed_source my_telos_wallet_banner_container'>
+										<a
+											href='https://myteloswallet.one'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={myteloswallet_logo} alt='my telos wallet logo' />
 										</a>
 									</div>
 								</ScrollAnimation>
