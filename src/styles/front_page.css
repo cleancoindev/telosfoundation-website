@@ -228,6 +228,10 @@
 	padding-bottom: 25px;
 }
 
+#wallets .wallet_intro {
+	text-align: center;
+}
+
 #wallets header {
 	background: #c2beae;
 	padding: 25px 0;
@@ -317,16 +321,24 @@
 	max-width: 100%;
 }
 
+#wallets .sqrl_banner_container img {
+	width: 225px;
+}
+
+#wallets .scatter_banner_container img {
+	width: 225px;
+}
+
 #wallets .awake_banner_container img {
-	width: 175px;
+	width: 145px;
 }
 
 #wallets .meow_banner_container img {
-	width: 275px;
+	width: 205px;
 }
 
 #wallets .torus_banner_container img {
-	width: 250px;
+	width: 200px;
 }
 
 #wallets .eos_lynx_banner_container img {

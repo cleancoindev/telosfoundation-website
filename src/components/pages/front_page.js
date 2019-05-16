@@ -655,7 +655,7 @@ const Wallets = () => {
 									duration={0.4}
 									delay={250}
 								>
-									<div className='wallet_img_container'>
+									<div className='wallet_img_container sqrl_banner_container'>
 										<Link to='/downloads'>
 											<img src={sqrl_logo} alt='sqrl wallet' />
 										</Link>
@@ -669,7 +669,7 @@ const Wallets = () => {
 									duration={0.4}
 									delay={375}
 								>
-									<div className='wallet_img_container'>
+									<div className='wallet_img_container scatter_banner_container'>
 										<a
 											href='https://get-scatter.com'
 											target='_blank'
