@@ -761,6 +761,9 @@ const Wallets = () => {
 											rel='noopener noreferrer'
 										>
 											<img src={myteloswallet_logo} alt='my telos wallet logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
 							</div>
 							<div className='wallet_banner'>
 								<ScrollAnimation
@@ -769,7 +772,6 @@ const Wallets = () => {
 									duration={0.4}
 									delay={1125}
 								>
->
 									<div className='wallet_img_container closed_source math_banner_container'>
 										<a
 											href='https://www.mathwallet.org'
