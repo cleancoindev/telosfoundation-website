@@ -25,6 +25,7 @@ import chijioke from '../../img/arbitrator/chijioke.png';
 import justin_yashouafar from '../../img/arbitrator/justin_yashouafar.png';
 import placeholder from '../../img/arbitrator/placeholder-femaleNO-TEXT.png';
 import sean_m_king from '../../img/arbitrator/sean_m_king.png';
+import chukwuemeka from '../../img/arbitrator/chukwuemeka.png';
 
 const arbitratorPortraits = {
 	marc_roger,
@@ -38,7 +39,8 @@ const arbitratorPortraits = {
 	placeholder,
 	chijioke,
 	justin_yashouafar,
-	sean_m_king
+	sean_m_king,
+	chukwuemeka
 };
 
 //email template for contact link
