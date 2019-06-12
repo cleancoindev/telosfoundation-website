@@ -221,14 +221,14 @@
       {
         "question": "How do I get TLOS?",
         "answer": [
-          "There are two primary ways for an individual to get TLOS. First, TLOS was distributed to all users with addresses in the EOS genesis network snapshot who registered their ERC-20 EOS tokens as instructed by block one prior to June 1, 2018. If you had an EOS account during the EOS genesis launch, you have Telos. To access your tokens, simply use your original EOS genesis keys in a verified wallet that supports Telos. Verified wallets are listed here: <a href=\"/downloads\" target=\"_blank\" rel=\"noopener noreferrer\">Downloads</a>",
+          "There are two primary ways for an individual to get TLOS. First, TLOS was distributed to all users with addresses in the EOS genesis network snapshot who registered their ERC-20 EOS tokens as instructed by block one prior to June 1, 2018. If you had an EOS account during the EOS genesis launch, you have Telos. To access your tokens, simply use your original EOS genesis keys in a verified wallet that supports Telos. Verified wallets are listed here: <a href=\"/downloads\" target=\"_blank\" rel=\"noopener noreferrer\">Downloads</a>.",
           "The second way to get TLOS is to purchase TLOS from an exchange. See exchanges listing TLOS. Click the MORE menu item above and follow the Exchanges link for more information."
         ]
       },
       {
         "question": "What exactly is the Telos genesis token distribution algorithm?",
         "answer": [
-          "Simply, it is that all Telos genesis addresses will receive the same number of tokens as their corresponding EOS addresses held in the genesis snapshot—up to a maximum of 40,000 tokens. There are a few exceptions to this policy: Addresses proven to have been stolen, phished, or misregistered, thereby depriving their rightful owners of them, were restored to new addresses controlled by their rightful owners; and new genesis tokens were created to compensate the Active Block Producers (ABPs) and establish the Telos Foundation."
+          "Simply, it is that all Telos genesis addresses will receive the same number of tokens as their corresponding EOS addresses held in the genesis snapshot—up to a maximum of 40,000 tokens. There are a few exceptions to this policy: Addresses proven to have been stolen, phished, or misregistered, thereby depriving their rightful owners of them, were restored to new addresses controlled by their rightful owners; and new genesis tokens were created to compensate the launch group and establish the Telos Foundation."
         ]
       },
       {
@@ -313,7 +313,7 @@
       {
         "question": "How are Telos block producers paid?",
         "answer": [
-          "Telos has 21 Block Producers (BPs) and 30 standby BPs. The top 51 positions receive pay from the blockchain through inflation, with the top 21 block producers earning 2x those in position 22-51.  Each block producer will be paid the same flat rate and each standby will be one half of that rate. All will receive pay deductions for missed blocks."
+          "Telos has 21 Block Producers (BPs) and 30 standby BPs. The top 51 positions receive pay from the blockchain through inflation, with the top 21 block producers earning 2x those in position 22-51. Each block producer will be paid the same flat rate and each standby will be one half of that rate. All will receive pay deductions for missed blocks."
         ]
       },
       {
@@ -329,7 +329,7 @@
       {
         "question": "Is there a forum I can join to learn about launching an application on the Telos blockchain?",
         "answer": [
-          "For resources and information join the <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Application Development Group on Telegram</a>"
+          "For resources and information join the <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Application Development Group on Telegram</a>."
         ]
       },
       {
