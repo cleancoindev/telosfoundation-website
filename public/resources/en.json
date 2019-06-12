@@ -228,7 +228,7 @@
       {
         "question": "What exactly is the Telos genesis token distribution algorithm?",
         "answer": [
-          "Simply, it is that all Telos genesis addresses will receive the same number of tokens as their corresponding EOS addresses held in the genesis snapshot—up to a maximum of 40,000 tokens. There are a few exceptions to this policy: Addresses proven to have been stolen, phished, or misregistered, thereby depriving their rightful owners of them, will be restored to new addresses controlled by their rightful owners; and new genesis tokens will be created to compensate the Active Block Producers (ABPs) and establish the Telos Foundation."
+          "Simply, it is that all Telos genesis addresses will receive the same number of tokens as their corresponding EOS addresses held in the genesis snapshot—up to a maximum of 40,000 tokens. There are a few exceptions to this policy: Addresses proven to have been stolen, phished, or misregistered, thereby depriving their rightful owners of them, were restored to new addresses controlled by their rightful owners; and new genesis tokens were created to compensate the Active Block Producers (ABPs) and establish the Telos Foundation."
         ]
       },
       {
@@ -238,7 +238,7 @@
         ]
       },
       {
-        "question": "What are the advantages of the Telos blockchain",
+        "question": "What are the advantages of the Telos blockchain?",
         "answer": [
           "0.5 Second blocktimes, Advanced Governance and  Arbitration. Ready for real world business applications. Click the MORE menu item above and follow the respective links for more information."
         ]
@@ -323,13 +323,13 @@
       {
         "question": "How do I register to become a block producer? What kind of infrastructure do I need to become a block producer? How do block producers help secure the network? Is there a forum I can join to read more about being a block producer?",
         "answer": [
-          "The answers to these and all other questions about becoming a BP on Telos can be found on the Telos Foundation Wiki on our <a href=\"https://github.com/Telos-Foundation/telos/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Github</a>."
+          "The answers to these and all other questions about becoming a BP on Telos can be found on the <a href=\"https://github.com/Telos-Foundation/telos/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Foundation Wiki</a>."
         ]
       },
       {
         "question": "Is there a forum I can join to learn about launching an application on the Telos blockchain?",
         "answer": [
-          "For resources and information join the Telos Application Development Group on Telegram https://t.me/dappstelos"
+          "For resources and information join the <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Application Development Group on Telegram</a>"
         ]
       },
       {
