@@ -109,9 +109,9 @@ const Intro = () => {
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<h1>Block Producer Candidates</h1>
-						<h2>This is a directory of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producer candidates, and being on this list is not an endorsement.</h2> 
-						<h2>Remember that Telos uses an inverse-weighted voting system - the more block candidates that you vote for, the more your votes count. Select up to 30 block producers to ensure that your votes hold maximum value.</h2>
+						<h1>Block Producers</h1>
+						<h2>This is a listing of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producers, and being on this list is not an endorsement.</h2> 
+						<h2>Telos uses an inverse-weighted voting system - the more block candidates that you vote for, the more your votes count. Select up to 30 block producers to ensure that your votes hold maximum value.</h2>
 						<h2>Download Sqrl, the free Telos wallet, to vote for block producer candidates:</h2> 
 						<h2><Link to='/downloads'>https://telosfoundation.io/downloads</Link></h2>
 					</Col>

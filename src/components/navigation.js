@@ -109,18 +109,6 @@ class Navigation extends Component {
 					  </span>
 					</button>
 					<li className='side_nav_item_mobile'>
-						<a 
-							href='/launch' 
-							onClick={e => {
-								e.preventDefault();
-								this.props.history.push('/launch');
-								this.handleCloseNav();
-							}}
-						>
-							LAUNCH CHECKLIST
-						</a>
-					</li>
-					<li className='side_nav_item_mobile'>
 						<a
 							href='/candidates'
 							onClick={e => {
@@ -178,18 +166,6 @@ class Navigation extends Component {
 							}}
 						>
 							DOWNLOADS
-						</a>
-					</li>
-					<li className='side_nav_item_mobile'>
-						<a
-							href='/recovery'
-							onClick={e => {
-								e.preventDefault();
-								this.props.history.push('/recovery');
-								this.handleCloseNav();
-							}}
-						>
-							TOKEN RECOVERY
 						</a>
 					</li>
 					<li className='side_nav_item_mobile'>

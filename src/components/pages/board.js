@@ -44,15 +44,15 @@ const interimNominees = [
 ];
 
 const boardNominees = [
-	{
-		name: 'J.T. Buice',
-		organization: 'Kainos Technologies LLC',
-		portrait: jt_buice,
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
-		bio: [
-			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
-		]
-	},
+	// {
+	// 	name: 'J.T. Buice',
+	// 	organization: 'Kainos Technologies LLC',
+	// 	portrait: jt_buice,
+	// 	nominatedBy: 'Josep Rosich, EOS Barcelona',
+	// 	bio: [
+	// 		'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+	// 	]
+	// },
 	// {
 	// 	name: 'Brett J. Bolte, M.D.',
 	// 	portrait: brett_bolte,
@@ -117,16 +117,16 @@ const boardNominees = [
 			'Justin led the Telos dapp outreach program pre launch and helped to deliver an impressive list of tools, wallets and dapps expected to be available from early in the chains existence. If elected, Justin will be able to continue to bring top talent to Telos and champion the needs of the networks community above all else.'
 		]
 	},
-	{
-		name: 'Azad Halim',
-		portrait: azad_halim,
-		nominatedBy: 'Kevin Quaintance, eosglobal.io & Dimitri C, infinitybloc',
-		bio: [
-			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
-			'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',
-			'I expect Telos to stay with us for a long time, I see further collaboration and positive contribution to the ever increasing number of EOSIO based projects. That in itself, is the best thing that could have happened to EOS.'
-		]
-	},
+	// {
+	// 	name: 'Azad Halim',
+	// 	portrait: azad_halim,
+	// 	nominatedBy: 'Kevin Quaintance, eosglobal.io & Dimitri C, infinitybloc',
+	// 	bio: [
+	// 		'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
+	// 		'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',
+	// 		'I expect Telos to stay with us for a long time, I see further collaboration and positive contribution to the ever increasing number of EOSIO based projects. That in itself, is the best thing that could have happened to EOS.'
+	// 	]
+	// },
 	{
 		name: 'Jim Hewitt',
 		organization: 'EOS UK',
@@ -201,15 +201,15 @@ const boardNominees = [
 	// 		'Suvi is co-founder for Cryptosuvi Block Producing Company, the first in Finland. She is a professional networker and communicator, a true people person. She aims to represent and work for The Telos Foundation\'s goals with the highest professionalism both locally, in Finland, throughout London, as well as globally.'
 	// 	]
 	// },
-	{
-		name: 'Josep Rosich',
-		organization: 'EOS Barcelona',
-		nominatedBy: 'Douglas Horn, GoodBlock',
-		portrait: josep_rosich,
-		bio: [
-			'An original public member of the Telos Contributors Group, who offered important feedback and ideas for the Telos white paper before it was published, Josep has worked tirelessly towards the success of Telos. Josep arranged for the first exchange that listed TLOS tokens and he continues constant efforts towards onboarding more exchanges, developers, block producers, and users.'
-		]
-	},
+	// {
+	// 	name: 'Josep Rosich',
+	// 	organization: 'EOS Barcelona',
+	// 	nominatedBy: 'Douglas Horn, GoodBlock',
+	// 	portrait: josep_rosich,
+	// 	bio: [
+	// 		'An original public member of the Telos Contributors Group, who offered important feedback and ideas for the Telos white paper before it was published, Josep has worked tirelessly towards the success of Telos. Josep arranged for the first exchange that listed TLOS tokens and he continues constant efforts towards onboarding more exchanges, developers, block producers, and users.'
+	// 	]
+	// },
 	{
 		name: 'Jesse Schulman',
 		organization: 'CalEOS',
@@ -230,26 +230,26 @@ const boardNominees = [
 	// 	],
 	// 	linkedIn: 'https://linkedin.com/in/sukeshtedla'
 	// },
-	{
-		name: 'Joost Voordouw',
-		organization: 'DutchEOS',
-		portrait: joost,
-		nominatedBy: 'Chen Li, Telos Vancouver',
-		bio: [
-			'Joost is an early member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement. Since that time, Joost has contributed to several working groups and visibly represented Telos at the London blockchain conference in September, along with the rest of the DutchEOS team.',
-			'Joost holds a M.Sc. in Computer Science from Delft University of Technolgy. He worked for over 10 years as a technical consultant for various multinationals. In 2017 he quitted his job as a data scientist to fully focus on blockchain technology. Besides being responsible for the operations of DutchEOS, Joost is co-chairing the Telos translations workgroup as he is passionate about sharing the opportunities of Telos with a global audience.'
-		]
-	},
-	{
-		name: 'Marlon Williams',
-		organization: 'EOS Miami',
-		nominatedBy: 'Peter Bue, GoodBlock',
-		portrait: marlon_williams,
-		bio: [
-			'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
-			'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
-		]
-	},
+	// {
+	// 	name: 'Joost Voordouw',
+	// 	organization: 'DutchEOS',
+	// 	portrait: joost,
+	// 	nominatedBy: 'Chen Li, Telos Vancouver',
+	// 	bio: [
+	// 		'Joost is an early member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement. Since that time, Joost has contributed to several working groups and visibly represented Telos at the London blockchain conference in September, along with the rest of the DutchEOS team.',
+	// 		'Joost holds a M.Sc. in Computer Science from Delft University of Technolgy. He worked for over 10 years as a technical consultant for various multinationals. In 2017 he quitted his job as a data scientist to fully focus on blockchain technology. Besides being responsible for the operations of DutchEOS, Joost is co-chairing the Telos translations workgroup as he is passionate about sharing the opportunities of Telos with a global audience.'
+	// 	]
+	// },
+	// {
+	// 	name: 'Marlon Williams',
+	// 	organization: 'EOS Miami',
+	// 	nominatedBy: 'Peter Bue, GoodBlock',
+	// 	portrait: marlon_williams,
+	// 	bio: [
+	// 		'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
+	// 		'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
+	// 	]
+	// },
 	// {
 	// 	name: 'Adam Zientarski',
 	// 	organization: 'EOS Detroit',
@@ -306,7 +306,7 @@ const BoardIntro = () => {
 									TELOS FOUNDATION GOVERNANCE DOCUMENT
 								</a>
 							</div>
-							<p>The Telos Foundation is governed by a board of 12 elected board members who will elect an Executive Director and a RAM Administration Director.</p>
+							<p>The Telos Foundation is governed by a board of elected board members who will elect an Executive Director and a RAM Administration Director.</p>
 						</div>
 					</Col>
 				</Row>
@@ -329,7 +329,7 @@ const InterimNominees = () => {
 							animateIn='fadeInUp'
 							duration={0.4}
 						>
-							<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation{"'"}s efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases. On October 9th the Telos Launch Group voted unanimously to confirm Jan as the Interim RAM Administration Director.</p>
+							<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation{"'"}s efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases.</p>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateOnce

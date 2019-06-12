@@ -539,7 +539,7 @@ const Exchanges = () => {
 								animateIn='fadeInUp'
 								duration={0.4}
 							>
-								<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+								<p>Buy, sell and trade TLOS, the native token of the Telos network on these exchanges. Check back often for new exchange partnerships!</p>
 							</ScrollAnimation>
 						</Col>
 					</Row>

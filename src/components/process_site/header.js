@@ -67,11 +67,6 @@ class Header extends Component {
 						    	}}
 						    >
 						    	<MenuItem
-						    		eventKey='launch'
-						    	>
-						    		Launch Checklist
-						    	</MenuItem>
-						    	<MenuItem
 						    		eventKey='candidates'
 						    	>
 						    		BP Candidates
@@ -95,11 +90,6 @@ class Header extends Component {
 						    		eventKey='downloads'
 						    	>
 									Downloads
-								</MenuItem>
-								<MenuItem
-						    		eventKey='recovery'
-						    	>
-									Token Recovery
 								</MenuItem>
 								<MenuItem
 						    		eventKey='faq'

@@ -14,18 +14,6 @@ const SideNavigation = (props) => {
 			</header>
 			<ul>
 				<li>
-					<a 
-						href='/launch' 
-						onClick={e => {
-							e.preventDefault();
-							props.history.push('/launch');
-							props.toggleSideNav(false);
-						}}
-					>
-						LAUNCH CHECKLIST
-					</a>
-				</li>
-				<li>
 					<a
 						href='/candidates'
 						onClick={e => {
@@ -83,18 +71,6 @@ const SideNavigation = (props) => {
 						}}
 					>
 						DOWNLOADS
-					</a>
-				</li>
-				<li>
-					<a
-						href='/recovery'
-						onClick={e => {
-							e.preventDefault();
-							props.history.push('/recovery');
-							props.toggleSideNav(false);
-						}}
-					>
-						TOKEN RECOVERY
 					</a>
 				</li>
 				<li>

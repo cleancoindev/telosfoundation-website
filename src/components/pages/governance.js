@@ -218,7 +218,6 @@ const GovernanceTable = ({governanceDocuments, table}) => {
 								<tr>
 									<th>{table.table_headings.document}</th>
 									<th>{table.table_headings.description}</th>
-									<th>{table.table_headings.eos_analog}</th>
 									<th>{table.table_headings.status}</th>
 									<th>{table.table_headings.link}</th>
 								</tr>
@@ -232,7 +231,6 @@ const GovernanceTable = ({governanceDocuments, table}) => {
 													<h4>{doc.short_name}</h4>
 												</td>
 												<td>{doc.short_description}</td>
-												<td>{doc.eos_analog}</td>
 												<td>{doc.status}</td>
 												<td>
 													<a href={doc.url} target='_blank' rel='noopener noreferrer'>
