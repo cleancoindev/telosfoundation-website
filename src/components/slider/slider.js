@@ -55,7 +55,8 @@ export default class TFSlider extends Component {
 								key={i}
 								img={slide.img}
 								heading={slide.heading}
-								paragraphs={slide.paragraphs} />
+								paragraphs={slide.paragraphs}
+								url ={slide.url} />
 						);
 					})}
 				</Slider>
@@ -77,9 +78,14 @@ const DAppSlide = (props) => {
 		backgroundImage: `url(${props.img})`
 	};
 
+	const routeChange = function(){
+		let path = props.url
+		window.location = path 
+	};
+
 	return (
-		<div className='dapps_slide'>
-			<div className='slide_image' style={slideImageStyle}></div>
+		<div className='dapps_slide' onClick={routeChange} >
+			<div className='slide_image' style={slideImageStyle} ></div>
 			<div className='slide_content_container'>
 				<div className='slide_content'>
 					<h4>{props.heading}</h4>

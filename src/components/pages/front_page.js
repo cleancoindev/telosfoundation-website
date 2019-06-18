@@ -72,9 +72,13 @@ import myteloswallet_logo from '../../img/my_telos_wallet.png';
 import carbon_logo from '../../img/stable_coin/CarbonLogo.png';
 import math_logo from '../../img/app_icon_rounded_1024.png';
 
-import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
-import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
-import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
+import splash_expo from '../../img/banners/SplashBanner_BlockchainExpo.png';
+import splash_hacker from '../../img/banners/SplashBanner_ReadyHackerOne.png'
+import splash_exchange from '../../img/banners/SplashBanner_Exchange.png';
+import splash_wallets from '../../img/banners/SplashBanner_Wallets.jpg';
+//import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
+//import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
+//import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
 
 //white papers
 import { 
@@ -304,29 +308,40 @@ const exchangesArr = [
 
 const slidesArr = [
 	{
-		img: splash_three,
-		heading: 'Blockchain Expo In London',
+		img: splash_expo,
+		heading: 'Blockchain Expo EUROPE 2019',
 		paragraphs: [
-			'Come visit the Telos Foundation at booth #521 on April 25-26th, 2019 in London.',
+			'Come visit the Telos Foundation at booth #289 on June 19-20, 2019 in Amsterdam.',
 			'Demo both the power and depth of Telos, and deep dive into what Telos can do for you.'
-		]
+		],
+		url: ''
 	},
 	{
-		img: splash_one,
+		img: splash_hacker,
 		heading: 'Ready Hacker One',
 		paragraphs: [
 			'Use the power of Telos and EOSIO to enhance a new or pre-existing game. The game can be simple or complex, the key is how you use blockchain to make gaming engaging and fun!',
-			'May 31st 2019 - Submissions Close',
+			'June 30th 2019 - Submissions Close',
 			'readyhackerone.telosfoundation.io'
-		]
+		],
+		url: ''
 	},
 	{
-		img: splash_two,
-		heading: 'New Exchange Listings',
+		img: splash_exchange,
+		heading: 'Exchange Listings',
 		paragraphs: [
 			'TLOS is now listed on ABCC Exchange! Both TLOS/USDT and TLOS/BTC pairs available.',
 			'TLOS is now listed on CoinTiger! TLOS/USDT pairs are available.'
-		]
+		],
+		url: ''
+	},
+	{
+		img: splash_wallets,
+		heading: 'Telos Wallets',
+		paragraphs: [
+			'Store your TLOS tokens.'
+		],
+		url: ''
 	}
 ];
 
