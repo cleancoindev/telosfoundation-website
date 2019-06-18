@@ -35,7 +35,7 @@ import splash_expo from '../../img/banners/SplashBanner_BlockchainExpo.png';
 import splash_hacker from '../../img/banners/SplashBanner_ReadyHackerOne.png';
 import splash_exchange from '../../img/banners/SplashBanner_Exchange.png';
 import splash_wallets from '../../img/banners/SplashBanner_Wallets.jpg';
-//import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
+import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
 //import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
 //import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
 
@@ -133,6 +133,14 @@ const slidesArr = [
 			'Store your TLOS tokens.'
 		],
 		url: ''
+	},
+	{
+		img: splash_one,
+		heading: 'Enterprise Business Solutions',
+		paragraphs: [
+			'When businesses utilize blockchain technology, they are able to eliminate security holes, increase transparency and efficiency.'
+		],
+		url: 'http://enterprise.telosfoundation.io/'
 	}
 ];
 
