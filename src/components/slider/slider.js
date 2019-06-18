@@ -78,7 +78,7 @@ const DAppSlide = (props) => {
 		backgroundImage: `url(${props.img})`
 	};
 
-	const routeChange = function(){
+	const routeChange = () => {
 		window.location = props.url
 	};
 

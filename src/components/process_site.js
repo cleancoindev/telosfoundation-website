@@ -9,7 +9,6 @@ import Checklist from './pages/checklist';
 import Download from './pages/download';
 import Board from './pages/board';
 import Arbitrator from './pages/arbitrator';
-import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
 import Governance from './pages/governance';
 import FAQPage from './pages/faq';
@@ -39,7 +38,6 @@ class ProcessSite extends Component {
 						<Route path='/:language/downloads' render={() => <Download downloads_page={site_content.downloads_page} language={site_content.language} />} />
 						<Route path='/:language/arbitrators' render={() => <Arbitrator arbitrators_page={site_content.arbitrators_page} />} />
 						<Route path='/:language/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />
-						<Route path='/:language/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} />} />
 						<Route path='/:language/governance' render={() => <Governance governance_page={site_content.governance_page} />} />
 						<Route path='/:language/faq' render={() => <FAQPage faq_page={site_content.faq_page} />} />
 						<Route path='/:language/candidates' component={BlockProducerCandidates} />
@@ -52,7 +50,6 @@ class ProcessSite extends Component {
 						<Route path='/downloads' render={() => <Download downloads_page={site_content.downloads_page} language={site_content.language} />} />
 						<Route path='/arbitrators' render={() => <Arbitrator arbitrators_page={site_content.arbitrators_page} />} />
 						<Route path='/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />
-						<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} />} />
 						<Route path='/governance' render={() => <Governance governance_page={site_content.governance_page} />} />
 						<Route path='/faq' render={() => <FAQPage faq_page={site_content.faq_page} />} />
 						<Route path='/candidates' component={BlockProducerCandidates} />

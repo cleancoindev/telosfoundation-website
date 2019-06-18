@@ -34,18 +34,8 @@ import splash_expo from '../../img/banners/SplashBanner_BlockchainExpo.png';
 import splash_hacker from '../../img/banners/SplashBanner_ReadyHackerOne.png';
 import splash_exchange from '../../img/banners/SplashBanner_Exchange.png';
 import splash_wallets from '../../img/banners/SplashBanner_Wallets.jpg';
-import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_display.jpg';
-//import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
-//import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
+import splash_enterprise from '../../img/banners/SplashBanner_Enterprise.png';
 
-
-//charts
-import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH1.png';
-import chart_en from '../../img/charts/Telos_MarketingSite_Chart_1000px_EN1.png';
-import chart_kr from '../../img/charts/Telos_MarketingSite_Chart_1000px_KR1.png';
-import chart_pg from '../../img/charts/Telos_MarketingSite_Chart_1000px_PG1.png';
-import chart_rn from '../../img/charts/Telos_MarketingSite_Chart_1000px_RN1.png';
-import chart_sp from '../../img/charts/Telos_MarketingSite_Chart_1000px_SP1.png';
 
 import '../../styles/front_page.css';
 
@@ -125,7 +115,7 @@ const slidesArr = [
 		url: '/downloads'
 	},
 	{
-		img: splash_one,
+		img: splash_enterprise,
 		heading: 'Enterprise Business Solutions',
 		paragraphs: [
 			'When businesses utilize blockchain technology, they are able to eliminate security holes, increase transparency and efficiency.'
@@ -156,8 +146,7 @@ class FrontPage extends Component {
 				dpos_heading,
 				dpos_content,
 				gov_heading,
-				gov_content,
-				github_text } = this.props.landing_page;
+				gov_content } = this.props.landing_page;
 		const {language} = this.props;
 
 		return (

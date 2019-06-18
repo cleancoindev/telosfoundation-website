@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, ResponsiveEmbed, Button, Table} from 'react-bootstrap';
+import {Grid, Row, Col, ResponsiveEmbed, Table} from 'react-bootstrap';
 import RewardsModal from '../modals/rewards_modal';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Helmet} from 'react-helmet';
