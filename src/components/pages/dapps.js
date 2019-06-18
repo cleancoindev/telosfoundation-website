@@ -17,6 +17,9 @@ import compatibility from '../../img/dapps/compatibility.png';
 import powerful from '../../img/dapps/powerful.png';
 import proprietary from '../../img/dapps/proprietary.png';
 import secure from '../../img/dapps/secure.png';
+import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
+import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
+import icon_governance from '../../img/Telos_MarketingSite_Icon_governance_200px.png';
 
 import '../../styles/dapps.css';
 
@@ -30,7 +33,9 @@ class DAppsPage extends Component {
 	}
 
 	render(){
-		const {dapps_page, dapps_page: {slides}} = this.props;
+		const {
+			dapps_page, 
+			dapps_page: {slides} } = this.props;
 		let slidesArr = [];
 		slidesArr.push({
 			img: dapps_gig,
@@ -54,6 +59,13 @@ class DAppsPage extends Component {
 					<title>Telos Dapps Development</title>
 				</Helmet>
 				<DAppsIntro intro={dapps_page.intro} />
+				<IconsText
+					developers_heading={dapps_page.intro.developers_heading}
+					developers_content={dapps_page.intro.developers_content}
+					dpos_heading={dapps_page.intro.dpos_heading}
+					dpos_content={dapps_page.intro.dpos_content}
+					gov_heading={dapps_page.intro.gov_heading}
+					gov_content={dapps_page.intro.gov_content} />
 				<section id='dapps_slider'>
 					<header>
 						<h2>The Future of Dapps on Telos</h2>
@@ -126,6 +138,60 @@ const DAppsIntro = ({intro}) => {
 								</div>
 							</ScrollAnimation>
 						</div>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
+const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
+	return (
+		<section id='front_page_icons'>
+			<Grid>
+				<Row>
+					<Col sm={4}>
+
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}>
+							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{developers_heading}</h2>
+								<p>{developers_content}</p>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col sm={4}>
+
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}
+							delay={250}>
+							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{dpos_heading}</h2>
+								<p>{dpos_content}</p>
+							</div>
+						</ScrollAnimation>
+
+					</Col>
+					<Col sm={4}>
+	
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}
+							delay={500}>
+							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{gov_heading}</h2>
+								<p>{gov_content}</p>
+							</div>
+						</ScrollAnimation>
+
 					</Col>
 				</Row>
 			</Grid>

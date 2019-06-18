@@ -7,10 +7,6 @@ import {connect} from 'react-redux';
 import Slider from '../slider/slider';
 import {selectLanguage} from '../../actions';
 
-import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
-import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
-import icon_governance from '../../img/Telos_MarketingSite_Icon_governance_200px.png';
-
 import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import codex_button from '../../img/exchange_logos/codex_button.jpg';
 import akdex_button from '../../img/exchange_logos/akdex.png';
@@ -140,13 +136,7 @@ class FrontPage extends Component {
 
 	render(){
 		const { intro_heading,
-				intro_content,
-				developers_heading,
-				developers_content,
-				dpos_heading,
-				dpos_content,
-				gov_heading,
-				gov_content } = this.props.landing_page;
+				intro_content } = this.props.landing_page;
 		const {language} = this.props;
 
 		return (
@@ -155,13 +145,6 @@ class FrontPage extends Component {
 					intro_heading={intro_heading}
 					intro_content={intro_content}
 					language={language} />
-				<IconsText
-					developers_heading={developers_heading}
-					developers_content={developers_content}
-					dpos_heading={dpos_heading}
-					dpos_content={dpos_content}
-					gov_heading={gov_heading}
-					gov_content={gov_content} />
 				<Exchanges />
 				<StableCoin />
 				<Wallets />
@@ -180,59 +163,59 @@ const Intro = () => {
 	);
 };
 
-const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
-	return (
-		<section id='front_page_icons'>
-			<Grid>
-				<Row>
-					<Col sm={4}>
+// const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
+// 	return (
+// 		<section id='front_page_icons'>
+// 			<Grid>
+// 				<Row>
+// 					<Col sm={4}>
 
-						<ScrollAnimation
-							animateOnce={true}
-							animateIn='fadeInUp'
-							duration={0.4}>
-							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
-							<div className='icons_text'>
-								<h2>{developers_heading}</h2>
-								<p>{developers_content}</p>
-							</div>
-						</ScrollAnimation>
-					</Col>
-					<Col sm={4}>
+// 						<ScrollAnimation
+// 							animateOnce={true}
+// 							animateIn='fadeInUp'
+// 							duration={0.4}>
+// 							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
+// 							<div className='icons_text'>
+// 								<h2>{developers_heading}</h2>
+// 								<p>{developers_content}</p>
+// 							</div>
+// 						</ScrollAnimation>
+// 					</Col>
+// 					<Col sm={4}>
 
-						<ScrollAnimation
-							animateOnce={true}
-							animateIn='fadeInUp'
-							duration={0.4}
-							delay={250}>
-							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
-							<div className='icons_text'>
-								<h2>{dpos_heading}</h2>
-								<p>{dpos_content}</p>
-							</div>
-						</ScrollAnimation>
+// 						<ScrollAnimation
+// 							animateOnce={true}
+// 							animateIn='fadeInUp'
+// 							duration={0.4}
+// 							delay={250}>
+// 							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
+// 							<div className='icons_text'>
+// 								<h2>{dpos_heading}</h2>
+// 								<p>{dpos_content}</p>
+// 							</div>
+// 						</ScrollAnimation>
 
-					</Col>
-					<Col sm={4}>
+// 					</Col>
+// 					<Col sm={4}>
 	
-						<ScrollAnimation
-							animateOnce={true}
-							animateIn='fadeInUp'
-							duration={0.4}
-							delay={500}>
-							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
-							<div className='icons_text'>
-								<h2>{gov_heading}</h2>
-								<p>{gov_content}</p>
-							</div>
-						</ScrollAnimation>
+// 						<ScrollAnimation
+// 							animateOnce={true}
+// 							animateIn='fadeInUp'
+// 							duration={0.4}
+// 							delay={500}>
+// 							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
+// 							<div className='icons_text'>
+// 								<h2>{gov_heading}</h2>
+// 								<p>{gov_content}</p>
+// 							</div>
+// 						</ScrollAnimation>
 
-					</Col>
-				</Row>
-			</Grid>
-		</section>
-	);
-};
+// 					</Col>
+// 				</Row>
+// 			</Grid>
+// 		</section>
+// 	);
+// };
 
 const Exchanges = () => {
 	return (
