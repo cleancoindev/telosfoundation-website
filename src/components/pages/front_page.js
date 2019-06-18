@@ -118,7 +118,7 @@ const slidesArr = [
 		img: splash_enterprise,
 		heading: 'Enterprise Business Solutions',
 		paragraphs: [
-			'When businesses utilize blockchain technology, they are able to eliminate security holes, increase transparency and efficiency.'
+			'Telos meets the need for trustless computing for enterprise.'
 		],
 		url: 'https://enterprise.telosfoundation.io/'
 	}
