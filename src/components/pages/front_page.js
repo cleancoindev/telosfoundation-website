@@ -10,7 +10,6 @@ import {selectLanguage} from '../../actions';
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
 import icon_governance from '../../img/Telos_MarketingSite_Icon_governance_200px.png';
-import white_paper from '../../img/white_paper_pdf_solid.png';
 
 import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import codex_button from '../../img/exchange_logos/codex_button.jpg';
@@ -39,15 +38,6 @@ import splash_one from '../../img/banners/SplashBanner_Telos-Medium_generic_1_di
 //import splash_two from '../../img/banners/SplashBanner_Telos-Medium_generic_2_display.jpg';
 //import splash_three from '../../img/banners/SplashBanner_Telos-Medium_generic_3_display.jpg';
 
-//white papers
-import { 
-	WHITE_PAPER_ENGLISH,
-	WHITE_PAPER_KOREAN,
-	WHITE_PAPER_CHINESE,
-	WHITE_PAPER_RUSSIAN,
-	WHITE_PAPER_PORTUGESE,
-	WHITE_PAPER_INDONESIAN
-} from '../../config/constants';
 
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH1.png';
@@ -167,8 +157,6 @@ class FrontPage extends Component {
 				dpos_content,
 				gov_heading,
 				gov_content,
-				white_paper_heading,
-				white_paper_content,
 				github_text } = this.props.landing_page;
 		const {language} = this.props;
 
@@ -185,11 +173,6 @@ class FrontPage extends Component {
 					dpos_content={dpos_content}
 					gov_heading={gov_heading}
 					gov_content={gov_content} />
-				<WhitePaper
-					white_paper_heading={white_paper_heading}
-					white_paper_content={white_paper_content}
-					github_text={github_text}
-					language={language} />
 				<Exchanges />
 				<StableCoin />
 				<Wallets />
@@ -255,74 +238,6 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 							</div>
 						</ScrollAnimation>
 
-					</Col>
-				</Row>
-			</Grid>
-		</section>
-	);
-};
-
-const WhitePaper = ({white_paper_heading, white_paper_content, github_text, language}) => {
-
-	let wp_url;
-	switch(language){
-		case 'en':
-			wp_url = WHITE_PAPER_ENGLISH;
-			break;
-		case 'korean':
-			wp_url = WHITE_PAPER_KOREAN;
-			break;
-		case 'mandarin':
-			wp_url = WHITE_PAPER_CHINESE;
-			break;
-		case 'russian':
-			wp_url = WHITE_PAPER_RUSSIAN;
-			break;
-		case 'pt-br':
-			wp_url = WHITE_PAPER_PORTUGESE;
-			break;
-		case 'indonesian':
-			wp_url = WHITE_PAPER_INDONESIAN;
-			break;
-		default:
-			wp_url = WHITE_PAPER_ENGLISH;
-			break;
-	}
-
-	return (
-		<section id='white_paper'>
-			<Grid>
-				<Row>
-					<Col md={8} mdOffset={2}>
-						<Row>
-							<Col sm={6}>
-								<ScrollAnimation
-									animateOnce={true}
-									animateIn='fadeInUp'
-									duration={0.4}>
-									
-									<div className='white_paper_text'>
-										<h1 dangerouslySetInnerHTML={{__html: white_paper_heading}}></h1>
-										<p>{white_paper_content}</p>
-										<h3>{github_text}</h3><a href='https://github.com/Telos-Foundation' target='_blank' rel='noopener noreferrer'>https://github.com/Telos-Foundation</a>
-									</div>
-								</ScrollAnimation>
-							</Col>
-							<Col sm={6}>
-								<ScrollAnimation
-									animateOnce={true}
-									animateIn='fadeInUp'
-									duration={0.4}
-									delay={250}>
-
-									<div className='white_paper_link'>
-										<a href={wp_url} target='_blank' rel='noopener noreferrer'>
-											<img src={white_paper} alt='white paper pdf' className='img-responsive front_page_pdf' />
-										</a>
-									</div>
-								</ScrollAnimation>
-							</Col>
-						</Row>
 					</Col>
 				</Row>
 			</Grid>
