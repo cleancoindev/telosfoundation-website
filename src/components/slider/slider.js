@@ -79,8 +79,7 @@ const DAppSlide = (props) => {
 	};
 
 	const routeChange = function(){
-		let path = props.url
-		window.location = path 
+		window.location = props.url
 	};
 
 	return (
