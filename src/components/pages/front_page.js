@@ -130,7 +130,7 @@ const slidesArr = [
 		paragraphs: [
 			'When businesses utilize blockchain technology, they are able to eliminate security holes, increase transparency and efficiency.'
 		],
-		url: 'http://enterprise.telosfoundation.io/'
+		url: 'https://enterprise.telosfoundation.io/'
 	}
 ];
 
