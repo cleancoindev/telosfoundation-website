@@ -95,7 +95,7 @@ const slidesArr = [
 			'Come visit the Telos Foundation at booth #289 on June 19-20, 2019 in Amsterdam.',
 			'Demo both the power and depth of Telos, and deep dive into what Telos can do for you.'
 		],
-		url: ''
+		url: 'https://blockchain-expo.com/europe/'
 	},
 	{
 		img: splash_hacker,
@@ -105,7 +105,7 @@ const slidesArr = [
 			'June 30th 2019 - Submissions Close',
 			'readyhackerone.telosfoundation.io'
 		],
-		url: ''
+		url: 'https://readyhackerone.telosfoundation.io'
 	},
 	{
 		img: splash_exchange,
@@ -114,7 +114,7 @@ const slidesArr = [
 			'TLOS is now listed on ABCC Exchange! Both TLOS/USDT and TLOS/BTC pairs available.',
 			'TLOS is now listed on CoinTiger! TLOS/USDT pairs are available.'
 		],
-		url: ''
+		url: '#exchanges'
 	},
 	{
 		img: splash_wallets,
@@ -122,7 +122,7 @@ const slidesArr = [
 		paragraphs: [
 			'Store your TLOS tokens.'
 		],
-		url: ''
+		url: '/downloads'
 	},
 	{
 		img: splash_one,
