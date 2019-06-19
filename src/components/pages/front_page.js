@@ -10,7 +10,7 @@ import {selectLanguage} from '../../actions';
 import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import codex_button from '../../img/exchange_logos/codex_button.jpg';
 import akdex_button from '../../img/exchange_logos/akdex.png';
-import p2pb2b_button from '../../img/exchange_logos/P2PPB2B-Button.jpg';
+// import p2pb2b_button from '../../img/exchange_logos/P2PPB2B-Button.jpg';
 import cointiger_button from '../../img/exchange_logos/CoinTiger-Button.jpg';
 import newdex_button from '../../img/exchange_logos/NewDexLogo.png';
 import abcc_button from '../../img/exchange_logos/abcc.png';
@@ -52,11 +52,11 @@ const exchangesArr = [
 		img: akdex_button,
 		url: 'https://akdex.io'
 	},
-	{
-		name: 'p2pb2b',
-		img: p2pb2b_button,
-		url: 'https://p2pb2b.io'
-	},
+	// {
+	// 	name: 'p2pb2b',
+	// 	img: p2pb2b_button,
+	// 	url: 'https://p2pb2b.io'
+	// },
 	{
 		name: 'cointiger',
 		img: cointiger_button,
