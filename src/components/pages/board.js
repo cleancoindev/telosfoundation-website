@@ -4,7 +4,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
 import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
-import beth from '../../img/foundation_site/beth.png';
+import suvi_rinikin from '../../img/foundation_site/Suvi.jpg';
+import beth_farnham from '../../img/foundation_site/beth.png';
 import robert_james from '../../img/foundation_site/robert_james.jpg';
 import jan_smit from '../../img/foundation_site/Jan Smit.jpg';
 import jesse_schulman from '../../img/foundation_site/Jesse Schulman.jpg';
@@ -12,6 +13,9 @@ import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg
 import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
 import mark_cohen from '../../img/foundation_site/mark_cohen.png';
 import justin_giudici from '../../img/foundation_site/Justin Giudici.jpg';
+// import daniel_uzcategui from '../../img/foundation_site/Justin Giudici.jpg';
+import adam_zientarski from '../../img/foundation_site/Adam Zientarski.png';
+import rory_mapstone from '../../img/foundation_site/Rory_Mapstone.jpg';
 
 import '../../styles/board.css';
 
@@ -19,86 +23,111 @@ const interimNominees = [
 	{
 		name: 'Jan Smit',
 		organization: 'DutchEOS',
-		nominatedBy: 'Douglas Horn, GoodBlock',
+		elected: '(appointed pre-network launch)',
 		portrait: jan_smit,
 		bio: [
-			'Jan is a respected member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement. Since that time, Jan has contributed to several working groups and visibly represented Telos at the London Hackathon and blockchain conference in September, along with the rest of the DutchEOS team. Jan has a background in investing and has agreed to be bound by the trading restrictions regarding secrecy and trading TLOS RAM on his own account or that of his organization while serving as the RAM Administration Director. He has demonstrated progressive and thoughtful ideas about the subject of resource management in Telos and has proven himself to be diligent contributor to the Telos community. I believe Jan will make an excellent RAM Administration Director to guide us through the launch of the Telos Blockchain Network.'
+			'Jan is a respected member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement.'
 		]
 	}
 ];
 
-const boardNominees = [
+const execNominees = [
 	{
-		name: 'Mark Cohen',
-		organization: 'Telos Vancouver',
-		portrait: mark_cohen,
-		nominatedBy: 'Richard Bryan, TelosDAC',
+		name: 'Suvi Rinikin: President',
+		elected: '(Elected April 15, 2019)',
+		portrait: suvi_rinikin,
 		bio: [
-			'For more than a decade, Mark has helped build, deploy, and manage the technical infrastructure and security practices for a wide variety of organizations.',
-			'Mark is an “inclusionist”; passionate about community, decentralized governance, and making space for dissenting voices.',
-			'As a valued member of the Telos Contributors Group, Mark chairs the Onboarding workgroup, and actively contributes to the Governance, Network Maintenance, and Marketing and Social Media workgroups. He has spent countless hours helping facilitate conversations and share resources across the many various Telos working groups, to help bring about consensus.',
-			'Mark has also spearheaded much of the public facing technical documentation, authoring articles for the Telos Foundation Wiki, so as to educate and empower Telos Block Producers, through the sharing of knowledge and best practices.',
-			'Mark is the Head of Operations and Security at Telos Vancouver, Telos Block Producer candidates, and one of the original organizations who participated in the Telos announcement.'
-		],
-		linkedIn: 'https://www.linkedin.com/in/mark-cohen'
+			'Suvi was elected President in April 2019, after serving on the board as a Telos Foundation Advisory Board member. Suvi brings her extensive business development expertise to the Foundation, with a focus on expanding relationships with exchanges and businesses.','Suvi is an experienced business development consultant with strong business acumen. She has been working full time in the technology space since 2017, with blockchain based projects being of particular interest to her. Suvi previously worked in the fintech industry specializing in payment and remittance technology. Utilizing her vast network, she regularly assists early stage companies in fundraising and establishing investor relations.'
+		]	
 	},
 	{
-		name: 'Richard Bryan Erikodi',
-		organization: 'Telos DAC',
-		nominatedBy: 'Justin Giudici, infinitybloc',
-		portrait: richard_erikodi,
+		name: 'Beth Farnham: Vice President',
+		elected: '(Elected Dec 24, 2018)',
+		portrait: beth_farnham,
 		bio: [
-			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast.  He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and will be looking to foster good relations between the Telos blockchain and the corporate world.  Bryan is passionate about community and economic mobility.   The decentralised economy will promote this by offering a unique opportunity to develop new organisational & ownership structures as well as new economic activities.',
-			'Bryan brings a wealth of organisational & treasury management, financial analysis and reporting expertise to the team.  He is currently researching and developing a standard for financial reporting and audit for blockchain organisations, DAOs and DACs in this age of radical transparency.'
+			'Beth has been the chair and driving force for many groups outside the Blockchain space. As well as bringing her overall management skills to the role of VP, Beth works closely with the Telos grants and social media working groups. In the past, Beth has served on the boards of a number of charity/non-profit organizations so is able to bring a wealth of experience to the TF.'
 		]
 	},
 	{
-		name: 'Beth Farnham',
-		organization: 'GoodBlock',
-		nominatedBy: 'Arjen Kruithof, DutchEOS',
-		portrait: beth,
+		name: 'Richard Bryan Erikodi: Treasurer',
+		elected: '(Elected Dec 24, 2018)',
+		portrait: richard_erikodi,
 		bio: [
-			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organizational and leadership skills would be a welcome addition to the board.'
+			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast. He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and is working to foster good relations between the Telos blockchain and the corporate world. Bryan is passionate about community and economic mobility. Bryan brings a wealth of organisational & treasury management, financial analysis and reporting expertise to the team. '
+		]
+	},
+	{
+		name: 'Mark Cohen: Secretary',
+		elected: '(Elected Dec24, 2018)',
+		portrait: mark_cohen,
+		bio: [
+			'As a valued member of the Telos Contributors Group, Mark chaired the Onboarding workgroup, and actively contributed to the Governance, Network Maintenance, and Marketing and Social Media workgroups. He spent countless hours helping facilitate conversations and share resources across the many various Telos working groups, to help bring about consensus.', 'Mark has also spearheaded much of the public facing technical documentation, authoring articles for the Telos Foundation Wiki, so as to educate and empower Telos Block Producers, through the sharing of knowledge and best practices.  Mark leads the Marking and Social Media working group for the TF.'
+		]	
+	},
+];
+
+const boardNominees = [
+	{
+		name: 'Robert James, CEP, CECP',
+		organization: 'Echelon Compensation Partners',
+		elected: '(Elected Dec 24, 2018)',
+		portrait: robert_james,
+		bio: [
+			'Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. Rob is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
+			'Rob assisted Telos in the development of the Bounty System providing guidance on competitive market compensation rates for Telos contributors. '
 		]
 	},
 	{
 		name: 'Justin Giudici',
 		organization: 'infinitybloc',
-		nominatedBy: 'Rob Konsdorf',
+		elected: '(Elected Dec 24, 2018)',
 		portrait: justin_giudici,
 		bio: [
-			'Justin is the founder and CEO of infinitybloc.io, a founding partner and block producer on Telos. He is highly experienced in this space, having assisted a number of top block producers before and after the first EOSIO chain launched. He is a well respected community member within both Telos and the broader EOSIO community.',
-			'He  appears on a weekly tokenomics crowdcast interviewing and reviewing top EOSIO dapps. And runs regular meetup sessions to educate and incubate blockchain talent in San Francisco and Silicon Valley.',
-			'Justin led the Telos dapp outreach program pre launch and helped to deliver an impressive list of tools, wallets and dapps expected to be available from early in the chains existence. If elected, Justin will be able to continue to bring top talent to Telos and champion the needs of the networks community above all else.'
+			'Justin is highly experienced in the Blockchain space, having assisted a number of top block producers before and after the first EOSIO chain launched. He is a well respected community member within both Telos and the broader EOSIO community. He appears on a weekly tokenomics crowdcast interviewing and reviewing top EOSIO dapps. Justin leads the Telos dapp outreach working group and is always actively working to get developers to build on Telos.'
 		]
 	},
 	{
 		name: 'Jim Hewitt',
 		organization: 'EOS UK',
-		nominatedBy: 'Jan Smit, DutchEOS',
+		elected: '(Elected Dec 24, 2018)',
 		portrait: jim_hewitt,
 		bio: [
-			'Jim has been the chair of the main weekly Telos Launch Group meetings and an invaluable contributor to the governance working group. In addition we feel that his unique backround will be an asset to the board. Before joining EOS UK, Jim was an assistant head teacher and for the last 3 years he has managed the operations of an internet consulting practice. Jim majored in history with a focus on the industrial revolution and we expect him to be a driving force behind this "new" industrial revolution.'
-		]
-	},
-	{
-		name: 'Robert James, CEP, CECP',
-		organization: 'Echelon Compensation Partners',
-		portrait: robert_james,
-		nominatedBy: 'Rob Konsdorf, EOS Detroit',
-		bio: [
-			'Rob is a co-founding Partner at Echelon Compensation Partners, an independent compensation and corporate governance consulting firm located in Southern California.',
-			'At Echelon, Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. He is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
-			'Rob has assisted Telos in the development of the Bounty System by providing guidance on competitive market compensation rates for Telos contributors. Rob remains an active member of the Telos, EOS and cryptoasset communities having discovered blockchain in in late 2016.'
+			'Jim was the first President of the TF.  Jim now leads the Events working group and is responsible for Telos being represented outside the eosio bubble. Before discovering the world of blockchain Jim was an assistant head teacher and has managed the operations for an internet consulting practice.  Jim was also involved in the drafting of the Telos Blockchain Network Agreement (TBNOA)'
 		]
 	},
 	{
 		name: 'Jesse Schulman',
 		organization: 'CalEOS',
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		elected: '(Elected Dec 24, 2018)',
 		portrait: jesse_schulman,
 		bio: [
-			'Jesse is an early member of the Telos Launch Group and has made a big impact as co-chair of the network maintenance group.  He is focused on the technical side of things, and has made contributions across the board such as authoring and implementing the TIP3 snapshot contract as well as helping many new BPs learn the nuances of eosio software and what it takes to get up and running on the testnet.  As co-founder of CalEOS.io, he along with his partner Don will be block producer candidates on the Telos network running their own self-funded bare metal infrastructure, they are working to learn and share as much as possible about tuning the eosio software for optimal performance, making sure users of the Telos network are billed as little CPU as possible for their transactions.'
+			'Jesse was an early member of the Telos Launch Group and has made a big impact as co-chair of the network maintenance group. Jesse is focused on the technical side of things, and has made contributions across the board such as authoring and implementing the TIP3 snapshot contract as well as helping many new BPs learn the nuances of eosio software and what it takes to get up and running on the testnet. '
+		]
+	},
+	{
+		name: 'Daniel Uzcategui',
+		organization: 'Telos Venezuela',
+		elected: '(Elected April 15, 2019)',
+		portrait: placeholder_portrait,
+		bio: [	'Daniel is an experienced Database Administrator (DBA) with 7 years of experience designing, coding, testing and supporting next-generation FINANCE application/database solutions in Fusion Middleware Oracle and SQL Server environments.  Daniel is a crypto enthusiast and miner since 2010, later involved in the Telos launch group. Backed up the team by testing the Telos smart contracts implementations, creator of multiple launch scripts for horizontal azure Telos environments, joined the ABP Telos team to help launch the Telos Network by editing and creating multiple validation scripts.'
+
+		]
+	},
+	{
+		name: 'Adam Zientarski',
+		organization: 'EOS Detroit',
+		elected: '(Elected April 15, 2019)',
+		portrait: adam_zientarski,
+		bio: [	
+			'Adam was an active member of the Telos Launch Group and has already contributed to improving the transparency of the Telos Foundation by authoring and successfully passing TIP-12, a proposal to have Telos Foundation pay proposed and voted on separately from Telos Foundation budgets by Telos Foundation Voting Token holders.  Adam played a vital role in the drafting of the TBNOA and now takes the lead in the arbitration working group for the foundation.'
+		]
+	},
+	{
+		name: 'Rory Mapstone',
+		elected: '(Elected April 15, 2019)',
+		portrait: rory_mapstone,
+		bio: [	
+			'Rory is passionate about the potential of Telos as a governed eosio community blockchain is actively promoting the adoption of Telos as the eosio chain of choice in Southern Africa, with current efforts focused on building awareness and access to token.  Rory is active in the exchange working group helping the TF deal with exchanges and promoting TLOS to the community.'
 		]
 	},
 ];
@@ -111,10 +140,14 @@ const Board = () => {
 				animateIn='fadeIn'
 				duration={0.4}
 			>
-				<BoardIntro />
+			<BoardIntro />
 			</ScrollAnimation>
-			<InterimNominees />
+			<FoundationGrantProgram/>
 			<ExecutiveNominees />
+			<BoardNominees />
+			<InterimNominees />
+			<Appendix />
+
 		</div>
 	);
 };
@@ -127,26 +160,49 @@ const BoardIntro = () => {
 					<Col md={10} mdOffset={1}>
 						<div className='intro_logo_container'>
 							<img src={foundation_logo} alt='telos foundation logo' />
-							<h1>The <strong>Telos</strong> Foundation</h1>
+							<h1>About the <strong>Telos</strong> Foundation</h1>
 						</div>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<div className='intro_content'>
-							<p>The Telos Foundation is an apolitical body with a mission of promoting the Telos Blockchain Network. It is voted as a decentralized autonomous organization (DAO) voted by holders of Telos Foundation Voting Tokens as described in its governance document.</p>
-							<div className='text-center'>
-								<a
-									href='https://resources.telosfoundation.io/Telos Foundation Governance.pdf'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='btn btn-primary'
-								>
-									TELOS FOUNDATION GOVERNANCE DOCUMENT
-								</a>
-							</div>
-							<p>The Telos Foundation is governed by a board of elected board members who will elect an Executive Director and a RAM Administration Director.</p>
+							<p>The Telos Foundation (TF) is an apolitical organization with a mission to aid in the promotion and improvement of the Telos Network. The TF seeks to do this in three distinct ways:</p>
+							<ul>
+								<li>Promoting the network through grants and administration to advertise, market, engage in social media, live events, and teaching opportunities that raise the profile and inform and expand the user-base.
+								</li>
+								<br/>
+								<li>Underwriting expenses that increase the functionality of the Telos Network outside the Worker Proposal System.
+								</li>
+								<br/>
+								<li>Maintaining a published guidance price for Telos Network RAM and both trading based on this price and offering sales at this price to qualified developers. when the market price for RAM is more than 10% above the published guidance price. Advise BPs of adhoc and/or gradual RAM increases.
+								</li>
+							</ul>
 						</div>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
+const FoundationGrantProgram = () => {
+	return (
+		<section id='interim_nominees'>
+			<header>
+				<h2>The Telos Foundation Grant program</h2>
+			</header>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							<p className='interim_intro'>The Telos Foundation is a promotional and funding body, dedicated to advancing the Telos Blockchain Network. The aim of the Telos Foundation is to provide grants to groups promoting necessary network functions that cannot or are not otherwise supported by worker proposals.</p>
+							<p className='interim_intro'>A primary part of the Telos Foundation mission is to provide granting opportunities to the community. With a focus on encouraging the creative and innovative communities that share EOSIO, anyone who meets the requirements is encouraged to apply. You can learn more about the program here: <br/> <a href= "https://medium.com/@teloslogical/the-telos-foundation-grant-program-e7b1253d5368">https://medium.com/@teloslogical/the-telos-foundation-grant-program-e7b1253d5368. </a></p>
+						</ScrollAnimation>
 					</Col>
 				</Row>
 			</Grid>
@@ -184,9 +240,8 @@ const InterimNominees = () => {
 											portrait={nom.portrait}
 											organization={nom.organization}
 											bio={nom.bio}
-											selfNominated={nom.selfNominated}
-											nominatedBy={nom.nominatedBy}
-											linkedIn={nom.linkedIn} />
+											elected={nom.elected}
+											/>
 									);
 								})
 							}
@@ -208,7 +263,7 @@ const ExecutiveNominees = () => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						{
-							boardNominees.map((nom, i) => {
+							execNominees.map((nom, i) => {
 								return (
 									<ScrollAnimation
 										key={i}
@@ -218,12 +273,10 @@ const ExecutiveNominees = () => {
 									>
 										<Nominee
 											name={nom.name}
+											elected={nom.elected}
 											portrait={nom.portrait}
-											organization={nom.organization}
 											bio={nom.bio}
-											selfNominated={nom.selfNominated}
-											nominatedBy={nom.nominatedBy}
-											linkedIn={nom.linkedIn} />
+										/>
 									</ScrollAnimation>
 								);
 							})
@@ -235,7 +288,41 @@ const ExecutiveNominees = () => {
 	);
 };
 
-
+const BoardNominees = () => {
+	return (
+		<section id='executive_nominees'>
+			<header>
+				<h2>Board Members</h2>
+			</header>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						{
+							boardNominees.map((nom, i) => {
+								return (
+									<ScrollAnimation
+										key={i}
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<Nominee
+											name={nom.name}
+											elected={nom.elected}
+											portrait={nom.portrait}
+											organization={nom.organization}
+											bio={nom.bio}
+											/>
+									</ScrollAnimation>
+								);
+							})
+						}
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
 
 const Nominee = (props) => {
 
@@ -249,9 +336,9 @@ const Nominee = (props) => {
 
 	const getName = () => {
 		if(!props.organization){
-			return <h4>{props.name}</h4>;
+			return <React.Fragment><h4>{props.name}</h4><h5>{props.elected}</h5></React.Fragment>;
 		}
-		return <h4>{props.name}, {props.organization}</h4>;
+		return <React.Fragment><h4>{props.name}, {props.organization}</h4><h5>{props.elected}</h5></React.Fragment>;
 	}
 
 	return (
@@ -266,6 +353,38 @@ const Nominee = (props) => {
 				{getLinkedIn()}
 			</div>
 		</div>
+	);
+};
+
+const Appendix = () => {
+	return (
+		<section id='board_intro'>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='intro_logo_container'>
+							<h1>Appendix:</h1>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='intro_content'>				
+							<div className='text-center'>
+								<a
+									href='https://resources.telosfoundation.io/Telos Foundation Governance.pdf'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='btn btn-primary'
+								>
+									TELOS FOUNDATION GOVERNANCE DOCUMENT
+								</a>
+							</div>
+						</div>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
 	);
 };
 
