@@ -123,7 +123,7 @@ const slidesArr = [
 		img: splash_dapp,
 		heading: 'Build Your Dapp on Telos',
 		paragraphs: [
-			'The best network makes the best Dapps'
+			'The best network makes the best Dapps.'
 		],
 		url: '/dapps'
 	}
