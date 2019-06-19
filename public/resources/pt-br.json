@@ -3,12 +3,6 @@
     "landing_page": {
         "intro_heading": "Blockchain governado pela comunidade",
         "intro_content": "<strong>Construído no EOSIO</strong> Delegated Proof of Stake é o futuro de contrato inteligente em blockchain. Combinamos rápida execução e escalabilidade do software EOSIO com a verdadeira descentralização que torna o DPoS sustentável. Telos terá a distribuição de dinheiro mais equilibrada de qualquer outra blockchain. Esta distribuição de tokens melhora a governança para que a rede seja mais segura e sustentável.",        
-        "developers_heading": "Para desenvolvedores",
-        "developers_content": "Telos existe para fornecer uma rede segura, estável e econômica para a implementação de Dapps de classe mundial. Os desenvolvedores podem esperar preços acessíveis de RAM e a capacidade de lançar contratos inteligentes open source ou proprietários sem taxas de transação.",
-        "dpos_heading": "Rápido DPoS",
-        "dpos_content": "A rede Telos processa até 5.000 transações por segundo para transações rápidas e de alta escalabilidade. Isso significa que o Dapps pode atingir o público mundial com a velocidade de transação média mais rápida de qualquer blockchain - apenas 1.5 segundo!",
-        "gov_heading": "Boa Governança",
-        "gov_content": "Telos tem um sistema de governança rico desde a Constituição até eleições de produtores de bloco, financiamento de propostas de trabalhadores e adjudicação de disputas. Nenhum outro blockchain oferece uma governança coesa do Telos.",
         "white_paper_heading": "Baixe o white paper",
         "white_paper_content": "Leia o white paper da Telos e julgue você mesmo. Estamos aqui para criar o melhor blockchain de todos os tempos. Junte-se a nós e desenvolva o Telos.",
         "github_text": "Visite nosso Github",
@@ -389,6 +383,12 @@
         "Estamos construindo um repositório de exemplos de contratos para novos tokens, migração de tokens existentes do Ethereum ou EOS, funções de votação e outros conceitos de desenvolvimento do Telos. Também temos uma forte comunidade de desenvolvedores para oferecer ajuda em nossos grupos de telegramas, especialmente o <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Dapp Development</a>.",
         "Há também uma excelente série de tutoriais sobre como implantar no Telos chamado <a href=\"https://link.medium.com/0UUfxmsMAV\" target=\"_blank\" rel=\"noopener noreferrer\">SensorDApp</a>."
       ],
+      "developers_heading": "Para desenvolvedores",
+      "developers_content": "Telos existe para fornecer uma rede segura, estável e econômica para a implementação de Dapps de classe mundial. Os desenvolvedores podem esperar preços acessíveis de RAM e a capacidade de lançar contratos inteligentes open source ou proprietários sem taxas de transação.",
+      "dpos_heading": "Rápido DPoS",
+      "dpos_content": "A rede Telos processa até 5.000 transações por segundo para transações rápidas e de alta escalabilidade. Isso significa que o Dapps pode atingir o público mundial com a velocidade de transação média mais rápida de qualquer blockchain - apenas 1.5 segundo!",
+      "gov_heading": "Boa Governança",
+      "gov_content": "Telos tem um sistema de governança rico desde a Constituição até eleições de produtores de bloco, financiamento de propostas de trabalhadores e adjudicação de disputas. Nenhum outro blockchain oferece uma governança coesa do Telos.",
       "tutorials_button": "TUTORIAIS",
       "tutorials_description": "Aprenda a construir seu DAPP na rede Telos.",
       "smart_contracts_button": "MODELOS DE CONTRATO INTELIGENTE",
@@ -452,7 +452,9 @@
   "governance_page": {
     "intro": {
       "heading": "Governança - Visão Geral",
-      "subheading": "Telos é um blockchain governado, baseado em EOSIO - o mesmo software que a EOS utiliza - para que seja possível implementar DApps na Telos e na EOS com o mesmo código. Quando a Telos for lançada (já em 4 de dezembro de 2018), possuirá documentação completa e um conjunto de estruturas operacionais, tais como governança integralmente assente na cadeia, a capacidade de ratificar ou alterar os documentos de governança por votação da comunidade, um sistema de proposta de trabalhadores e eleição de produtores de blocos e árbitros. Abaixo estão listados os principais elementos e características da governança blockchain na Telos."
+      "subheading_one": "Telos é um blockchain governado, baseado em EOSIO - o mesmo software que a EOS utiliza - para que seja possível implementar DApps na Telos e na EOS com o mesmo código. Quando a Telos for lançada (já em 4 de dezembro de 2018), possuirá documentação completa e um conjunto de estruturas operacionais, tais como governança integralmente assente na cadeia, a capacidade de ratificar ou alterar os documentos de governança por votação da comunidade, um sistema de proposta de trabalhadores e eleição de produtores de blocos e árbitros. Abaixo estão listados os principais elementos e características da governança blockchain na Telos.",
+      "subheading_two": "",
+      "subheading_three": ""
     },
     "documents": {
       "heading": "OS DOCUMENTOS",

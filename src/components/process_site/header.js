@@ -36,31 +36,25 @@ class Header extends Component {
 							>
 								FOUNDATION
 							</NavItem>
-							<NavItem
-								onSelect={(key, e) => {
-									e.preventDefault();
-									this.props.history.push(`/governance`);
-								}}
-							>
-								GOVERNANCE
-							</NavItem>
-							<NavItem
-								onSelect={(key, e) => {
-									e.preventDefault();
-									this.props.history.push(`/arbitrators`);
-								}}
-							>
-								ARBITRATION
-							</NavItem>
-							<NavItem
-								onSelect={(key, e) => {
-									e.preventDefault();
-									this.props.history.push(`/roadmap`);
-								}}
-							>
-								ROADMAP
-							</NavItem>
-							<NavDropdown title="MONITORS" id="basic-nav-dropdown">
+							<NavDropdown title="TELOS NETWORK" id="basic-nav-dropdown">
+								<MenuItem
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/candidates`);
+									}}
+								>
+									BLOCK PRODUCERS
+								</MenuItem>
+								<MenuItem
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/roadmap`);
+									}}
+								>
+									DEVELOPMENT ROADMAP
+								</MenuItem>
+							
+									<NavDropdown title="MONITORS" id="basic-nav-dropdown">
 								<Navbar.Header>Mainnet</Navbar.Header>
 								<MenuItem 
 									onClick={(e) => {
@@ -109,6 +103,26 @@ class Header extends Component {
 									EosX
 								</MenuItem>
 							</NavDropdown>
+							</NavDropdown>
+							<NavDropdown title="BUILDING ON TELOS" id="basic-nav-dropdown">
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/dapps`);
+									}}
+								>
+									Building dApps
+								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://enterprise.telosfoundation.io');
+									}} 
+									href="https://enterprise.telosfoundation.io"
+								>
+									Enterprise Business Solutions
+								</MenuItem>
+							</NavDropdown>
 							<NavDropdown
 								title="MORE"
 								id="more-nav-dropdown"
@@ -118,28 +132,19 @@ class Header extends Component {
 								}}
 							>
 								<MenuItem
-						    		eventKey='dapps'
+						    		eventKey='arbitrators'
 						    	>
-									Dapp Development
+									Arbitration
 								</MenuItem>
-								<NavItem
-									onClick={e => {
-										e.preventDefault();
-										window.open('https://medium.com/@teloslogical');
-									}}
-									href='https://medium.com/@teloslogical'
-								>
-									Blog
-								</NavItem>
+								<MenuItem
+						    		eventKey='governance'
+						    	>
+									Governance
+								</MenuItem>
 								<MenuItem
 						    		eventKey='downloads'
 						    	>
 									Resources
-								</MenuItem>
-								<MenuItem
-									eventKey='candidates'
-								>
-									BP Candidates
 								</MenuItem>
 								<MenuItem
 						    		eventKey='faq'

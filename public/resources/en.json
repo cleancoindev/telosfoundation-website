@@ -3,12 +3,6 @@
   "landing_page": {
     "intro_heading": "Community <br />Governed <br />Blockchain",
     "intro_content": "<strong>Built on EOSIO.</strong> Delegated Proof of Stake is the future of smart-contract blockchains. We combine the blazing fast execution and scalability of EOSIO software with true decentralization that makes DPoS sustainable. Telos will have the most even money supply distribution of any blockchain. This token distribution improves governance so the network is more secure and ensures that the future of Telos is decided by its community. Telos has built the most advanced smart contract-controlled governance features of any blockchain.",
-    "developers_heading": "Developer Focus",
-    "developers_content": "Telos exists to provide a secure, stable, cost-effective network for deploying world class Dapps. Developers can expect affordable RAM prices and the ability to launch open-source or proprietary smart contracts with no transaction fees.",
-    "dpos_heading": "DPoS Speed",
-    "dpos_content": "The Telos network handles up to 5,000 transactions per second for blazing fast transactions and massive scalability. This means Dapps can reach a worldwide audience at the fastest average transaction speed of any blockchain—just 1.5 seconds!",
-    "gov_heading": "Good Governance",
-    "gov_content": "Telos has a rich governance system from voting amendments to the user agreement, to ongoing block producer elections, to worker proposal funding and dispute resolution. No other blockchain offers the cohesive governance of Telos.",
     "white_paper_heading": "Download the<br /> white paper",
     "white_paper_content": "Read the Telos white paper to judge for yourself.  We are out to create the best blockchain ever. Join us and build on Telos.",
     "github_text": "Visit our Github",
@@ -64,6 +58,12 @@
         "We are building a repository of sample contracts for new tokens, migration of existing tokens from Ethereum or EOS, voting functions, and other Telos development concepts. We also have a strong developer community to offer help in our Telegram groups, especially <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Dapp Development</a>.",
         "There is also an excellent tutorial series about deploying on Telos called <a href=\"https://link.medium.com/0UUfxmsMAV\" target=\"_blank\" rel=\"noopener noreferrer\">SensorDApp</a>."
       ],
+      "developers_heading": "Developer Focus",
+      "developers_content": "Telos exists to provide a secure, stable, cost-effective network for deploying world class Dapps. Developers can expect affordable RAM prices and the ability to launch open-source or proprietary smart contracts with no transaction fees.",
+      "dpos_heading": "DPoS Speed",
+      "dpos_content": "The Telos network handles up to 5,000 transactions per second for blazing fast transactions and massive scalability. This means Dapps can reach a worldwide audience at the fastest average transaction speed of any blockchain—just 1.5 seconds!",
+      "gov_heading": "Good Governance",
+      "gov_content": "Telos has a rich governance system from voting amendments to the user agreement, to ongoing block producer elections, to worker proposal funding and dispute resolution. No other blockchain offers the cohesive governance of Telos.",
       "tutorials_button": "TUTORIALS",
       "tutorials_description": "Learn how to build your Dapp on the Telos network.",
       "smart_contracts_button": "SMART CONTRACT TEMPLATES",
@@ -127,16 +127,18 @@
   "governance_page": {
     "intro": {
       "heading": "Governance Overview",
-      "subheading": "Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as December 4, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos."
+      "subheading_one": "Telos is a governed blockchain based on the EOSIO software. Like all DPOS (delegated proof of stake) chains, Telos has default governance built in. After observing other DPOS networks, the Telos blockchain founders decided to implement some safeguards to help protect the chain against collusion, hoarding, and ineffective BPs. Governance changes to Telos blockchain can only be implemented by Telos token holders the referendum process. ",
+      "subheading_two":"The Telos Blockchain is a decentralized, trustless system, where token holders have the power to come together and change the direction of the chain and the way it operates. Some often refer to DPOS chains as an online democracy, although in practice it is more akin to shareholders of a public company. ",
+      "subheading_three":"A DPOS chain is particularly stable since approving referendum requires a significant amount of voters to approve a motion in order for any new initiatives or significant code changes to pass. It also allows for those that have a vested interest in the chain to have a voice and campaign for the changes they believe will be the most beneficial to the Telos ecosystem. "
     },
     "documents": {
-      "heading": "THE DOCUMENTS",
-      "subheading": "The definitions, rules, and procedures of Telos governance are contained in six documents that will be recorded on-chain and modifiable by community vote (pro rata by TLOS token ownership). These documents are:",
+      "heading": "TELOS GOVERNANCE DOCUMENTS",
+      "subheading_pone": "Listed below is detailed documentation of the operating structures of the Telos blockchain, including on-chain governance, how to ratify or amend the governance documents by community voting, how to use the worker proposal system, and how to elect block producers and arbitrators. The definitions, rules, and procedures of Telos governance are contained in six documents that are recorded on-chain and modifiable by community vote (pro rata by TLOS token ownership). These documents are:",
       "documents": {
         "operating_agreement": {
           "long_name": "Operating Agreement (TBNOA)",
           "short_name": "Operating Agreement",
-          "long_description": "The prime governing document on Telos describing the rights and responsibilities of becoming a member of the Telos Blockchain Network. It is required to opt-in to this agreement in order to access or use Telos. This agreement is the equivalent of the EOS Constitution. It differs from the EOS constitution in form: The TBNOA thoroughly defines all network parts and participants and describes governance actions such as electing block producers, amending the governance documents or submitting a worker proposal system submission. The TBNOA has inherited almost no terms from the EOS Constitution. The TBNOA includes the other five governance documents by reference and each of them adopts its definitions and terms.",
+          "long_description": "This is the prime governing document on Telos describing the rights and responsibilities of becoming a member of the Telos Blockchain Network. It is required to opt-in to this agreement in order to access or use Telos. The TBNOA thoroughly defines all network parts and participants and describes governance actions such as electing block producers, amending the governance documents or making a worker proposal system submission. The TBNOA includes the other five governance documents by reference and each of them adopts its definitions and terms.",
           "short_description": "Primary governance document",
           "eos_analog": "EOS Constitution",
           "status": "Adopted"
@@ -144,7 +146,7 @@
         "arbitration_rules": {
           "long_name": "Arbitration Rules & Procedures (TBNARP)",
           "short_name": "Arbitration Rules & Procedures",
-          "long_description": "The Arbitration Rules & Procedures describes the entire process of arbitration on Telos - from filing a case to procedures for arbitration, to delivery of arbitral judges decisions to block producers for execution. The EOS analog for this is the ECAF Rules and as yet unpublished ECAF Handbook. the Telos Arbitration Rules are entirely independent from the ECAF Rules and share no text. They are also a community amendable core governance document on Telos, whereas the ECAF Rules are set and maintained by the ECAF with no mechanism for input or control from the broader EOS community.",
+          "long_description": "The Arbitration Rules & Procedures describes the entire process of arbitration on Telos - from filing a case to procedures for arbitration, to delivery of arbitral judges decisions to block producers for execution. They are also a community amendable core governance document on Telos.",
           "short_description": "Rules and procedures for arbitration on Telos",
           "eos_analog": "ECAF Rules",
           "status": "Adopted"
@@ -152,7 +154,7 @@
         "regproducer_contract": {
           "long_name": "'regproducer' Contract Human Language Terms ('regproducer')",
           "short_name": "Regproducer Contract",
-          "long_description": "The 'regproducer' contract is used by any member desiring to become a block producer candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for block producer candidates. This text is largely inherited from the EOS 'regproducer' contract with much additional text added. The primary difference between the EOS and Telos versions is that while both list prohibited actions, the Telos version also documents penalties for any infractions, the method of enforcement, and the responsibility of block producers to enforce the rules on other BPs.",
+          "long_description": "The 'regproducer' contract is used by any member desiring to become a block producer candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for block producer candidates.",
           "short_description": "Rules, responsibilities and representations of block producers",
           "eos_analog": "EOS 'Regproducer' Contract",
           "status": "Adopted"
@@ -160,7 +162,7 @@
         "bp_minimums": {
           "long_name": "Producer Minimum Requirements (BP Minimum Requirements)",
           "short_name": "BP Minimums",
-          "long_description": "The BP Minimum Requirements is a list of disclosures, practices, equipment and networking standards that block producer candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies a BP from service until the omission is cured, regardless of how many votes the BP has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases which the block producers can vote to move between based on 2/3 + 1 voting. EOS does not have minimum requirements or a similar document. A minimum amount of RAM is specified in the EOS 'regproducer' contract.",
+          "long_description": "The BP Minimum Requirements is a list of disclosures, practices, equipment and networking standards that block producer candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies a BP from service until the omission is cured, regardless of how many votes the BP has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases which the block producers can vote to move between based on 2/3 + 1 voting. ",
           "short_description": "Minimum requirements to act as a block producer",
           "eos_analog": "None",
           "status": "Adopted"
@@ -168,7 +170,7 @@
         "regarb_contract": {
           "long_name": "'regarb' Contract Human Language Terms ('regarb')",
           "short_name": "'Regarb' Contract",
-          "long_description": "The 'regarb' contract is used by any member desiring to become an arbitrator candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for arbitrator candidates. There is no similar document on EOS because EOS does not elect arbitrators.",
+          "long_description": "The 'regarb' contract is used by any member desiring to become an arbitrator candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for arbitrator candidates. ",
           "short_description": "Rules, responsibilities and representations of arbitrators",
           "eos_analog": "None",
           "status": "Adopted"
@@ -176,7 +178,7 @@
         "arbitrator_minimums": {
           "long_name": "Arbitrator Minimum Requirements (Arbitrator Minimum Requirements)",
           "short_name": "Arbitrator Minimums",
-          "long_description": "The Arbitrator Minimum Requirements is a list of disclosures, practices, equipment and networking standards that arbitrator candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies an arbitrator from being assigned new cases until the omission is cured, regardless of how many votes the arbitrator candidate has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases. There is no similar document on EOS because EOS does not elect arbitrators.",
+          "long_description": "The Arbitrator Minimum Requirements is a list of disclosures, practices, equipment and networking standards that arbitrator candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies an arbitrator from being assigned new cases until the omission is cured, regardless of how many votes the arbitrator candidate has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases. Election of arbitrators is unique to the Telos Blockchain Network.",
           "short_description": "Minimum requirements to act as an arbitrator",
           "eos_analog": "None",
           "status": "Adopted"

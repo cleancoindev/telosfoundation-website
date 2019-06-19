@@ -124,6 +124,7 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	min-height: 367px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 767px){
@@ -152,6 +153,7 @@
 	height: auto;
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1100px){

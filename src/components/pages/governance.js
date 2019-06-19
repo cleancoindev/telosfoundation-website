@@ -134,7 +134,9 @@ const GovernanceIntro = ({intro}) => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<h1>{intro.heading}</h1>
-						<h3>{intro.subheading}</h3>
+						<h3>{intro.subheading_one}</h3>
+						<h3>{intro.subheading_two}</h3>
+						<h3>{intro.subheading_three}</h3>
 					</Col>
 				</Row>
 			</Grid>

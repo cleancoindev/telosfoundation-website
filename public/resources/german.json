@@ -3,12 +3,6 @@
   "landing_page": {
   	"intro_heading": "Von der Gemeinschaft kontrollierte Blockchain",
   	"intro_content": "<strong>Errichtet auf EOSIO</strong> Der delegierte Anteilsnachweis als Konsensus Mechanismus, ist die Zukunft smart-contract basierter Blockchain-Netzwerke. Telos bietet eine nachhaltige Lösung, in dem wir die Geschwindigkeit und Skalierbarkeit der EOSIO Software mit echter Dezentralisierung vereinen. Telos hat die gerechteste, und gleichmäßigste Geldverteilung aller Blockchainprojekte, und ist somit vor Korruption des politischen Prozesses geschützt, was mehr Sicherheit und Tragfähigkeit bedeutet.",
-  	"developers_heading": "Entwickler Fokus",
-  	"developers_content": "Die Telos Plattform existiert zum Zweck der sicheren, stabilen und kosteneffizienten Anwendung von smart-contract basierten Lösungen und dezentralisierten Apps. Günstige RAM Preise erlauben Entwicklern sowohl open-source also auch proprietäre Programme zu schreiben, welche ohne Transaktionskosten laufen können.",
-  	"dpos_heading": "Geschwindigkeit",
-  	"dpos_content": "Das Telos Netzwerk kann eine Rekordgeschwindigkeit von 5'000 Transaktionen pro Sekunde erreichen, was zu massiver Skalierbarkeit führt. Dank des schnellsten dezentralisierten Netzwerkes aller Zeiten, können Dapps weltweite Reichweite erziehen, mit nur 1.5 Sekunden pro Blockverifizierung.",
-  	"gov_heading": "Gute Verwaltung",
-  	"gov_content": "Telos hat ein reiches Verwaltungssystem, welches von einer Konstitution, bis hin zu regelmäßigen Wahlen von Blockproduzenten und Werkanträgen reicht. Kein anderes Blockchain Netzwerk bietet mehr interne Führungsstruktur und Disputresolution.",
   	"white_paper_heading": "Lesen sie unser Witepaper",
   	"white_paper_content": "Lesen sie das Whitepaper und entscheiden sie selbst. Wir wollen die beste Blockchain aller Zeiten erschaffen. Helfen sie uns, Telos zu bauen.",
   	"github_text": "Besuchen sie unseren Github",
@@ -389,6 +383,12 @@
         "We are building a repository of sample contracts for new tokens, migration of existing tokens from Ethereum or EOS, voting functions, and other Telos development concepts. We also have a strong developer community to offer help in our Telegram groups, especially <a href=\"https://t.me/dappstelos\" target=\"_blank\" rel=\"noopener noreferrer\">Telos Dapp Development</a>.",
         "There is also an excellent tutorial series about deploying on Telos called <a href=\"https://link.medium.com/0UUfxmsMAV\" target=\"_blank\" rel=\"noopener noreferrer\">SensorDApp</a>."
       ],
+      "developers_heading": "Entwickler Fokus",
+      "developers_content": "Die Telos Plattform existiert zum Zweck der sicheren, stabilen und kosteneffizienten Anwendung von smart-contract basierten Lösungen und dezentralisierten Apps. Günstige RAM Preise erlauben Entwicklern sowohl open-source also auch proprietäre Programme zu schreiben, welche ohne Transaktionskosten laufen können.",
+      "dpos_heading": "Geschwindigkeit",
+      "dpos_content": "Das Telos Netzwerk kann eine Rekordgeschwindigkeit von 5'000 Transaktionen pro Sekunde erreichen, was zu massiver Skalierbarkeit führt. Dank des schnellsten dezentralisierten Netzwerkes aller Zeiten, können Dapps weltweite Reichweite erziehen, mit nur 1.5 Sekunden pro Blockverifizierung.",
+      "gov_heading": "Gute Verwaltung",
+      "gov_content": "Telos hat ein reiches Verwaltungssystem, welches von einer Konstitution, bis hin zu regelmäßigen Wahlen von Blockproduzenten und Werkanträgen reicht. Kein anderes Blockchain Netzwerk bietet mehr interne Führungsstruktur und Disputresolution.",  
       "tutorials_button": "TUTORIALS",
       "tutorials_description": "Learn how to build your Dapp on the Telos network.",
       "smart_contracts_button": "SMART CONTRACT TEMPLATES",
@@ -452,7 +452,9 @@
   "governance_page": {
     "intro": {
       "heading": "Governance Overview",
-      "subheading": "Telos is a governed blockchain based on EOSIO. Telos launched with complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos."
+      "subheading_one": "Telos is a governed blockchain based on EOSIO. Telos launched with complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos.",
+      "subheading_two":"",
+      "subheading_three":""
     },
     "documents": {
       "heading": "THE DOCUMENTS",
