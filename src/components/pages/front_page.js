@@ -31,6 +31,7 @@ import splash_hacker from '../../img/banners/SplashBanner_ReadyHackerOne.png';
 import splash_exchange from '../../img/banners/SplashBanner_Exchange.png';
 import splash_wallets from '../../img/banners/SplashBanner_Wallets.jpg';
 import splash_enterprise from '../../img/banners/SplashBanner_Enterprise.png';
+import splash_dapp from '../../img/banners/SplashBanner_Dapp.jpg';
 
 
 import '../../styles/front_page.css';
@@ -117,6 +118,14 @@ const slidesArr = [
 			'Telos meets the need for trustless computing for enterprise.'
 		],
 		url: 'https://enterprise.telosfoundation.io/'
+	},
+	{
+		img: splash_dapp,
+		heading: 'Build Your Dapp on Telos',
+		paragraphs: [
+			'The best network makes the best Dapps'
+		],
+		url: '/dapps'
 	}
 ];
 
@@ -162,60 +171,6 @@ const Intro = () => {
 		</section>
 	);
 };
-
-// const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
-// 	return (
-// 		<section id='front_page_icons'>
-// 			<Grid>
-// 				<Row>
-// 					<Col sm={4}>
-
-// 						<ScrollAnimation
-// 							animateOnce={true}
-// 							animateIn='fadeInUp'
-// 							duration={0.4}>
-// 							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
-// 							<div className='icons_text'>
-// 								<h2>{developers_heading}</h2>
-// 								<p>{developers_content}</p>
-// 							</div>
-// 						</ScrollAnimation>
-// 					</Col>
-// 					<Col sm={4}>
-
-// 						<ScrollAnimation
-// 							animateOnce={true}
-// 							animateIn='fadeInUp'
-// 							duration={0.4}
-// 							delay={250}>
-// 							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
-// 							<div className='icons_text'>
-// 								<h2>{dpos_heading}</h2>
-// 								<p>{dpos_content}</p>
-// 							</div>
-// 						</ScrollAnimation>
-
-// 					</Col>
-// 					<Col sm={4}>
-	
-// 						<ScrollAnimation
-// 							animateOnce={true}
-// 							animateIn='fadeInUp'
-// 							duration={0.4}
-// 							delay={500}>
-// 							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
-// 							<div className='icons_text'>
-// 								<h2>{gov_heading}</h2>
-// 								<p>{gov_content}</p>
-// 							</div>
-// 						</ScrollAnimation>
-
-// 					</Col>
-// 				</Row>
-// 			</Grid>
-// 		</section>
-// 	);
-// };
 
 const Exchanges = () => {
 	return (
