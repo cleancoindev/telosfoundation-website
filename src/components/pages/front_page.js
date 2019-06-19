@@ -60,7 +60,7 @@ const exchangesArr = [
 	{
 		name: 'cointiger',
 		img: cointiger_button,
-		url: 'https://www.cointiger.com/en-us'
+		url: 'https://www.cointiger.com'
 	},
 	{
 		name: 'newdex',
