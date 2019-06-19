@@ -221,52 +221,6 @@ const ElectedArbitrators = ({elected_arbitrators, candidate_section}) => {
 	);
 };
 
-const ArbitratorCandidates = ({candidate_section}) => {
-	return (
-		<section id='arbitrator_candidates'>
-			<Row>
-				<Col md={12}>
-					<ScrollAnimation
-						animateOnce
-						animateIn='fadeIn'
-						duration={0.5}
-						delay={250}
-					>
-						<h2>{candidate_section.heading}</h2>
-					</ScrollAnimation>
-					<hr />
-					<div className='candidate_list'>
-						{
-							candidate_section.candidates.map((arb, i) => {
-								return (
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-									>
-										<ArbitratorCandidate
-											key={i}
-											cand_name={arb.name}
-											cand_vote_name={arb.vote_name}
-											cand_description={arb.description}
-											cand_statement={arb.statement}
-											cand_image={arbitratorPortraits[arb.portrait]}
-											cand_languages={arb.languages}
-											cand_country={arb.country}
-											languages_heading={candidate_section.languages_heading}
-											country_heading={candidate_section.country_heading}
-											vote_heading={candidate_section.vote_heading} />
-									</ScrollAnimation>
-								);
-							})
-						}
-					</div>
-				</Col>
-			</Row>
-		</section>
-	);
-};
-
 const ArbitratorCandidate = (
 		{
 			cand_name,

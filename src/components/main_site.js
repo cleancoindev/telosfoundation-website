@@ -1,17 +1,12 @@
 import React from 'react';
 import FrontPage from './pages/front_page';
-import ExchangeOutreach from './pages/exchange_outreach';
-import RewardsTranslate from './pages/rewards_translate'; //component that uses json file, ready for localization
-import Checklist from './pages/checklist';
 import Download from './pages/download';
 import Arbitrator from './pages/arbitrator';
-import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
 import Governance from './pages/governance';
 import FAQPage from './pages/faq';
 import BlockProducerCandidates from './pages/block_prod_candidates';
 import HowToVote from './pages/how_to_vote';
-import RewardsSubmission from './pages/rewards_submission';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import Header from './header';

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Slider from 'react-slick';
 import {Helmet} from 'react-helmet';
 
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {selectLanguage} from '../../actions';
+import Slider from '../slider/slider';
 
 import dapps_currency from '../../img/dapps/currency_and_commerce.jpg';
 import dapps_gig from '../../img/dapps/gig_economy.jpg';
@@ -17,9 +17,9 @@ import compatibility from '../../img/dapps/compatibility.png';
 import powerful from '../../img/dapps/powerful.png';
 import proprietary from '../../img/dapps/proprietary.png';
 import secure from '../../img/dapps/secure.png';
-
-import arrow_next from '../../img/dapps/arrow_next_white.png';
-import arrow_prev from '../../img/dapps/arrow_prev_white.png';
+import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
+import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
+import icon_governance from '../../img/Telos_MarketingSite_Icon_governance_200px.png';
 
 import '../../styles/dapps.css';
 
@@ -33,14 +33,45 @@ class DAppsPage extends Component {
 	}
 
 	render(){
-		const {dapps_page} = this.props;
+		const {
+			dapps_page, 
+			dapps_page: {slides} } = this.props;
+		let slidesArr = [];
+		slidesArr.push({
+			img: dapps_gig,
+			heading: slides.gigs.heading,
+			paragraphs: slides.gigs.content
+		});
+		slidesArr.push({
+			img: dapps_currency,
+			heading: slides.currency.heading,
+			paragraphs: slides.currency.content
+		});
+		slidesArr.push({
+			img: dapps_records,
+			heading: slides.records.heading,
+			paragraphs: slides.records.content
+		});
+
 		return (
 			<div className='dapps'>
 				<Helmet>
 					<title>Telos Dapps Development</title>
 				</Helmet>
 				<DAppsIntro intro={dapps_page.intro} />
-				<DAppsSlider slides={dapps_page.slides} />
+				<IconsText
+					developers_heading={dapps_page.intro.developers_heading}
+					developers_content={dapps_page.intro.developers_content}
+					dpos_heading={dapps_page.intro.dpos_heading}
+					dpos_content={dapps_page.intro.dpos_content}
+					gov_heading={dapps_page.intro.gov_heading}
+					gov_content={dapps_page.intro.gov_content} />
+				<section id='dapps_slider'>
+					<header>
+						<h2>The Future of Dapps on Telos</h2>
+					</header>
+					<Slider slides={slidesArr} />
+				</section>
 				<DAppContent dapp_sections={dapps_page.dapp_sections} />
 			</div>
 		);
@@ -114,110 +145,57 @@ const DAppsIntro = ({intro}) => {
 	);
 };
 
-class DAppsSlider extends Component {
-
-	constructor(props){
-		super(props);
-
-		this.handleNext = this.handleNext.bind(this);
-		this.handlePrevious = this.handlePrevious.bind(this);
-	}
-
-	handleNext(){
-		this.slider.slickNext();
-	}
-
-	handlePrevious(){
-		this.slider.slickPrev();
-	}
-
-	render(){
-		const {slides} = this.props;
-
-		const dappsSlides = [
-			{
-				img: dapps_gig,
-				heading: slides.gigs.heading,
-				paragraphs: slides.gigs.content
-			},
-			{
-				img: dapps_currency,
-				heading: slides.currency.heading,
-				paragraphs: slides.currency.content
-			},
-			{
-				img: dapps_records,
-				heading: slides.records.heading,
-				paragraphs: slides.records.content
-			}
-		];
-
-		const settings = {
-			dots: false,
-			infinite: true,
-			speed: 500,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			adaptiveHeight: true,
-			autoplay: true,
-			autoplaySpeed: 10000
-		};
-
-		const nextStyle = {
-			backgroundImage: `url(${arrow_next})`
-		};
-
-		const prevStyle = {
-			backgroundImage: `url(${arrow_prev})`
-		};
-
-		return (
-			<section id='dapps_slider'>
-				<header>
-					<h2>The Future of Dapps on Telos</h2>
-				</header>
-				<Slider 
-					{...settings}
-					ref={el => this.slider = el}
-				>
-					{dappsSlides.map((slide, i) => {
-						return (
-							<DAppSlide
-								key={i}
-								img={slide.img}
-								heading={slide.heading}
-								paragraphs={slide.paragraphs} />
-						);
-					})}
-				</Slider>
-				<button
-					className='slider_arrow previous'
-					style={prevStyle}
-					onClick={this.handlePrevious} />
-				<button
-					className='slider_arrow next'
-					style={nextStyle}
-					onClick={this.handleNext} />
-			</section>
-		);
-	}
-}
-
-const DAppSlide = (props) => {
-	const slideImageStyle = {
-		backgroundImage: `url(${props.img})`
-	};
-
+const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
 	return (
-		<div className='dapps_slide'>
-			<div className='slide_image' style={slideImageStyle}></div>
-			<div className='slide_content_container'>
-				<div className='slide_content'>
-					<h4>{props.heading}</h4>
-					{props.paragraphs.map((par, i) => <p key={i}>{par}</p>)}
-				</div>
-			</div>
-		</div>
+		<section id='front_page_icons'>
+			<Grid>
+				<Row>
+					<Col sm={4}>
+
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}>
+							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{developers_heading}</h2>
+								<p>{developers_content}</p>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col sm={4}>
+
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}
+							delay={250}>
+							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{dpos_heading}</h2>
+								<p>{dpos_content}</p>
+							</div>
+						</ScrollAnimation>
+
+					</Col>
+					<Col sm={4}>
+	
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeInUp'
+							duration={0.4}
+							delay={500}>
+							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
+							<div className='icons_text'>
+								<h2>{gov_heading}</h2>
+								<p>{gov_content}</p>
+							</div>
+						</ScrollAnimation>
+
+					</Col>
+				</Row>
+			</Grid>
+		</section>
 	);
 };
 

@@ -28,87 +28,145 @@ class Header extends Component {
 								e.preventDefault();
 							}}
 						>
-							<LanguageToggleDesktop />
 							<NavItem
-								onClick={e => {
+								onSelect={(key, e) => {
 									e.preventDefault();
-									window.open('https://medium.com/@teloslogical');
+									this.props.history.push(`/foundation`);
 								}}
-								href='https://medium.com/@teloslogical'
 							>
-								BLOG
+								FOUNDATION
 							</NavItem>
-							<NavDropdown title="MONITOR" id="basic-nav-dropdown">
+							<NavDropdown title="TELOS NETWORK" id="basic-nav-dropdown">
+								<MenuItem
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/candidates`);
+									}}
+								>
+									BLOCK PRODUCERS
+								</MenuItem>
+								<MenuItem
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/roadmap`);
+									}}
+								>
+									DEVELOPMENT ROADMAP
+								</MenuItem>
+							
+									<NavDropdown title="MONITORS" id="basic-nav-dropdown">
+								<Navbar.Header>Mainnet</Navbar.Header>
 								<MenuItem 
 									onClick={(e) => {
 										e.preventDefault();
-										window.open('https://mon-test.telosfoundation.io');
+										window.open('https://monitor.telosfoundation.io/');
 									}}
-									href="https://mon-test.telosfoundation.io"
+									href="https://monitor.telosfoundation.io/"
 								>
-									Testnet
+									Telos Foundation
 								</MenuItem>
 								<MenuItem
 									onClick={(e) => {
 										e.preventDefault();
-										window.open('https://monitor.telosfoundation.io');
+										window.open('https://telostracker.io/monitor');
 									}} 
-									href="https://monitor.telosfoundation.io"
+									href="https://telostracker.io/monitor"
 								>
-									Mainnet
+									Telos Tracker
 								</MenuItem>
-						    </NavDropdown>
-						    <NavDropdown
-						    	title="MORE"
-						    	id="more-nav-dropdown"
-						    	onSelect={(key, e) => {
-						    		e.preventDefault();
-						    		this.props.history.push(`/${key}`);
-						    	}}
-						    >
-						    	<MenuItem
-						    		eventKey='candidates'
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://telos.eosx.io/');
+									}} 
+									href="https://telos.eosx.io/"
+								>
+									EosX
+								</MenuItem>
+								<Navbar.Header>Testnet</Navbar.Header>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://mon-test.telosfoundation.io/');
+									}} 
+									href="https://mon-test.telosfoundation.io/"
+								>
+									Telos Foundation
+								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://telos-test.eosx.io/');
+									}} 
+									href="https://telos-test.eosx.io/"
+								>
+									EosX
+								</MenuItem>
+							</NavDropdown>
+							</NavDropdown>
+							<NavDropdown title="BUILDING ON TELOS" id="basic-nav-dropdown">
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/dapps`);
+									}}
+								>
+									Building dApps
+								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://enterprise.telosfoundation.io');
+									}} 
+									href="https://enterprise.telosfoundation.io"
+								>
+									Enterprise Business Solutions
+								</MenuItem>
+							</NavDropdown>
+							<NavDropdown
+								title="MORE"
+								id="more-nav-dropdown"
+								onSelect={(key, e) => {
+									e.preventDefault();
+									this.props.history.push(`/${key}`);
+								}}
+							>
+								<MenuItem
+						    		eventKey='arbitrators'
 						    	>
-						    		BP Candidates
-						    	</MenuItem>
-						    	<MenuItem
+									Arbitration
+								</MenuItem>
+								<MenuItem
 						    		eventKey='governance'
 						    	>
 									Governance
 								</MenuItem>
 								<MenuItem
-						    		eventKey='arbitrators'
-						    	>
-									Arbitrator Program
-								</MenuItem>
-								<MenuItem
-						    		eventKey='dapps'
-						    	>
-									Dapp Development
-								</MenuItem>
-								<MenuItem
 						    		eventKey='downloads'
 						    	>
-									Downloads
+									Resources
 								</MenuItem>
 								<MenuItem
 						    		eventKey='faq'
 						    	>
 									FAQ
 								</MenuItem>
-						    </NavDropdown>
+							</NavDropdown>
+							<LanguageToggleDesktop />
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-				<nav className='process_page_nav'>
-					<Grid>
-						<ul>
-							<li><a href="#future_anchor">ROADMAP</a></li>
-							<li><a href="#team_anchor">TEAM</a></li>
-							<li><a href="#history_anchor">PROJECT HISTORY</a></li>
-						</ul>
-					</Grid>
-				</nav>
+				{this.props.location.pathname === '/roadmap' && (
+					<nav className='process_page_nav'>
+						<Grid>
+							<ul>
+								<li><a href="#future_anchor">ROADMAP</a></li>
+								<li><a href="#team_anchor">TEAM</a></li>
+								<li><a href="#history_anchor">PROJECT HISTORY</a></li>
+							</ul>
+						</Grid>
+					</nav>
+				)}
 			</header>
 		);
 	}
