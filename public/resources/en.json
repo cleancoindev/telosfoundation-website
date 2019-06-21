@@ -401,6 +401,7 @@
     },
     "elected_arbitrators": [
       {
+        "key": 0,
         "name": "Blake Lagarde",
         "statement": [
           "Having received a B.S. Biological Sciences (2007) and a B.S. Nursing (2010) from Louisiana State University, Blake Lagarde’s journey towards arbitration candidacy is a unique one. He has spent his decade long professional career as a Registered Nurse, presently at Children’s Hospital in his home town of New Orleans.  What he lacks in traditional law practice is made up by first hand experience with and a passion for EOS and Telos (and Ethereum by proxy) blockchain token recovery.  Nearly 2 weeks after the EOS Genesis Snapshot and Mainnet launch, Blake personally created the now 1,300 member EOS Lost Non-Compromised (Genesis) Key Group on Telegram--an EOS 911 partner.  He has also served as an administrator for the 2,200 member EOS 911, known together with the former as the \"EOS Lost Key Community.\"  He has led the effort to find a <a href=\"https://medium.com/@blaketlagarde/safe-recovery-of-eos-genesis-accounts-with-lost-non-compromised-private-keys-944d48a6dde6\" target=\"_blank\" rel=\"noopener noreferrer\">solution</a> for those with lost non-compromised genesis keys (as well as some fringe cases).  He penned the EOS Lost Key <a href=\"https://www.change.org/p/eos-block-producers-ecaf-a-solution-for-individuals-with-lost-non-compromised-eos-private-keys\" target=\"_blank\" rel=\"noopener noreferrer\">Petition</a> which has garnered the support and signature of over 1,700+ individuals.  Through Blake’s personal outreach the Lost Key movement has also received endorsement or support from over 30 EOS Block Producers, many of whom fill the ‘Top 21’ today.  Because of the work in and commitment to the EOS Lost Key community, he was approached by Douglas Horn to join the Telos Launch Group (TLG) with a focus on token recovery.",
@@ -411,6 +412,7 @@
         "portrait": "blake_lagarde"
       },
       {
+        "key": 1,
         "name": "Justin Yashouafar",
         "statement": [
           "Justin.arb is owned 100% by Justin Yashouafar.",
@@ -422,6 +424,7 @@
         "portrait": "justin_yashouafar"
       },
       {
+        "key": 2,
         "name": "Chijioke Ilochonwu",
         "statement": [
           "\"My name is Chijioke Ilochonwu. I am a Telos Blockchain Arbitrator. I am the owner of Nobles, a shipping and logistics company that cordinates the movement goods and services overseas. I hold a bachelors degree in Pure and Industrial Chemistry. I also authored the book, \"You Shall Know the Truth About Tithing,\" which you can preview and purchase on Amazon @ <a href=\"https://www.amazon.com/shall-know-truth-about-tithing/dp/0989356701\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.amazon.com/shall-know-truth-about-tithing/dp/0989356701</a>. Originally from Nigeria, now a naturalized citizen of the United States, my journey to who I am and what I have become today is because of my faith and personal relationship with Jesus Christ who has carried me since I committed my life to Him during my last year of college in 1999. This definitely sustained me through the first few trying years when I arrived in the United States with only $20 in my pocket.\"",
@@ -431,6 +434,7 @@
         "portrait": "chijioke"
       },
       {
+        "key": 3,
         "name": "Mikko Ohtamaa",
         "statement": [
           "Mikko is chief technical officer, open source advocate, blockchain developer.",
@@ -444,6 +448,7 @@
         "languages": ["English", "Finnish"]
       },
       {
+        "key": 4,
         "name": "Marc-Roger Gagné",
         "description": "CCIE, CCII, CIPP/G/C, MAPP",
         "statement": [
@@ -456,6 +461,7 @@
         "portrait": "marc_roger"
       },
       {
+        "key": 5,
         "name": "Mariela Josefina Mejias de Coronado",
         "statement": [
           "Venezuelan nationality, resides in a town of the beautiful Capital City Barcelona, Anzoategui state, a city with a history of heroes and liberators of great relevance for my country. I consider myself an excellent Arbiter of Telos, for being a woman who practices justice, love of neighbor, truth, respect, honesty, wisdom, humility, knowledge, with the vision of helping others, directing them, motivate them in the right way, the way of love and prosperity.",
@@ -470,6 +476,7 @@
         "portrait": "placeholder"
       },
       {
+        "key": 6,
         "name": "Sean M. King (金世翔)",
         "statement": [
           "Overview:",
@@ -479,6 +486,20 @@
           "\"I firmly believe in a transparent and decentralized blockchain where all disputes are handled in an open and 'innocent until proven guilty' manner; where people should not be blacklisted without due process, as this goes against the spirit of blockchain which rejects arbitrary exclusion that we see in so many other parts of society; where users should have free access to their own funds, tokens, and accounts without interference unless clear evidence has been presented to the contrary, and unless the person in question has had a chance to dispute that evidence in a fair and open manner.\""
         ],
         "portrait": "sean_m_king"
+      },
+      {
+        "key": 7,
+        "name": "Chukwuemeka, Ukamaka Patience",
+        "statement": [
+          "My name is Chukuemeka, Ukamaka. I am from Anambra State which is the Eastern part of Nigeria, but I live and work in the Capital, the Northern part of the Country. For the past 8 Years, I have worked as the Warehouse Supervisor for an International Pharmaceutical company. I hold a bachelor’s degree and currently running a Post Graduate Diploma in Logistics &amp; Supply Chain Management and Warehousing & Materials Management from College of Supply Chain Management Nigeria.",
+          "Through my extensive warehouse management experience spanning almost a decade, I have developed strong expertise in successfully overseeing logistics, medical, and inventory control while collaborating with multicultural, diverse staff to maximize productivity, efficiency, and overall warehouse performance. Through my experience, I have become adept in ensuring adherence to organizational goals and requirements while facilitating streamlined warehouse operations.",
+          "All my life, I’ve have always love to serve which is why I have made myself available and approachable to others in order to assist in any way that I can be of help. When I was newly introduced to the Blockchain, I loved it especially the dynamics of it. Steemit was the platform account that I created. At first, I had difficulties trying to fit into the platform for the first three months. Then, I met the founder of steemchurch in a person of Sirknight who was so helpful in helping young steemians find their feet.",
+          "This actually motivated my friends and me in creating a community account where newbies are tutored, nurtured, and within a short period of time, we were able to help about 300 newcomers on the platform. We were also able to go round the states in Nigeria, talking to universities students about the platform and Blockchain.",
+          "The nature of my offline job has also contributed a lot in helping to build my inter-personal relationship. As a Supervisor heading six states, the primary aim of my job is to make sure our customers are satisfied. This I have achieved by prompt delivery and making sure that their complaints are been well handled.",
+          "Serving as Telos Arbitrator will give me the opportunity to showcase the skills that I’ve learned over these years in the course of my job. My skills include: commitment: actively contributes to achieving organizational goals; honest; hard-working; diversity: respects others and values their diverse perspectives and contribution; integrity: acts in a manner consistent with the organizational core values and organizational principles; accountability: takes responsibility for my own action and delegated work; ability to interact in a helpful manner; time management; decision making and problem-solving skills; excellent personal communication skills, in written and verbal English; team player.",
+          "I have always been a strong believer of the Blockchain and have invested time, energy, and money to it. I have also wanted to be involved in a community whose goal is to better the quality of life of humanity and I would state here that it would be an honor to join the Telos community. I know I will find fulfillment from having an opportunity to serve as Arbitrator because for me, blockchain is the future!"
+        ],
+        "portrait": "chukwuemeka"
       }
     ],
     "candidate_section": {
