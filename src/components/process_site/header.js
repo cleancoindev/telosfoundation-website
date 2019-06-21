@@ -56,6 +56,24 @@ class Header extends Component {
 							
 									<NavDropdown title="MONITORS" id="basic-nav-dropdown">
 								<Navbar.Header>Mainnet</Navbar.Header>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://telos.bloks.io/');
+									}} 
+									href="https://telos.bloks.io/"
+								>
+									Bloks
+								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://telos.eosx.io/');
+									}} 
+									href="https://telos.eosx.io/"
+								>
+									EosX
+								</MenuItem>
 								<MenuItem 
 									onClick={(e) => {
 										e.preventDefault();
@@ -74,25 +92,7 @@ class Header extends Component {
 								>
 									Telos Tracker
 								</MenuItem>
-								<MenuItem
-									onClick={(e) => {
-										e.preventDefault();
-										window.open('https://telos.eosx.io/');
-									}} 
-									href="https://telos.eosx.io/"
-								>
-									EosX
-								</MenuItem>
 								<Navbar.Header>Testnet</Navbar.Header>
-								<MenuItem
-									onClick={(e) => {
-										e.preventDefault();
-										window.open('https://mon-test.telosfoundation.io/');
-									}} 
-									href="https://mon-test.telosfoundation.io/"
-								>
-									Telos Foundation
-								</MenuItem>
 								<MenuItem
 									onClick={(e) => {
 										e.preventDefault();
@@ -101,6 +101,15 @@ class Header extends Component {
 									href="https://telos-test.eosx.io/"
 								>
 									EosX
+								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://mon-test.telosfoundation.io/');
+									}} 
+									href="https://mon-test.telosfoundation.io/"
+								>
+									Telos Foundation
 								</MenuItem>
 							</NavDropdown>
 							</NavDropdown>
