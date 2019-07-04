@@ -111,6 +111,15 @@ class Header extends Component {
 								>
 									Telos Foundation
 								</MenuItem>
+								<MenuItem
+									onClick={(e) => {
+										e.preventDefault();
+										window.open('https://testnet.telostracker.io/');
+									}} 
+									href="https://testnet.telostracker.io/"
+								>
+									Telos Tracker
+								</MenuItem>
 							</NavDropdown>
 							</NavDropdown>
 							<NavDropdown title="BUILDING ON TELOS" id="basic-nav-dropdown">
