@@ -175,6 +175,11 @@ class Header extends Component {
 									Resources
 								</MenuItem>
 								<MenuItem
+						    		eventKey='proposal'
+						    	>
+									Worker Proposals
+								</MenuItem>
+								<MenuItem
 						    		eventKey='faq'
 						    	>
 									FAQ
