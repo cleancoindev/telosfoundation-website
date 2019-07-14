@@ -26,12 +26,11 @@ import myteloswallet_logo from '../../img/my_telos_wallet.png';
 import carbon_logo from '../../img/stable_coin/CarbonLogo.png';
 import math_logo from '../../img/app_icon_rounded_1024.png';
 
-import splash_expo from '../../img/banners/SplashBanner_BlockchainExpo.png';
-import splash_hacker from '../../img/banners/SplashBanner_ReadyHackerOne.png';
 import splash_exchange from '../../img/banners/SplashBanner_Exchange.png';
 import splash_wallets from '../../img/banners/SplashBanner_Wallets.jpg';
 import splash_enterprise from '../../img/banners/SplashBanner_Enterprise.png';
 import splash_dapp from '../../img/banners/SplashBanner_Dapp.jpg';
+import splash_grant from '../../img/banners/SplashBanner_Grant.jpeg';
 
 
 import '../../styles/front_page.css';
@@ -76,23 +75,12 @@ const exchangesArr = [
 
 const slidesArr = [
 	{
-		img: splash_expo,
-		heading: 'Blockchain Expo EUROPE 2019',
+		img: splash_grant,
+		heading: 'Telos Grant Program',
 		paragraphs: [
-			'Come visit the Telos Foundation at booth #289 on June 19-20, 2019 in Amsterdam.',
-			'Demo both the power and depth of Telos, and deep dive into what Telos can do for you.'
+			'Earn TLOS to build on EOSIO!',
 		],
-		url: 'https://blockchain-expo.com/europe/'
-	},
-	{
-		img: splash_hacker,
-		heading: 'Ready Hacker One',
-		paragraphs: [
-			'Use the power of Telos and EOSIO to enhance a new or pre-existing game. The game can be simple or complex, the key is how you use blockchain to make gaming engaging and fun!',
-			'June 30th 2019 - Submissions Close',
-			'readyhackerone.telosfoundation.io'
-		],
-		url: 'https://readyhackerone.telosfoundation.io'
+		url: '/grant'
 	},
 	{
 		img: splash_exchange,
