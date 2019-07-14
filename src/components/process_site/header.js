@@ -40,6 +40,14 @@ class Header extends Component {
 								<MenuItem 
 									onSelect={(key, e) => {
 										e.preventDefault();
+										this.props.history.push(`/history`);
+									}}
+								>
+									Telos History
+								</MenuItem>
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
 										this.props.history.push(`/grant`);
 									}}
 								>
