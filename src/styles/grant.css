@@ -1,0 +1,96 @@
+.grant_form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size:1.2em
+}
+
+.grant_form a {
+	font-size: 1em;
+}
+
+#grant_content p {
+	font-size: 1.2em;
+}
+
+#grant_content p.row_header {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom:12px;
+}
+
+#grant_content .intro_logo_container {
+	text-align: center;
+}
+
+#grant_content .intro_logo_container img {
+	display: block;
+	width: 500px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#grant_content .intro_logo_container h1 {
+	font-size: 4.5em;
+	font-weight: 200;
+}
+
+@media screen and (max-width: 991px){
+	#grant_content .intro_logo_container h1 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#grant_content .intro_logo_container h1 {
+		font-size: 2.5em;
+	}
+}
+
+#grant_intro .grant_content .btn-primary {
+	margin-bottom: 35px;
+	background-color: #635b50;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 1.5em;
+	padding: 5px 8px;
+	border-radius: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#grant_intro .grant_content .btn-primary:hover {
+	background-color: #4A4237;
+	color: #fff;
+	text-decoration: none;
+}
+
+#grant_intro .grant_content .btn-primary:active,
+#grant_intro .grant_content .btn-primary:focus {
+	outline: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+
+.warning {
+    color: #ff0000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
