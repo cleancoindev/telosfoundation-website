@@ -54,7 +54,7 @@ const HistoryContent = () => {
                                 <li>The first ever Worker Proposal System launched on an EOSIO blockchain</li>
 							</ul>
                             <br></br>
-                            <p>Q2 was ushered in with the first worker proposals passing, listing on CoinTiger and Newdex, multiple new wallets and Vapaee, the first Telos DEX, live launched with development supported by the Telos WPS.  Telos Foundation also introduced its monthly grant program and announced the first grant recipient.</p>
+                            <p>Q2 was ushered in with the first worker proposals passing, listing on CoinTiger and Newdex, multiple new wallets and Vapaée, the first Telos DEX, live launched with development supported by the Telos WPS.  Telos Foundation also introduced its monthly grant program and announced the first grant recipient.</p>
 						</div>
 					</Col>
 				</Row>
