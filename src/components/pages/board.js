@@ -142,7 +142,6 @@ const Board = () => {
 			>
 			<BoardIntro />
 			</ScrollAnimation>
-			<FoundationGrantProgram/>
 			<ExecutiveNominees />
 			<BoardNominees />
 			<InterimNominees />
@@ -179,30 +178,6 @@ const BoardIntro = () => {
 								</li>
 							</ul>
 						</div>
-					</Col>
-				</Row>
-			</Grid>
-		</section>
-	);
-};
-
-const FoundationGrantProgram = () => {
-	return (
-		<section id='interim_nominees'>
-			<header>
-				<h2>The Telos Foundation Grant program</h2>
-			</header>
-			<Grid>
-				<Row>
-					<Col md={10} mdOffset={1}>
-						<ScrollAnimation
-							animateOnce
-							animateIn='fadeInUp'
-							duration={0.4}
-						>
-							<p className='interim_intro'>The Telos Foundation is a promotional and funding body, dedicated to advancing the Telos Blockchain Network. The aim of the Telos Foundation is to provide grants to groups promoting necessary network functions that cannot or are not otherwise supported by worker proposals.</p>
-							<p className='interim_intro'>A primary part of the Telos Foundation mission is to provide granting opportunities to the community. With a focus on encouraging the creative and innovative communities that share EOSIO, anyone who meets the requirements is encouraged to apply. You can learn more about the program here: <br/> <a href= "https://medium.com/@teloslogical/the-telos-foundation-grant-program-e7b1253d5368">https://medium.com/@teloslogical/the-telos-foundation-grant-program-e7b1253d5368. </a></p>
-						</ScrollAnimation>
 					</Col>
 				</Row>
 			</Grid>
