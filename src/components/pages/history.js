@@ -2,7 +2,9 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
-import history_timeline from '../../img/charts/timeline.png';
+import history_timeline_sm from '../../img/charts/timeline_sm.png';
+import history_timeline_lg from '../../img/charts/timeline_lg.png';
+import ModalImage from 'react-modal-image';
 
 import '../../styles/history.css';
 
@@ -57,8 +59,12 @@ const HistoryContent = () => {
 				</Row>
                 <Row>
 					<Col md={10} mdOffset={1}>
-                        <div className='intro_logo_container'>
-                            <img src={history_timeline} alt="history timeline"></img>
+                        <div>
+                            <ModalImage
+                                small={history_timeline_sm}
+                                medium={history_timeline_lg}
+                                alt="telos history timeline"                            
+                            />
 						</div>
 					</Col>
 				</Row>
