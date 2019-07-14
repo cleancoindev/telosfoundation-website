@@ -60,7 +60,7 @@ const HistoryContent = () => {
 				</Row>
                 <Row>
 					<Col md={10} mdOffset={1}>
-                        <div>
+                        <div className="history_image">
                             <ModalImage
                                 small={history_timeline_sm}
                                 medium={history_timeline_lg}

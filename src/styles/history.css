@@ -2,6 +2,12 @@
     padding-bottom: 50px;
 }
 
+.history_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #history_content p,a {
 	font-size: 1.2em;
 }
