@@ -1,0 +1,54 @@
+.history_container {
+    padding-bottom: 50px;
+}
+
+#history_content p,a {
+	font-size: 1.2em;
+}
+
+#history_content .intro_logo_container {
+	text-align: center;
+}
+
+#history_content .intro_logo_container img {
+	display: block;
+	width: 500px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#history_content .intro_logo_container h1 {
+	font-size: 4.5em;
+	font-weight: 200;
+}
+
+@media screen and (max-width: 991px){
+	#history_content .intro_logo_container h1 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#hsitory_content .intro_logo_container h1 {
+		font-size: 2.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
