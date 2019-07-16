@@ -27,8 +27,7 @@ const ProposalContent = () => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<div className='intro_logo_container'>
-							<img src={foundation_logo} alt='telos foundation logo' />
-							<h1><strong>Telos</strong> Worker Proposal System</h1>
+							<h1>Telos Worker Proposal System</h1>
 						</div>
 					</Col>
 				</Row>
