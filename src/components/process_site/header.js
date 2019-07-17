@@ -28,14 +28,32 @@ class Header extends Component {
 								e.preventDefault();
 							}}
 						>
-							<NavItem
-								onSelect={(key, e) => {
-									e.preventDefault();
-									this.props.history.push(`/foundation`);
-								}}
-							>
-								FOUNDATION
-							</NavItem>
+							<NavDropdown title="FOUNDATION" id="basic-nav-dropdown">
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/foundation`);
+									}}
+								>
+									About
+								</MenuItem>
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/history`);
+									}}
+								>
+									Telos History
+								</MenuItem>
+								<MenuItem 
+									onSelect={(key, e) => {
+										e.preventDefault();
+										this.props.history.push(`/grant`);
+									}}
+								>
+									Telos Foundation Grant Program
+								</MenuItem>
+							</NavDropdown>
 							<NavDropdown title="TELOS NETWORK" id="basic-nav-dropdown">
 								<MenuItem
 									onSelect={(key, e) => {
@@ -163,6 +181,11 @@ class Header extends Component {
 						    		eventKey='downloads'
 						    	>
 									Resources
+								</MenuItem>
+								<MenuItem
+						    		eventKey='proposal'
+						    	>
+									Worker Proposals
 								</MenuItem>
 								<MenuItem
 						    		eventKey='faq'

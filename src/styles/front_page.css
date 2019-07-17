@@ -1,9 +1,34 @@
 #front_page_intro {
-	margin-top: -65px;
+	/* margin-top: -65px; */
+}
+
+#front_page_intro .title_header{
+	 text-align: center;
+	 margin-bottom: 50px;
+}
+
+#front_page_intro .title_header h1{
+	font-weight: 500;
+    font-size: 5em;
+}
+#front_page_intro .title_header h2{
+	font-weight: 500;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 500px){
+	#front_page_intro .title_header h1{
+		font-weight: 500;
+		font-size: 3em;
+	}
+	#front_page_intro .title_header h2{
+		font-weight: 600;
+		font-size: 1em;
+	}
 }
 
 #front_page_icons {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 50px 0;
 }
 
@@ -79,7 +104,7 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background: #c2beae;
+	background: #bebebe;
 	z-index: -1;
 	animation: pulse 3s infinite;
 }
@@ -101,7 +126,7 @@
 }
 
 #partners header {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 25px 0;
 	margin-bottom: 50px;
 }
@@ -159,7 +184,7 @@
 }
 
 #exchanges header {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 25px 0;
 	margin-bottom: 50px;
 }
@@ -222,7 +247,7 @@
 }
 
 #wallets header {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 25px 0;
 	margin-bottom: 50px;
 }
@@ -255,12 +280,12 @@
 #wallets .cs_wallet::after {
 	content: "*";
 	font-size: 2.5em;
-	color: #c2beae;
+	color: #bebebe;
 	position: absolute;
 }
 
 #wallets .cs_wallets::after:hover {
-	color: #c2beae;
+	color: #bebebe;
 }*/
 
 #wallets footer {
@@ -269,7 +294,7 @@
 }
 
 #wallets footer p {
-	color: #c2beae;
+	color: #bebebe;
 }
 
 /*#wallets .wallet_banners {
@@ -346,7 +371,7 @@
 	content: "*";
 	font-size: 2.5em;
 	position: absolute;
-	color: #c2beae;
+	color: #bebebe;
 	right: -20px;
 	top: -5px;
 }
@@ -356,7 +381,7 @@
 }
 
 #stable_coin header {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 25px 0;
 	margin-bottom: 50px;
 }

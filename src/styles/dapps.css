@@ -54,7 +54,7 @@
 }
 
 #dapps_intro .intro_buttons .btn-primary {
-	background-color: #ed4a2e;
+	background-color: #ef682f;
 	border-color: transparent;
 	transition: background-color 0.15s ease;
 	font-size: 2em;
@@ -105,7 +105,7 @@
 }
 
 #dapps_slider header {
-	background: #c2beae;
+	background: #bebebe;
 	padding: 25px 0;
 	text-align: center;
 	position: relative;
@@ -118,7 +118,7 @@
 }
 
 .dapps_slide {
-	background: #625a51;
+	background: #5f5f5f;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

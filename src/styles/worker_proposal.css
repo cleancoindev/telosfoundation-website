@@ -1,0 +1,61 @@
+.proposal_container {
+    padding-bottom: 50px;
+}
+
+#proposal_content p,a {
+	font-size: 1.2em;
+}
+
+#proposal_content p.row_header {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom:12px;
+}
+
+#proposal_content .intro_logo_container {
+	text-align: center;
+}
+
+#proposal_content .intro_logo_container img {
+	display: block;
+	width: 500px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#proposal_content .intro_logo_container h1 {
+	font-size: 4.5em;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 991px){
+	#proposal_content .intro_logo_container h1 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#proposal_content .intro_logo_container h1 {
+		font-size: 2.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

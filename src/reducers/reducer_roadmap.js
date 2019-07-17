@@ -410,6 +410,160 @@ export default function(){
 					link: 'https://blocktivity.info/'
 				}
 			]
+		},
+		{
+			month: 'February',
+			year: 2019,
+			stage: 'two',
+			items: [
+				{
+					category: 'tools',
+					content: 'Math wallet, MyTelos wallet deploy',
+					link: 'https://myteloswallet.one/dashboard'
+				},
+				{
+					category: 'network',
+					content: 'First tokensale on Telos'
+				},
+				{
+					category: 'community',
+					content: 'Telos Users\' Guide published',
+					link: 'https://medium.com/goodblock-io/telos-users-guide-51fde3161908'
+				},
+				{
+					category: 'community',
+					content: 'GoodGrants recipients',
+					link: 'https://medium.com/goodblock-io/goodgrant-recipient-teachology-io-7bd064f7d994'
+				},
+				{
+					category: 'governance',
+					content: 'Arbitrator elections begin'
+				},
+				{
+					category: 'community',
+					content: 'CoinGecko, Livecoin watch track TLOS'
+				},
+				{
+					category: 'community',
+					content: 'First distribution of Exchange Token Reserve funds'
+				},
+				{
+					category: 'network',
+					content: 'First airdrop for Telos accounts (QBE)'
+				},
+				{
+					category: 'tools',
+					content: 'Chainspector.io portal launched',
+					link: 'https://chainspector.io/'
+				},
+				{
+					category: 'network',
+					content: 'Token migration from Ethereum to Telos (QBE)'
+				},
+				{
+					category: 'network',
+					content: 'Token migration from EOS to Telos (EDNA)'
+				},
+				{
+					category: 'development',
+					content: 'TCD Roadmap page released'
+				},
+				{
+					category: 'tools',
+					content: 'iOS mobile wallet Kibisis released for Telos',
+					link: 'https://kibisis.ch/'
+				},
+				{
+					category: 'development',
+					content: 'ProveAccount method released'
+				}
+			]
+		},
+		{
+			month: 'March',
+			year: 2019,
+			stage: 'two',
+			items: [
+				{
+					category: 'governance',
+					content: 'First Worker Proposal ballots begin',
+					link: 'https://medium.com/goodblock-io/vote-to-support-scatter-d9e4a729317c'
+				},
+				{
+					category: 'governance',
+					content: 'First arbitrator elections close'
+				},
+				{
+					category: 'network',
+					content: 'ACORN UBI token released'
+				},
+				{
+					category: 'governance',
+					content: 'First TCD Worker Proposal submitted'
+				},
+				{
+					category: 'tools',
+					content: 'BP Monitoring Tool released'
+				},
+				{
+					category: 'governance',
+					content: 'WordProof WP passes'
+				}
+			]
+		},
+		{
+			month: 'April',
+			year: 2019,
+			stage: 'two',
+			items: [
+				{
+					category: 'development',
+					content: 'Telos IPFS expands'
+				},
+				{
+					category: 'community',
+					content: 'CoinTiger lists TLOS pairs'
+				},
+				{
+					category: 'community',
+					content: 'ABCC lists TLOS pairs'
+				},
+				{
+					category: 'network',
+					content: 'Carbon CUSD stablecoin announces Telos deployment'
+				}
+			]
+		},
+		{
+			month: 'May',
+			year: 2019,
+			stage: 'two',
+			items: [
+				{
+					category: 'governance',
+					content: 'Telos Economic Development Plan proposed'
+				},
+				{
+					category: 'governance',
+					content: 'TCD WP #2 submitted'
+				},
+				{
+					category: 'community',
+					content: 'Newdex lists TLOS and Telos tokens'
+				},
+				{
+					category: 'community',
+					content: 'Telos Blockchain Solutions consultancy launches'
+				},
+				{
+					category: 'community',
+					content: 'Vapaée native DEX launches' 
+				},
+				{
+					category: 'tools',
+					content: 'Telos native Android mobile wallet released' 
+				}
+			]
 		}
 	];
 }

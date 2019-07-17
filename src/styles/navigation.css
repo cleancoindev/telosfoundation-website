@@ -51,7 +51,7 @@
 	.main_telos_site .navbar-nav > li.rewards_nav_item > a {
 		padding: 10px 15px;
 		color: #fff;
-		background-color: #8F8B7B;
+		background-color: #5f5f5f;
 		border-radius: 4px;
 		box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.2);
 		transition: background-color 0.25s ease;
@@ -64,7 +64,7 @@
 	}
 	.main_telos_site .navbar-nav > li.rewards_nav_item > a:focus {
 		color: #fff;
-		background-color: #8F8B7B;
+		background-color: #5f5f5f;
 	}
 }
 
@@ -72,7 +72,7 @@
 	.main_telos_site .navbar-nav > li.roadmap_nav_item > a {
 		padding: 10px 15px;
 		color: #fff;
-		background-color: #ed4a2e;
+		background-color: #ef682f;
 		border-radius: 12px;
 		box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.2);
 		transition: background-color 0.25s ease;
@@ -85,7 +85,7 @@
 	}
 	.main_telos_site .navbar-nav > li.roadmap_nav_item > a:focus {
 		color: #fff;
-		background-color: #ed4a2e;
+		background-color: #ef682f;
 	}
 }
 
@@ -117,7 +117,7 @@
 }
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-	background-color: #635a51;
+	background-color: #5f5f5f;
 }
 
 @media screen and (min-width: 768px){
@@ -152,7 +152,7 @@
 }
 
 .navbar-default .navbar-toggle.collapsed .icon-bar {
-	background-color: #635a51;
+	background-color: #5f5f5f;
 }
 
 .navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2) {

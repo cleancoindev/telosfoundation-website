@@ -1,0 +1,75 @@
+.grant_form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size:1.2em
+}
+
+.grant_form a {
+	font-size: 1em;
+}
+
+#grant_content {
+	margin-top: 50px;
+}
+
+#grant_content p {
+	font-size: 1.2em;
+}
+
+#grant_content p.row_header {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom:12px;
+}
+
+#grant_content .intro_logo_container {
+	text-align: center;
+}
+
+#grant_content .intro_logo_container img {
+	display: block;
+	width: 500px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#grant_content .intro_logo_container h1 {
+	font-size: 4.5em;
+	font-weight: 200;
+}
+
+.warning {
+    color: #ff0000
+}
+
+@media screen and (max-width: 991px){
+	#grant_content .intro_logo_container h1 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#grant_content .intro_logo_container h1 {
+		font-size: 2.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

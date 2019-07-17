@@ -14,6 +14,9 @@ import Governance from './pages/governance';
 import FAQPage from './pages/faq';
 import BlockProducerCandidates from './pages/block_prod_candidates';
 import HowToVote from './pages/how_to_vote';
+import GrantProgram from './pages/grant';
+import WorkerProposal from './pages/worker_proposal';
+import History from './pages/history';
 
 import Header from './process_site/header';
 import Footer from './process_site/footer';
@@ -55,6 +58,10 @@ class ProcessSite extends Component {
 						<Route path='/candidates' component={BlockProducerCandidates} />
 						<Route path='/how_to_vote' component={HowToVote} />
 						<Route path='/roadmap' component={Roadmap} />
+						<Route path='/grant' component={GrantProgram} />
+						<Route path='/proposal' component={WorkerProposal} />
+						<Route path='/history' component={History} />
+
 
 						<Route path='/:language' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 						<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />

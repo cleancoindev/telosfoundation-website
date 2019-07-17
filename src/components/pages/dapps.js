@@ -14,7 +14,7 @@ import dapps_records from '../../img/dapps/records_and_info.jpg';
 
 import decentralized from '../../img/dapps/decentralized_LARGE.png';
 import compatibility from '../../img/dapps/compatibility.png';
-import powerful from '../../img/dapps/powerful.png';
+import powerful from '../../img/dapps/download.png';
 import proprietary from '../../img/dapps/proprietary.png';
 import secure from '../../img/dapps/secure.png';
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
@@ -99,7 +99,7 @@ const DAppsIntro = ({intro}) => {
 							</div>
 						</ScrollAnimation>
 					</Col>
-					<Col md={10} mdOffset={1}>
+					{/* <Col md={10} mdOffset={1}>
 						<div className='intro_buttons'>
 							<ScrollAnimation
 								animateOnce
@@ -138,7 +138,7 @@ const DAppsIntro = ({intro}) => {
 								</div>
 							</ScrollAnimation>
 						</div>
-					</Col>
+					</Col> */}
 				</Row>
 			</Grid>
 		</section>
