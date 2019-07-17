@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+#history_content {
+	margin-top:50px;
+}
+
 #history_content p,a {
 	font-size: 1.2em;
 }
