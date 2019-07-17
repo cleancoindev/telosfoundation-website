@@ -1,4 +1,5 @@
-import placeholder from '../img/process_site/Blank-profile.jpg';
+import placeholder from '../img/arbitrator/placeholder-femaleNO-TEXT.png';
+import hauge from '../img/process_site/John-Hauge.jpg';
 import alvaro from '../img/process_site/Alvaro-Arias.jpg';
 import andres from '../img/process_site/Andres-Berdasco.jpg';
 import brendon from '../img/process_site/Brendon-Ross.jpg';
@@ -126,7 +127,7 @@ export default function(){
 			name: 'John Hauge',
 			title: 'Developer',
 			company: 'Telos Voyager',
-			image: placeholder,
+			image: hauge,
 			bio: [
 				''
 			]

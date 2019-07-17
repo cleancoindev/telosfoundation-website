@@ -55,10 +55,10 @@
 }
 
 .react-tagsinput-tag {
-  background-color: #c2beae;
+  background-color: #bebebe;
   border-radius: 2px;
-  border: 1px solid #615a53;
-  color: #615a53;
+  border: 1px solid #5f5f5f;
+  color: #5f5f5f;
   display: inline-block;
   font-family: sans-serif;
   font-size: 13px;
@@ -104,7 +104,7 @@
 }
 
 .rewards_submission button[type="submit"] {
-  background-color: #ed4a2e;
+  background-color: #ef682f;
   border-color: transparent;
   color: #ffffff;
   transition: background-color 0.15s ease;

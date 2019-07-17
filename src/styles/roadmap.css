@@ -125,7 +125,7 @@
 }
 
 .roadmap_month.stage_one {
-	background-color: #dcd6c5;
+	background-color: #dcdcdc;
 }
 
 .roadmap_month.stage_two {
@@ -144,7 +144,7 @@
 }
 
 .roadmap_month.stage_one header {
-	background-color: #b5a78e;
+	background-color: #bebebe;
 }
 
 .roadmap_month.stage_two header {
@@ -233,7 +233,7 @@
 }
 
 #developer_team {
-	background-color: #f6f1e2;
+	background-color: #dcdcdc;
 	padding: 28px 20px;
 	position: relative;
 }
@@ -301,7 +301,7 @@
 }
 
 .dev_team_member header {
-	background-color: #b4a78f;
+	background-color: #bebebe;
 	padding: 8px 20px;
 }
 
@@ -454,7 +454,7 @@
 }
 
 .priority-Medium {
-	background-color: #dcd6c7;
+	background-color: #dcdcdc;
 }
 
 .priority-Medium h4,

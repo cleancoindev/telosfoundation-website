@@ -2,7 +2,8 @@
 /*d9632c orange*/
 
 #process_header {
-	background-color: #f6f1e1;
+	background-color:white;;
+	border-bottom: 3px solid #960b14;
 	padding: 12px 0;
 	font-family: 'ClanProNews', 'Titillium Web', sans-serif;
 	position: fixed;
@@ -129,7 +130,7 @@
 }
 
 #process_header .process_page_nav {
-	background-color: #b4a78f;
+	background-color: #bebebe;
 	position: absolute;
 	top: 100%;
 	left: 0;

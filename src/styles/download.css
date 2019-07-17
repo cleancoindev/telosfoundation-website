@@ -84,7 +84,7 @@
 }
 
 .download_page #download_wallets .btn-primary {
-	background-color: #ed4a2e;
+	background-color: #ef682f;
 	border-color: transparent;
 	transition: background-color 0.15s ease;
 	font-size: 1em;
@@ -197,7 +197,7 @@
 }
 
 .download_page .btn-primary {
-	background-color: #ed4a2e;
+	background-color: #ef682f;
 	border-color: transparent;
 	transition: background-color 0.15s ease;
 	font-size: 2em;
@@ -246,7 +246,7 @@
 }
 
 .banner_download_btn.btn-primary {
-	background-color: #ed4a2e;
+	background-color: #ef682f;
 	border-color: transparent;
 	transition: background-color 0.15s ease;
 	font-size: 2em;

@@ -153,6 +153,24 @@ class FrontPage extends Component {
 const Intro = () => {
 	return (
 		<section id='front_page_intro'>
+
+			<div className='title_header'>
+				<ScrollAnimation
+					animateOnce={true}
+					animateIn='fadeIn'
+					duration={1.0}
+					delay={500}>
+					<h1>Telos Blockchain Network</h1>
+				</ScrollAnimation>
+				<ScrollAnimation
+					animateOnce={true}
+					animateIn='fadeIn'
+					duration={1.0}
+					delay={1600}>
+					<h2>The Internet of Value is Here</h2>
+				</ScrollAnimation>
+			</div>
+		
 			<Slider
 				slides={slidesArr}
 			/>
