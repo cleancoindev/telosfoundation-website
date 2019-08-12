@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
 import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
-import suvi_rinikin from '../../img/foundation_site/Suvi.jpg';
+import suvi_rinkinen from '../../img/foundation_site/Suvi.jpg';
 import beth_farnham from '../../img/foundation_site/beth.png';
 import robert_james from '../../img/foundation_site/robert_james.jpg';
 import jan_smit from '../../img/foundation_site/Jan Smit.jpg';
@@ -33,9 +33,9 @@ const interimNominees = [
 
 const execNominees = [
 	{
-		name: 'Suvi Rinikin: President',
+		name: 'Suvi Rinkinen: President',
 		elected: '(Elected April 15, 2019)',
-		portrait: suvi_rinikin,
+		portrait: suvi_rinkinen,
 		bio: [
 			'Suvi was elected President in April 2019, after serving on the board as a Telos Foundation Advisory Board member. Suvi brings her extensive business development expertise to the Foundation, with a focus on expanding relationships with exchanges and businesses.','Suvi is an experienced business development consultant with strong business acumen. She has been working full time in the technology space since 2017, with blockchain based projects being of particular interest to her. Suvi previously worked in the fintech industry specializing in payment and remittance technology. Utilizing her vast network, she regularly assists early stage companies in fundraising and establishing investor relations.'
 		]	
