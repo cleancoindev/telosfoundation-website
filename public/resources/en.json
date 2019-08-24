@@ -125,7 +125,7 @@
   "governance_page": {
     "intro": {
       "heading": "Governance Overview",
-      "subheading_one": "Telos is a governed blockchain based on the EOSIO software. Like all DPOS (delegated proof of stake) chains, Telos has default governance built in. After observing other DPOS networks, the Telos blockchain founders decided to implement some safeguards to help protect the chain against collusion, hoarding, and ineffective BPs. Governance changes to Telos blockchain can only be implemented by Telos token holders the referendum process. ",
+      "subheading_one": "Telos is a governed blockchain based on the EOSIO software. Like all DPOS (delegated proof of stake) chains, Telos has default governance built in. After observing other DPOS networks, the Telos blockchain founders decided to implement some safeguards to help protect the chain against collusion, hoarding, and ineffective BPs. Governance changes to Telos blockchain can only be implemented by Telos token holders through the referendum process. ",
       "subheading_two":"The Telos Blockchain is a decentralized, trustless system, where token holders have the power to come together and change the direction of the chain and the way it operates. Some often refer to DPOS chains as an online democracy, although in practice it is more akin to shareholders of a public company. ",
       "subheading_three":"A DPOS chain is particularly stable since approving referendum requires a significant amount of voters to approve a motion in order for any new initiatives or significant code changes to pass. It also allows for those that have a vested interest in the chain to have a voice and campaign for the changes they believe will be the most beneficial to the Telos ecosystem. "
     },

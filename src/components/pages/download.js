@@ -140,8 +140,8 @@ const Wallets = ({wallets}) => {
 			logo: sqrl_logo,
 			links: {
 				linux: 'https://github.com/Telos-Foundation/Sqrl/releases',
-				apple: 'https://github.com/Telos-Foundation/Sqrl/releases/download/1.0.5/mac-Sqrl-1.0.5.dmg',
-				windows: 'https://github.com/Telos-Foundation/Sqrl/releases/download/1.0.5/win-Sqrl-1.0.5.exe',
+				apple: 'https://github.com/Telos-Foundation/Sqrl/releases',
+				windows: 'https://github.com/Telos-Foundation/Sqrl/releases',
 				github: 'https://github.com/Telos-Foundation/Sqrl'
 			}
 		},
