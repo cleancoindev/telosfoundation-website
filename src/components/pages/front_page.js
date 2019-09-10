@@ -19,7 +19,7 @@ import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 import awake_logo from '../../img/awake_wallet_banner.png';
 import meow_logo from '../../img/meow_wallet_banner.png';
-import torus_logo from '../../img/torus_wallet.png';
+import kibisis_logo from '../../img/kibisis.jpg';
 import eoslynx_logo from '../../img/EOSLynxLogo.png';
 import myteloswallet_logo from '../../img/my_telos_wallet.png';
 
@@ -377,13 +377,13 @@ const Wallets = () => {
 									duration={0.4}
 									delay={750}
 								>
-									<div className='wallet_img_container closed_source torus_banner_container'>
+									<div className='wallet_img_container closed_source kibisis_banner_container'>
 										<a
 											href='http://kibisis.ch'
 											target='_blank'
 											rel='noopener noreferrer'
 										>
-											<img src={torus_logo} alt='torus logo' />
+											<img src={kibisis_logo} alt='kibisis logo' />
 										</a>
 									</div>
 								</ScrollAnimation>

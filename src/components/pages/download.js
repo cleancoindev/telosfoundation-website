@@ -11,7 +11,7 @@ import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 import awake_logo from '../../img/awake_wallet_banner.png';
 import meow_logo from '../../img/meow_wallet_banner.png';
-import torus_logo from '../../img/torus_wallet.png';
+import kibisis_logo from '../../img/kibisis.jpg';
 
 import telos_icon from '../../img/Telos_MarketingSite_TelosIcon_334px.png';
 
@@ -173,9 +173,9 @@ const Wallets = ({wallets}) => {
 			}
 		},
 		{
-			name: 'torus',
-			description: 'Fully functional iOS mobile wallet available on Apple TestFlight. Coming soon to the Apple Store.',
-			logo: torus_logo,
+			name: 'kibisis',
+			description: 'Fully functional iOS mobile wallet available on App Store in 8 languages. ',
+			logo: kibisis_logo,
 			links: {
 				download: 'http://kibisis.ch'
 			}
