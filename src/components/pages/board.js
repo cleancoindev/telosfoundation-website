@@ -41,28 +41,12 @@ const execNominees = [
 		]	
 	},
 	{
-		name: 'Beth Farnham: Vice President',
-		elected: '(Elected Dec 24, 2018)',
-		portrait: beth_farnham,
-		bio: [
-			'Beth has been the chair and driving force for many groups outside the Blockchain space. As well as bringing her overall management skills to the role of VP, Beth works closely with the Telos grants and social media working groups. In the past, Beth has served on the boards of a number of charity/non-profit organizations so is able to bring a wealth of experience to the TF.'
-		]
-	},
-	{
 		name: 'Richard Bryan Erikodi: Treasurer',
 		elected: '(Elected Dec 24, 2018)',
 		portrait: richard_erikodi,
 		bio: [
 			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast. He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and is working to foster good relations between the Telos blockchain and the corporate world. Bryan is passionate about community and economic mobility. Bryan brings a wealth of organisational & treasury management, financial analysis and reporting expertise to the team. '
 		]
-	},
-	{
-		name: 'Mark Cohen: Secretary',
-		elected: '(Elected Dec24, 2018)',
-		portrait: mark_cohen,
-		bio: [
-			'As a valued member of the Telos Contributors Group, Mark chaired the Onboarding workgroup, and actively contributed to the Governance, Network Maintenance, and Marketing and Social Media workgroups. He spent countless hours helping facilitate conversations and share resources across the many various Telos working groups, to help bring about consensus.', 'Mark has also spearheaded much of the public facing technical documentation, authoring articles for the Telos Foundation Wiki, so as to educate and empower Telos Block Producers, through the sharing of knowledge and best practices.  Mark leads the Marking and Social Media working group for the TF.'
-		]	
 	},
 ];
 
